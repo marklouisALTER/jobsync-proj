@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import EmployerSidebar from '../../../components/EmployerSidebar';
 import { FaTimes , FaPlus } from 'react-icons/fa';
 import { FaQuestionCircle } from 'react-icons/fa';
 import { useLocation } from 'react-router-dom';
@@ -8,6 +7,7 @@ import { useAuth } from '../../../AuthContext';
 import Swal from 'sweetalert2';
 import { useJobContext } from '../../../JobContext';
 import { postToEndpoint } from '../../../components/apiService';
+import EmployerSidebar from '../../../components/employersidebar';
 
 export default function Step1ScreeningQuestions({ questions = [], setQuestions = () => {} }) {
     const { user } = useAuth(); 

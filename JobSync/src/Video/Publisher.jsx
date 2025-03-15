@@ -22,6 +22,8 @@ import Swal from "sweetalert2";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDesktop } from '@fortawesome/free-solid-svg-icons';
 import apiClient from "../components/apiClient";
+import { Button, Container, Row, Col } from "react-bootstrap";
+
 
 export const Publisher = () => {
   const { user } = useAuth();
@@ -116,7 +118,7 @@ export const Publisher = () => {
       }
     }, 5000);
 
-    return () => clearInterval(intervalId);
+    return () => clearInterval(intervalId); 
 
   }, [channel]);
 
@@ -265,50 +267,243 @@ export const Publisher = () => {
 
   return (
     <>
-    <div className="room">
+  <Container fluid className="room p-3">
       {isConnected ? (
-        <div className="user-list">
-          {/* Render the local user */}
-          <div className="user">
-            {screenShareOn && screenVideoTrack ? (
-              <div className="screen-share">
-                <LocalVideoTrack
-                  disabled={!screenShareOn}
-                  play={screenShareOn}
-                  track={screenVideoTrack}
-                />
-                {screenAudioTrack && (
-                  <LocalAudioTrack
-                    disabled={!screenShareOn}
-                    track={screenAudioTrack}
-                  />
+        <>
+        <div className="video-chat-container">
+          <div className={`user-list-container ${remoteUsers.length === 0 ? 'single-user-mode' : ''}`}>
+              {/* Render the local user */}
+              <div className={`user local-user ${remoteUsers.length === 0 ? 'only-user' : ''}`}>
+                <div className="video-container">
+                {screenShareOn && screenVideoTrack ? (
+                  <div className="screen-share h-100">
+                    <LocalVideoTrack
+                      disabled={!screenShareOn}
+                      play={screenShareOn}
+                      track={screenVideoTrack}
+                    />
+                    {screenAudioTrack && (
+                      <LocalAudioTrack
+                        disabled={!screenShareOn}
+                        track={screenAudioTrack}
+                      />
+                    )}
+                  </div>
+                ) : (
+                  <LocalUser
+                    audioTrack={localMicrophoneTrack}
+                    cameraOn={cameraOn}
+                    micOn={micOn}
+                    videoTrack={localCameraTrack}
+                    cover={company.logo}
+                    className="h-100"
+                  >
+                    <samp className="user-name">You: ({company.company_name})</samp>
+                  </LocalUser>
                 )}
+                </div>
               </div>
-            ) : (
-              <LocalUser
-                audioTrack={localMicrophoneTrack}
-                cameraOn={cameraOn}
-                micOn={micOn}
-                videoTrack={localCameraTrack}
-                cover={company.logo}
-              >
-                <samp className="user-name">You: ({company.company_name})</samp>
-              </LocalUser>
-            )}
+              {/* Render remote users */}
+              {remoteUsers.map((user) => (
+                <div className="user remote-user" key={user.uid}>
+                  <div className="video-container">
+                    <RemoteUser cover={applications[0]?.profile_picture_url} user={user}  className="h-100">
+                      <samp className="user-name">{applications[0]?.firstname} {applications[0]?.lastname}</samp>
+                    </RemoteUser>
+                  </div>
+                </div>
+              ))}
           </div>
-          {/* Render remote users */}
-          {remoteUsers.map((user) => (
-            <div className="user" key={user.uid}>
-              <RemoteUser
-                cover={applications[0]?.profile_picture_url}
-                user={user}
-              >
-                <samp className="user-name">{applications[0]?.firstname} {applications[0]?.lastname}</samp>
-              </RemoteUser>
+
+          <div className="control-container">
+            <div className="control-buttons">
+              <div className="left-control">
+                  <Button className="btn1" variant={micOn ? "primary" : "danger"} onClick={() => setMic((a) => !a)}>
+                    <i className={`i-microphone ${!micOn ? "off" : ""}`} />
+                  </Button>
+                  <Button className="btn1" variant={cameraOn ? "primary" : "danger"} onClick={() => setCamera((a) => !a)}>
+                    <i className={`i-camera ${!cameraOn ? "off" : ""}`} />
+                  </Button>
+                  <Button
+                    variant={screenShareOn ? "primary" : "secondary"}
+                    onClick={() => setScreenShareOn((prev) => !prev)}
+                  >
+                    <FontAwesomeIcon icon={faDesktop} className={!screenShareOn ? "off" : ""} />
+                  </Button>
+                </div>
+                <div className="center-control">
+                  <Button
+                    variant={calling ? "success" : "danger"}
+                    className="btn1 btn-phone"
+                    onClick={() => setCalling((a) => !a)}
+                  >
+                    {calling ? <i className="i-phone-hangup" /> : <i className="i-mdi-phone" />}
+                  </Button>
+                </div>
             </div>
-          ))}
+          </div>
         </div>
         
+<style jsx>{`
+  /* Main container */
+
+  .room {
+    position: fixed;
+  }
+  .video-chat-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 80px;
+  }
+  
+  /* User list container */
+  .user-list-container {
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 15px;
+    gap: 15px;
+  }
+  
+  /* Single user mode */
+  .single-user-mode {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Individual user containers */
+  .user {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  /* Only user styles */
+  .only-user {
+    max-width: 800px !important;
+    height: 70vh !important;
+    margin: 0 auto;
+  }
+  
+  /* Video container */
+  .video-container {
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+  }
+  
+  .h-100 {
+    height: 100%;
+  }
+  
+  /* User name styles */
+  .user-name {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  /* Control container */
+  .control-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #21242c;
+    padding: 15px 0;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+  }
+  
+  /* Control buttons container */
+  .control-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 32px;
+    position: relative;
+  }
+  
+  /* Left controls */
+  .left-control {
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* Center control (call button) */
+  /* PC View - Side by side */
+  @media (min-width: 768px) {
+    .local-user {
+      height: 650px !important
+    }
+    .remote-user {
+      height: 650px !important
+    }
+    .user-list-container {
+      flex-direction: row;
+    }
+    
+    .user {
+      flex: 1;
+      max-width: calc(50% - 7.5px);
+      height: 50vh;
+    }
+    
+    /* Center only user on PC view */
+    .single-user-mode .only-user {
+      max-width: 800px;
+      width: 80%;
+      height: 70vh;
+    }
+  }
+  
+  /* Mobile View - Stacked */
+  @media (max-width: 767.98px) {
+    .user-list-container {
+      flex-direction: column;
+    }
+    
+    .user {
+      width: 100%;
+      height: 30vh;
+      margin-bottom: 15px;
+    }
+    
+    /* Center only user on Mobile view */
+    .single-user-mode .only-user {
+      width: 100%;
+      height: 50vh !important;
+      margin-bottom: 0;
+    }
+    
+    .control-buttons button {
+      padding: 8px 12px;
+      font-size: 14px;
+    }
+  }
+
+  @media (min-width: 576px) {
+    .local-user {
+      height: 330px;
+    }
+    .remote-user {
+      height: 330px;
+    }
+  }
+`}</style>
+        </>
       ) : (
         <>
       <div className="join-room">
@@ -348,8 +543,9 @@ export const Publisher = () => {
       </div>
 
         </>
-      )}
-    </div>
+        )}
+  </Container>
+
     
     {isConnected && pendingRequests.length > 0 && (
   <div>
@@ -440,38 +636,6 @@ export const Publisher = () => {
     </div>
   </div>
 )}
-
-
-
-    {isConnected && (
-      <div className="control">
-        <div className="left-control">
-          <button className="btn1" onClick={() => setMic((a) => !a)}>
-            <i className={`i-microphone ${!micOn ? "off" : ""}`} />
-          </button>
-          <button className="btn1" onClick={() => setCamera((a) => !a)}>
-            <i className={`i-camera ${!cameraOn ? "off" : ""}`} />
-          </button>
-          <button
-            className="btn1"
-            style={{height: '33px'}}
-            onClick={() => setScreenShareOn((prev) => !prev)}
-          >
-            <FontAwesomeIcon 
-              icon={faDesktop} 
-              className={!screenShareOn ? "off" : ""} 
-              style={{ fontSize: '1.2rem', width: '1.5rem', marginTop: '2px' }} 
-            />
-          </button>
-        </div>
-        <button
-          className={`btn1 btn-phone ${calling ? "btn-phone-active" : ""}`}
-          onClick={() => setCalling((a) => !a)}
-        >
-          {calling ? <i className="i-phone-hangup" /> : <i className="i-mdi-phone" />}
-        </button>
-      </div>
-    )}
   </>
   );
 };

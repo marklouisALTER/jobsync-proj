@@ -95,6 +95,7 @@ import CheckToken from './components/CheckToken';
 import ResumeBuilder from './Pages/Resume/ResumeBuilder';
 import ResumeAIForm from './Pages/Resume/CreaeteResume';
 import ForgotPassword from './Pages/ForgotPassword';
+import MapComponent from './Pages/Applicants/Mapp';
 
 function Layout({ userId, setUserId }) {
   const location = useLocation();
@@ -296,6 +297,7 @@ const getBreadcrumbs = () => {
         <Route path='/resubmit/:firstname/:employer_id/:token' element={ <ResubmitRegistration />} /> 
         <Route path='/checkToken' element={ <CheckToken />} /> 
         <Route path='/forgotPassword' element={ <ForgotPassword />} /> 
+        <Route path='/map' element={ <MapComponent />} /> 
 
         {/* Resume Builder */}
         <Route path='/resume-builder' element={<ProtectedRoute> <ResumeBuilder /> </ProtectedRoute>} /> 

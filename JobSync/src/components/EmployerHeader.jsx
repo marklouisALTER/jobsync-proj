@@ -84,8 +84,12 @@ function EmployerHeader() {
     }, [user?.id]); 
 
     function getRelativeTime(timestamp) {
-        const now = new Date();
+        const now = new Date(); 
         const past = new Date(timestamp);
+    
+        const userTimezoneOffset = now.getTimezoneOffset() * 60000;
+        past.setTime(past.getTime() - userTimezoneOffset);
+    
         const diff = Math.floor((now - past) / 1000);
     
         if (diff < 60) return `${diff} sec${diff !== 1 ? 's' : ''} ago`;

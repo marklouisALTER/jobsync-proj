@@ -45,7 +45,7 @@ export default function Interview() {
         }
     };
     fetchApplications();
-    const interval = setInterval(fetchApplications, 3000);
+    const interval = setInterval(fetchApplications, 30000);
     return () => clearInterval(interval);
 }, [user.id]); 
 

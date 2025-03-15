@@ -28,7 +28,6 @@
   padding: 25px;
   background-color: #1e1e1e; 
   position: relative;
-  top: -80px;
 }
 
 /* Input field styles */
@@ -286,4 +285,67 @@
   text-align: center;
   transition: background-color 0.3s ease;
 }
+
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 768px) {
+    .join-room {
+      width: 85%;
+      margin-top: 4rem !important;
+      padding: 30;
+    }
+    
+    .title1 {
+      font-size: 1.5rem !important;
+    }
+    
+    .join-requests {
+      width: 85%;
+    }
+    .logo {
+      width: 130px !important;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .join-room {
+      width: 100%;
+      padding: 35px;
+    }
+    
+    .logo {
+      width: 100px !important;
+    }
+    
+    .title1 {
+      font-size: 1.5rem !important;
+    }
+    
+    .welcome-message h4 {
+      font-size: 1.1rem;
+    }
+    
+    .welcome-message p {
+      font-size: 0.9rem;
+    }
+    
+    input {
+      font-size: 0.9rem;
+    }
+    
+    .join-channel {
+      font-size: 0.9rem;
+    }
+    
+    .join-requests {
+      padding: 20px;
+    }
+    
+    .join-requests h4 {
+      font-size: 1.1rem;
+    }
+    
+    .cancel-button {
+      font-size: 0.9rem;
+    }
+  }
 

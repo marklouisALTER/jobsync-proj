@@ -95,7 +95,7 @@ export default function ProfilePage() {
           }
       };
       fetchApplications();
-      const interval = setInterval(fetchApplications, 9000);
+      const interval = setInterval(fetchApplications, 30000);
       return () => clearInterval(interval);
   }, [user.id]); 
 

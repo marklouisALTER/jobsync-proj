@@ -4,7 +4,7 @@ const JobSyncFlow = () => {
   const containerStyle = {
     maxWidth: '1200px',
     margin: '0 auto',
-    padding: '20px',
+    padding: '20px',  
   };
 
   const jobSyncFlowStyle = {
@@ -30,7 +30,7 @@ const JobSyncFlow = () => {
     padding: '20px',
     borderRadius: '10px',
     textAlign: 'center',
-    transition: 'transform 0.3s ease',  // Smooth transition
+    transition: 'transform 0.3s ease',  
   };
 
   const stepContainerHoverStyle = {
@@ -90,7 +90,7 @@ const JobSyncFlow = () => {
           onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
         >
           <div style={iconStyle}>💻</div>
-          <p>Take Interview through video call</p>
+          <p>Interview through video call</p>
         </div>
       </div>
     </div>

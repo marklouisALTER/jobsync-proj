@@ -1,7 +1,7 @@
 <?php
 include 'dbconnect.php';
 include 'config.php';  
-
+date_default_timezone_set('UTC');
 try {
     $objDb = new Dbconnect();
     $conn = $objDb->connect(); 

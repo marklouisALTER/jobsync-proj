@@ -18,6 +18,7 @@ const ApplyModal = ({ show, handleClose, applicant_id, job_id, jobTitle, company
     const [screeningQuestions, setScreeningQuestions] = useState([]);
     const [selectedOption, setSelectedOption] = useState({}); 
     const [loading, setLoading] = useState(false);
+    const [loadingSub, setLoadingSubmmit] = useState(false);
 
     const resetApplicationData = () => {
         setCurrentStep(1); 
@@ -163,6 +164,8 @@ const ApplyModal = ({ show, handleClose, applicant_id, job_id, jobTitle, company
             paddingRight: '40px'
         };
         const handleSubmit = async () => {
+            setLoadingSubmmit(true);  
+        
             const formData = new FormData();
             formData.append('applicant_id', applicant_id);
             formData.append('job_id', job_id);
@@ -187,9 +190,9 @@ const ApplyModal = ({ show, handleClose, applicant_id, job_id, jobTitle, company
                         text: 'Your application has been submitted successfully!',
                         confirmButtonText: 'OK',
                     }).then(() => {
-                        resetApplicationData(); 
-                        handleClose(); 
-                        window.location.reload(); 
+                        resetApplicationData();
+                        handleClose();
+                        window.location.reload();
                     });
                 } else {
                     Swal.fire({
@@ -209,6 +212,8 @@ const ApplyModal = ({ show, handleClose, applicant_id, job_id, jobTitle, company
                     text: 'There was an error submitting the application!',
                     confirmButtonText: 'OK',
                 });
+            } finally {
+                setLoadingSubmmit(false); // Stop loading
             }
         };
         
@@ -567,7 +572,7 @@ const ApplyModal = ({ show, handleClose, applicant_id, job_id, jobTitle, company
                         (currentStep === 3 && !isStep3Valid)
                     } style={{width: '120px', height: '40px', fontSize: '12px', borderRadius: '3px', background: '#156ad7', fontWeight: '500'}}>Next</Button>
                 ) : (
-                    <Button onClick={handleSubmit} style={{width: '120px', height: '40px', fontSize: '12px', borderRadius: '3px', background: '#156ad7', fontWeight: '500'}}>Submit</Button>
+                    <Button onClick={handleSubmit} style={{width: '120px', height: '40px', fontSize: '12px', borderRadius: '3px', background: '#156ad7', fontWeight: '500'}} disabled = {loadingSub} >{loadingSub ? 'Submitting...' : 'Submit'}</Button>
                 )}
             </Modal.Footer>
         </Modal>

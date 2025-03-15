@@ -17,14 +17,14 @@ export default function ForgotPassword() {
                         <Card className="shadow-lg p-4 mb-4 cards" style={{ borderRadius: "10px", marginTop: '8rem'}}>
                             <Card.Body>
                             <div className="text-center mb-4">
-                                <img src="src/assets/logo3.png" alt="Logo" style={{ width: "130px" }} />
+                                <img src="/assets/logo3-DvGSKCSt.png" alt="Logo" style={{ width: "130px" }} />
                             </div>
                             <h2 className="fw-bold text-center">Forgot Password</h2>
                             <p className="text-muted text-center mb-0">
                                 Go back to <a href="/candidate_login" style={{ color: "#0A65CC" }}>Sign In</a>
                             </p>
                             <p className="text-muted text-center">
-                                Don’t have an account? <a href="/signup" style={{ color: "#0A65CC" }}>Create account</a>
+                                Don’t have an account? <a href="/registration" style={{ color: "#0A65CC" }}>Create account</a>
                             </p>
 
                             <Form onSubmit={handleSubmit}>
@@ -51,7 +51,7 @@ export default function ForgotPassword() {
                 <Col  xs={12} lg={7} className="d-none d-md-flex align-items-center justify-content-center">
                     <div className="position-relative w-100">
                         <Image 
-                            src="/src/assets/our-services.jpg" 
+                            src="/assets/our-services.jpg" 
                             alt="Registration Visual" 
                             fluid
                             className="w-100 h-100"

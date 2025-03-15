@@ -305,7 +305,7 @@ function SignInEmployer() {
                 <Col xs={12} lg={7} className="d-none d-md-flex align-items-center justify-content-center">
                     <div className="position-relative w-100">
                         <Image
-                            src="/src/assets/our-services.jpg"
+                            src="/assets/our-services.jpg"
                             alt="Registration Visual"
                             fluid
                             className="w-100 h-100"

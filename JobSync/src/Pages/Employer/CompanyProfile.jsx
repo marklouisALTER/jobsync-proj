@@ -86,13 +86,13 @@ const CompanyProfile = () => {
   };
   const logoUrl = logo instanceof File 
   ? URL.createObjectURL(logo) 
-  : (logo && logo.startsWith('http') && logo !== "http://localhost/capstone-project/jobsync/src/api/") 
+  : (logo && logo.startsWith('http') && logo !== "https://jobsync-ph.com/src/api/") 
     ? logo 
     : null;
 
   const bannerUrl = banner instanceof File 
   ? URL.createObjectURL(banner) 
-  : (banner && banner.startsWith('http') && banner !== "http://localhost/capstone-project/jobsync/src/api/") 
+  : (banner && banner.startsWith('http') && banner !== "https://jobsync-ph.com/src/api/") 
     ? banner 
     : null;
 

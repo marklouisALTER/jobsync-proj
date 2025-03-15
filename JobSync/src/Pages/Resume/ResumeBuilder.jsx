@@ -467,8 +467,9 @@ const handleSave = async () => {
               <div style={{display: 'flex', justifyContent: 'space-between'}}>
                 <h2 className="mb-3">Personal Information</h2>
                 <div className="d-flex align-items-center">
-                <Button onClick={downloadPDF} style={{borderRadius: '3px', border: 'none', background: '#0a65cc', height: '32px', fontSize: '13px'}}>
-                      <FontAwesomeIcon icon={faDownload} /> Download PDF
+                <Button onClick={downloadPDF} style={{ borderRadius: '3px', border: 'none', background: '#0a65cc', height: '32px', fontSize: '13px' }}>
+                  <FontAwesomeIcon icon={faDownload} /> 
+                  <span className="d-none d-md-inline ms-1">Download PDF</span>
                 </Button>
                 <Button
                   onClick={handleSave}
@@ -484,12 +485,12 @@ const handleSave = async () => {
                   Save Resume
                 </Button>
 
-                <Form.Check
+                {/* <Form.Check
                   type="checkbox"
                   className="ms-2"
                   checked={isPrimary}
                   onChange={handleCheckboxChange}
-                />
+                /> */}
                 </div>
               </div>
               <div className="d-flex align-items-center mb-3" style={{justifyContent: 'space-around'}}>
@@ -800,67 +801,65 @@ const handleSave = async () => {
     formData.workExperience || formData.education || formData.skills.some(skill => skill.trim() !== "")
   ) && (
     <>
-    <Col lg={6} className="ml-3" ref={pdfRef}>
-      <Card className="shadow-sm p-4 pt-5 border-0">
-        <div className="d-flex mb-4" style={{ flexWrap: "wrap", paddingLeft: '15px' }}>
-          {profileImage ? (
-            <div className="profile-image-container" 
-              style={{ 
-                width: "150px", height: "150px", marginRight: "20px", display: "flex", flexShrink: 0, 
-                justifyContent: "center", alignItems: "center", border: "2px solid #ccc", 
-                borderRadius: "50%", overflow: "hidden" 
-              }}
-            >
-              <img
-                src={profileImage}
-                alt="Profile"
-                style={{ 
-                  width: "100%", height: "100%", objectFit: "cover", 
-                  borderRadius: "50%", display: "block"
-                }}
-              />
-            </div>
-          ) : (
-            <div className="profile-image-container" 
-              style={{ 
-                width: "150px", height: "150px", marginRight: "20px", display: "flex", flexShrink: 0, 
-                justifyContent: "center", alignItems: "center", border: "2px solid #ccc", 
-                borderRadius: "50%", overflow: "hidden" 
-              }}
-            >
-                            <img
-                    src={profilePicture}
-                    alt="Profile"
-                    style={{ 
-                      width: "100%", height: "100%", objectFit: "cover", 
-                      borderRadius: "50%", display: "block" 
-                    }}
-                    crossOrigin="anonymous"
-                  />
-            </div>
-          )}
-          
-          <div style={{ maxWidth: "100%", wordWrap: "break-word", overflowWrap: "break-word", flexGrow: 1, textAlign: 'left'}}>
-            <h5 className="fw-bold" style={{ fontSize: '40px', textAlign: 'left' }}>
-              {formData.firstName} {formData.lastName}
-            </h5>
-            <div className="d-flex flex-column mt-2">
-              {formData.phone && <p className="text-muted mb-1" style={{fontSize: '17px'}}><strong>Phone:</strong> {formData.phone}</p>}
-              {formData.email && <p className="text-muted mb-1" style={{fontSize: '17px'}}><strong>Email:</strong> {formData.email}</p>}
-              {(formData.streetNumber || formData.city || formData.country) && (
-                <p className="text-muted mb-1" style={{fontSize: '17px'}}>
-                  <strong>Address:</strong> {formData.streetNumber}, {formData.city}, {formData.zipcode}, {formData.country}
-                </p>
-              )}
-              {formData.dob && <p className="text-muted mb-1" style={{fontSize: '17px'}}><strong>Date of Birth:</strong> {formatDate(formData.dob)}</p>}
-              {formData.nationality && <p className="text-muted mb-1" style={{fontSize: '17px'}}><strong>Nationality:</strong> {formData.nationality}</p>}
-            </div>
-          </div>
+<Col xs={12} sm={12} md={8} lg={6} className="ml-md-3 mx-auto" ref={pdfRef}>
+  <Card className="shadow-sm p-4 pt-5 border-0">
+    <div className="d-flex flex-wrap mb-4 justify-content-center justify-content-md-start" style={{ paddingLeft: '15px' }}>
+      {profileImage ? (
+        <div className="profile-image-container"
+          style={{
+            width: "120px", height: "120px", marginRight: "15px", display: "flex",
+            flexShrink: 0, justifyContent: "center", alignItems: "center",
+            border: "2px solid #ccc", borderRadius: "50%", overflow: "hidden"
+          }}>
+          <img
+            src={profileImage}
+            alt="Profile"
+            style={{
+              width: "100%", height: "100%", objectFit: "cover",
+              borderRadius: "50%", display: "block"
+            }}
+          />
         </div>
-        
-        <div style={{paddingLeft: '50px', paddingRight: '40px'}}>
-        {(formData.profile || formData.workExperience || formData.education || formData.skills.some(skill => skill.trim() !== "")) && <hr className="my-4" style={{ borderColor: '#ccc', border: '1px solid' }} />}
-        <style> {`
+      ) : (
+        <div className="profile-image-container"
+          style={{
+            width: "120px", height: "120px", marginRight: "15px", display: "flex",
+            flexShrink: 0, justifyContent: "center", alignItems: "center",
+            border: "2px solid #ccc", borderRadius: "50%", overflow: "hidden"
+          }}>
+          <img
+            src={profilePicture}
+            alt="Profile"
+            style={{
+              width: "100%", height: "100%", objectFit: "cover",
+              borderRadius: "50%", display: "block"
+            }}
+            crossOrigin="anonymous"
+          />
+        </div>
+      )}
+
+      <div style={{ maxWidth: "100%", wordWrap: "break-word", overflowWrap: "break-word", flexGrow: 1, textAlign: 'left' }}>
+        <h5 className="fw-bold text-center text-md-start" style={{ fontSize: '30px' }}>
+          {formData.firstName} {formData.lastName}
+        </h5>
+        <div className="d-flex flex-column mt-2 text-center text-md-start">
+          {formData.phone && <p className="text-muted mb-1" style={{ fontSize: '15px' }}><strong>Phone:</strong> {formData.phone}</p>}
+          {formData.email && <p className="text-muted mb-1" style={{ fontSize: '15px' }}><strong>Email:</strong> {formData.email}</p>}
+          {(formData.streetNumber || formData.city || formData.country) && (
+            <p className="text-muted mb-1" style={{ fontSize: '15px' }}>
+              <strong>Address:</strong> {formData.streetNumber}, {formData.city}, {formData.zipcode}, {formData.country}
+            </p>
+          )}
+          {formData.dob && <p className="text-muted mb-1" style={{ fontSize: '15px' }}><strong>Date of Birth:</strong> {formatDate(formData.dob)}</p>}
+          {formData.nationality && <p className="text-muted mb-1" style={{ fontSize: '15px' }}><strong>Nationality:</strong> {formData.nationality}</p>}
+        </div>
+      </div>
+    </div>
+
+    <div className="px-3 px-md-5">
+    {(formData.profile || formData.workExperience || formData.education || formData.skills.some(skill => skill.trim() !== "")) && <hr className="my-4" style={{ borderColor: '#ccc', border: '1px solid' }} />}
+    <style> {`
                   .icon-circle {
                     display: flex;
                     align-items: center;
@@ -878,94 +877,81 @@ const handleSave = async () => {
                   }
                   `}
         </style>
-        {formData.profile && (
-          <div className="mt-4">
-            <div style={{ display: 'flex', alignItems: 'center' }}>
+      {formData.profile && (
+        <div className="mt-4">
+          <div style={{ display: 'flex', alignItems: 'center' }}>
             <div className="icon-circle">
               <FontAwesomeIcon icon={faUser} className="icon" />
             </div>
-              <h4 style={{ textAlign: 'left', color: '#5794ef', margin: 0}}>Profile Summary</h4>
-            </div>
-            <div className="mt-2" style={{ textAlign: 'left', paddingLeft: '30px'}} dangerouslySetInnerHTML={{ __html: formData.profile }} />
+            <h4 style={{ color: '#5794ef', margin: 0 }}>Profile Summary</h4>
           </div>
-        )}
-
-  {workExperiences.length > 0 && (
-    <div className="mt-4">
-      <div style={{ display: 'flex', alignItems: 'center' }}>
-        <div className="icon-circle">
-          <FontAwesomeIcon icon={faBriefcase} className="icon" />
+          <div className="mt-2 text-left profile-sum" style={{ paddingLeft: '30px' }} dangerouslySetInnerHTML={{ __html: formData.profile }} />
         </div>
-        <h4 style={{ textAlign: 'left', color: '#5794ef', margin: 0 }}>Work Experience</h4>
-      </div>
+      )}
 
-      {workExperiences.map((exp, index) => (
-        (exp.companyName || exp.jobTitle || exp.workCity || exp.workExperience) && (
-          <div key={index} className="mt-3">
-            <div style={{ display: 'flex', paddingLeft: '15px' }} className="mt-2">
-              {exp.jobTitle && <p style={{ textAlign: 'left', marginBottom: '0', fontSize: '20px' }}>• <strong>{exp.jobTitle}</strong></p>}
-              {exp.workCity && <p className="ms-2" style={{ textAlign: 'left', marginBottom: '0', marginTop: '5px'}}> • {exp.workCity}</p>}
+      {workExperiences.length > 0 && (
+        <div className="mt-4">
+          <div style={{ display: 'flex', alignItems: 'center' }}>
+            <div className="icon-circle">
+              <FontAwesomeIcon icon={faBriefcase} className="icon" />
             </div>
-            {exp.companyName && <p style={{ textAlign: 'left', fontWeight: 'bold', marginBottom: '0', paddingLeft: '30px' }}>{exp.companyName}</p>}
-            {exp.workExperience && (
-              <div className="mt-2">
-                <div style={{ textAlign: 'left', paddingLeft: '30px' }} dangerouslySetInnerHTML={{ __html: exp.workExperience }} />
-              </div>
-            )}
+            <h4 style={{ color: '#5794ef', margin: 0 }}>Work Experience</h4>
           </div>
-        )
-      ))}
-    </div>
-  )}
 
+          {workExperiences.map((exp, index) => (
+            (exp.companyName || exp.jobTitle || exp.workCity || exp.workExperience) && (
+              <div key={index} className="mt-3">
+                <div style={{ display: 'flex', flexWrap: 'wrap', paddingLeft: '15px' }} className="mt-2">
+                  {exp.jobTitle && <p className="mb-0" style={{ fontSize: '18px' }}>• <strong>{exp.jobTitle}</strong></p>}
+                  {exp.workCity && <p className="ms-2 mb-0" style={{ fontSize: '16px' }}> • {exp.workCity}</p>}
+                </div>
+                {exp.companyName && <p className="mb-0" style={{ paddingLeft: '30px', fontWeight: 'bold' }}>{exp.companyName}</p>}
+                {exp.workExperience && (
+                  <div className="mt-2 text-left profile-exp" style={{ paddingLeft: '30px' }} dangerouslySetInnerHTML={{ __html: exp.workExperience }} />
+                )}
+              </div>
+            )
+          ))}
+        </div>
+      )}
 
-        {formData.education && (
-          <>
-            <hr className="my-4" style={{ borderColor: '#ccc', border: '1px solid'  }} />
-            <div className="mt-4">
+      {formData.skills.some(skill => skill.trim() !== "") && (
+        <>
+          <hr className="my-4" style={{ borderColor: '#ccc', border: '1px solid' }} />
+          <div className="mt-4">
             <div style={{ display: 'flex', alignItems: 'center' }}>
               <div className="icon-circle">
-                <FontAwesomeIcon icon={faGraduationCap} className="icon" />
+                <FontAwesomeIcon icon={faTools} className="icon" />
               </div>
-                <h4 style={{ textAlign: 'left', color: '#5794ef', margin: 0 }}>Education</h4>
+              <h4 style={{ color: '#5794ef', margin: 0 }}>Skills</h4>
             </div>
-              <div className="mt-2" style={{ paddingLeft: '15px' }}>
-                {formData.education && <p style={{ textAlign: 'left', marginBottom: '0', fontSize: '20px' }}><strong> • {formData.education}</strong></p>}
-                {formData.program && <p style={{ textAlign: 'left', fontWeight: '400', marginBottom: '0', paddingLeft: '30px' }}>{formData.program}</p>}
-              </div>
-            </div>
-          </>
-        )}
-
-        {formData.skills.some(skill => skill.trim() !== "") && (
-          <>
-            <hr className="my-4" style={{ borderColor: '#ccc', border: '1px solid' }} />
-            <div className="mt-4">
-              <div style={{ display: 'flex', alignItems: 'center' }}>
-                <div className="icon-circle">
-                  <FontAwesomeIcon icon={faTools} className="icon" />
+            <div className="mt-2" style={{ 
+              display: 'grid', 
+              gridTemplateColumns: 'repeat(auto-fit, minmax(120px, 1fr))', 
+              gap: '10px', 
+              paddingLeft: '20px', 
+              textAlign: 'left' 
+            }}>
+              {formData.skills.filter(skill => skill.trim() !== "").map((skill, index) => (
+                <div key={index} className="text-muted" style={{ padding: '5px', background: '#f8f9fa', borderRadius: '5px' }}>
+                  {skill}
                 </div>
-                <h4 style={{ textAlign: 'left', color: '#5794ef', margin: 0 }}>Skills</h4>
-              </div>
-              <div className="mt-2" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '10px', paddingLeft: '20px', textAlign: 'left' }}>
-                {formData.skills.filter(skill => skill.trim() !== "").map((skill, index) => (
-                  <div key={index} className="text-muted" style={{ padding: '5px', background: '#f8f9fa', borderRadius: '5px' }}>
-                    {skill}
-                  </div>
-                ))}
-              </div>
+              ))}
             </div>
-          </>
-        )}
+          </div>
+        </>
+      )}
+    </div>
+  </Card>
+</Col>
 
-        </div>
-      </Card>
-    </Col>
     
     </>
   )}
         </Row>
       </Container>
+
+
       <Modal show={showModal} onHide={() => setShowModal(false)} centered>
             <Modal.Header closeButton>
               <Modal.Title>What job are you applying for?</Modal.Title>
@@ -1013,6 +999,100 @@ const handleSave = async () => {
       </>
     )}
 
+  <style>{`
+          <style>
+          @media (max-width: 1200px) {
+            .profile-image-container {
+              width: 120px !important;
+              height: 120px !important;
+            }
+          }
+
+          @media (max-width: 992px) {
+            .profile-image-container {
+              width: 100px !important;
+              height: 100px !important;
+            }
+            .register2 {
+              font-size: 14px !important;
+            }
+            .d-flex.align-items-center.mb-3 {
+              flex-direction: column;
+              align-items: center !important;
+            }
+            .profile-image-container {
+              margin-right: 0 !important;
+              margin-bottom: 15px;
+            }
+            .profile-summary-container {
+              width: 100% !important;
+            }
+          }
+
+          @media (max-width: 768px) {
+            .profile-image-container {
+              width: 120px !important;
+              height: 120px !important;
+            }
+            .profile-image-container img {
+              width: 100% !important;
+              height: 100% !important;
+            }
+            .container-fluid {
+              padding: 0 10px !important;
+            }
+            .card {
+              padding: 15px !important;
+            }
+            .form-control {
+              width: 100% !important;
+            }
+            .btn {
+              width: 100% !important;
+            }
+            .row {
+              flex-direction: column !important;
+            }
+            .col-md-6,
+            .col-md-4 {
+              width: 100% !important;
+            }
+          }
+          
+          @media (max-width: 576px) {
+            .profile-exp {
+              padding-left: 0px !important
+            }
+            .profile-sum {
+              padding-left: 10px !important
+            }
+            .profile-image-container {
+              width: 70px !important;
+              height: 70px !important;
+            }
+            .container {
+              padding: 10px !important;
+            }
+            .row {
+              flex-direction: column !important;
+            }
+            .col-md-6, .col-md-4 {
+              width: 100% !important;
+            }
+            .btn {
+              width: 100% !important;
+              margin-top: 5px !important;
+            }
+            .d-flex.justify-content-between h2 {
+              font-size: 18px !important;
+            }
+            .register2 {
+              font-size: 12px !important;
+            }
+          }
+        </style>
+
+  `}</style>
     </>
   );
 }

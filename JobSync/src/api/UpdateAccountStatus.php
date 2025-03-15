@@ -119,7 +119,7 @@ if (isset($data['employer_id']) && isset($data['status'])) {
         } catch (PDOException $e) {
             echo "Error: " . $e->getMessage();
         }
-        $verificationLink = "http://localhost:5173/checkToken?employer_id=" . $employer_id . "&token=" . $token;
+        $verificationLink = "https://jobsync-ph.com/checkToken?employer_id=" . $employer_id . "&token=" . $token;
         $mail->Subject = 'Document Resubmission Request - JobSync';
         $mail->Body = "<!DOCTYPE html>
                         <html lang='en'>

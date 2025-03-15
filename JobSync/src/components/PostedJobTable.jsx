@@ -16,67 +16,75 @@ const JobRow = ({ job, handleShowModal }) => {
     };
 
     return (
-        <tr className="border-bottom">
-            {/* Job details */}
-            <td style={{ textAlign: 'left' }}>
-                <div>
-                    <h6 className="mb-0" style={{ padding: '5px', textAlign: 'left', color: '#444444' }}>{job.jobTitle}</h6>
-                    <small className="text-muted" style={{ marginLeft: '6px' }}>{job.jobType}</small>
-                    <small className="text-muted" style={{ left: '9px', position: 'relative' }}> • </small>
-                    <small className='text-muted' style={{ left: '16px', position: 'relative' }}>
-                        {job.remainingDays > 0
-                            ? `${job.remainingDays} days remaining`
-                            : `${new Date(job.expirationDate).toLocaleDateString('en-US', {
-                                year: 'numeric', month: 'short', day: 'numeric'
-                            })}`}
-                    </small>
-                </div>
-            </td>
+<tr className="border-bottom">
+    {/* Job details */}
+    <td style={{ textAlign: 'left', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+        <div>
+            <h6 className="mb-0" style={{ padding: '5px', textAlign: 'left', color: '#444444', fontSize: 'clamp(12px, 2vw, 16px)' }}>{job.jobTitle}</h6>
+            <small className="text-muted d-block d-md-inline" style={{ marginLeft: '6px' }}>{job.jobType}</small>
+            <small className="text-muted d-none d-md-inline" style={{ left: '9px', position: 'relative' }}> • </small>
+            <small className='text-muted d-block d-md-inline remaining' style={{ left: '16px', position: 'relative' }}>
+                {job.remainingDays > 0
+                    ? `${job.remainingDays} days remaining`
+                    : `${new Date(job.expirationDate).toLocaleDateString('en-US', {
+                        year: 'numeric', month: 'short', day: 'numeric'
+                    })}`}
+            </small>
+        </div>
+    </td>
 
-            {/* Status */}
-            <td className="text-center">
-                <span style={{ color: statusColor, padding: '10px', fontSize: '14px', fontWeight: '700', display: 'inline-block', marginTop: '5px' }}>
-                    {job.status === 'Active' ? <FaCheck className="me-2" /> : <FaTimes className="me-2" />}
-                    {job.status}
-                </span>
-            </td>
+    {/* Status */}
+    <td className="text-center">
+        <span className="d-inline-block" style={{ color: statusColor, padding: '10px', fontSize: 'clamp(12px, 2vw, 14px)', fontWeight: '700', marginTop: '5px' }}>
+            {job.status === 'Active' ? <FaCheck className="me-1" /> : <FaTimes className="me-1" />}
+            {job.status}
+        </span>
+    </td>
 
-            {/* Applications */}
-            <td className="text-center">
-                <div className="d-flex justify-content-center align-items-center" style={{ marginTop: '15px', display: 'inline-block', color: '#656565', fontWeight: '500', fontSize: '14px' }}>
-                    <FaUsers className="me-2" style={{fontSize: '17px'}}/>
-                    <span >{job.applicant_count}</span><span className="ms-1">Applications</span>
-                </div>
-            </td>
+    {/* Applications */}
+    <td className="text-center">
+        <div className="d-flex justify-content-center align-items-center" style={{ marginTop: '15px', color: '#656565', fontWeight: '500', fontSize: 'clamp(12px, 2vw, 14px)' }}>
+            <FaUsers className="me-2" style={{ fontSize: 'clamp(14px, 2vw, 17px)' }} />
+            <span>{job.applicant_count}</span>
+            <span className="ms-1 d-none d-sm-inline">Applications</span>
+        </div>
+    </td>
 
-            {/* Actions */}
-            <td className="text-center">
-                <div className="d-flex justify-content-center align-items-center">
-                    <button
-                        className="btn btn-sm btn-light text-primary"
-                        style={{
-                            marginLeft: 'auto',
-                            width: '60%',
-                            fontWeight: '500',
-                            marginTop: '5px',
-                            background: '#ddf2ff',
-                            padding: '10px',
-                            borderRadius: '6px'
-                        }}
-                        onClick={handleViewApplications}
-                    >
-                        View Applications
-                    </button>
-                    <button
-                        className="btn btn-sm btn-light text-primary fw-bold ms-2"
-                        style={{ marginTop: '7px' }}
-                        onClick={(e) => handleShowModal(job, e)}
-                    >
-                        <FaEllipsisV />
-                    </button>
-                </div>
-            </td>
-        </tr>
+    {/* Actions */}
+    <td className="text-center">
+    <div className="d-flex justify-content-center align-items-center flex-wrap">
+        <button
+            className="btn btn-sm btn-light text-primary"
+            style={{
+                width: '100%',
+                maxWidth: '120px',
+                fontWeight: '500',
+                marginTop: '5px',
+                background: '#ddf2ff',
+                padding: '8px',
+                borderRadius: '6px',
+                fontSize: 'clamp(12px, 2vw, 14px)'
+            }}
+            onClick={handleViewApplications}
+        >
+            {/* Show text on larger screens */}
+            <span className="d-none d-md-inline">View</span>
+            {/* Show icon on smaller screens */}
+            <span className="d-inline d-md-none">
+                <FaEye />
+            </span>
+        </button>
+        <button
+            className="btn btn-sm btn-light text-primary fw-bold ms-2 mt-2 mt-md-0"
+            style={{ fontSize: 'clamp(12px, 2vw, 14px)' }}
+            onClick={(e) => handleShowModal(job, e)}
+        >
+            <FaEllipsisV />
+        </button>
+    </div>
+</td>
+
+</tr>
     );
 };
 
@@ -252,13 +260,13 @@ const PostedJobTable = () => {
     
     return (
         <div className="container-fluid px-0">
-            <div className="table-responsive">
+            <div className="table-responsive" style={{scrollbarWidth: 'thin'}}>
                 {jobs.length === 0 ? (
                     <div className="text-center p-5" style={{ width: '100%', minWidth: '1000px' }}>
                         <h5>No job posts available</h5>
                     </div>
                 ) : (
-                    <table className="table" style={{ width: '100%', minWidth: '1000px' }}>
+                    <table className="table" style={{ maxWidth: '100%'}}>
                         <thead className="thead-light">
                             <tr>
                                 <th style={{ color: '#676767', background: '#ebebebc2' }}>Jobs</th>
@@ -458,6 +466,14 @@ const PostedJobTable = () => {
                 </div>
             </div>
         )}
+
+        <style>{`
+        @media (max-width: 576px) { 
+            .remaining {
+                left: 0px !important;
+            }
+        }
+        `}</style>
 
         </div>
     );

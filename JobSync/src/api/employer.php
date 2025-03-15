@@ -20,7 +20,7 @@ $data = json_decode(file_get_contents("php://input"), true);
         exit;
     }
 
-    $api_key = "06drhvszBIfFNWgrp16YFysZCR98bTE9"; 
+    $api_key = "aG1vrxmTbAYoDIQ8cJ9JcPnvE7Aiqc9Q"; 
     $api_url = "https://api2.idanalyzer.com/scan";
 
     $uploads_dir = 'uploads';
@@ -37,23 +37,58 @@ $data = json_decode(file_get_contents("php://input"), true);
     
         return isset($extensions[$mimeType]) ? $extensions[$mimeType] : 'bin';
     }
-    $dti_document = base64_decode($data['dti_certificate']);
-    $bir_document = base64_decode($data['bir_certificate']);
-    $business_permit = base64_decode($data['business_permit']);
 
-    $dti_mime_type = mime_content_type('data://application/octet-stream;base64,' . base64_encode($dti_document));
-    $bir_mime_type = mime_content_type('data://application/octet-stream;base64,' . base64_encode($bir_document));
-    $business_permit_mime_type = mime_content_type('data://application/octet-stream;base64,' . base64_encode($business_permit));
-
-    $dti_extension = getFileExtension($dti_mime_type);
-    $bir_extension = getFileExtension($bir_mime_type);
-    $business_permit_extension = getFileExtension($business_permit_mime_type);
-
-    $dti_document_filename = $uploads_dir . '/dti_certificate_' . uniqid() . '.' . $dti_extension;
-    $bir_document_filename = $uploads_dir . '/bir_certificate_' . uniqid() . '.' . $bir_extension;
-    $business_permit_filename = $uploads_dir . '/business_permit_' . uniqid() . '.' . $business_permit_extension;
-
-
+    function saveFile($base64String, $prefix) {
+        global $uploads_dir;
+    
+        if (str_contains($base64String, ';base64,')) {
+            $parts = explode(';base64,', $base64String);
+            $mimeType = str_replace('data:', '', $parts[0]); 
+            $base64Data = $parts[1];
+        } else {
+            $base64Data = $base64String;
+        }
+    
+        $decodedFile = base64_decode($base64Data, true);
+        if (!$decodedFile) {
+            return false;
+        }
+    
+        // Detect MIME type after decoding
+        $finfo = new finfo(FILEINFO_MIME_TYPE);
+        $mimeType = $finfo->buffer($decodedFile);
+    
+        $allowedTypes = [
+            'image/jpeg' => 'jpg',
+            'image/png' => 'png',
+            'application/pdf' => 'pdf'
+        ];
+    
+        if (!isset($allowedTypes[$mimeType])) {
+            return false; // Unsupported file type
+        }
+    
+        $extension = $allowedTypes[$mimeType];
+        $filePath = "$uploads_dir/{$prefix}_" . uniqid() . ".$extension";
+    
+        if (file_put_contents($filePath, $decodedFile)) {
+            return $filePath;
+        }
+    
+        return false;
+    }
+//==    
+    
+    
+    $dti_document_filename = saveFile($data['dti_certificate'], 'dti');
+    $bir_document_filename = saveFile($data['bir_certificate'], 'bir');
+    $business_permit_filename = saveFile($data['business_permit'], 'permit');
+    
+    if (!$dti_document_filename || !$bir_document_filename || !$business_permit_filename) {
+        echo json_encode(['error' => 'Failed to save one or more documents']);
+        exit;
+    }
+    
     $document_image = base64_decode($data['document']);
     $face_image = base64_decode($data['face']);
     $back_image = base64_decode($data['backSideId']);
@@ -62,9 +97,8 @@ $data = json_decode(file_get_contents("php://input"), true);
     $face_filename = $uploads_dir . '/face_' . uniqid() . '.png';
     $back_filename = $uploads_dir . '/back_' . uniqid() . '.png';
 
-    if (!file_put_contents($dti_document_filename, $dti_document) ||
-        !file_put_contents($bir_document_filename, $bir_document) ||
-        !file_put_contents($business_permit_filename, $business_permit) ||
+    if (
+    
         !file_put_contents($document_filename, $document_image) ||
         !file_put_contents($face_filename, $face_image) ||
         !file_put_contents($back_filename, $back_image)) {
@@ -187,29 +221,31 @@ try {
         $mail->send();
 
         $hashed_password = password_hash($data['password'], PASSWORD_DEFAULT);
+try {
+    $sql = "INSERT INTO js_employer_info 
+        (firstname, middlename, lastname, suffix, contact, position, email, password, verification_code, 
+        document_path, face_path, back_side_path, dti_document, bir_document, business_permit, decision, account_status) 
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
-        $sql = "INSERT INTO js_employer_info (firstname, middlename, lastname, suffix, contact, position, email, password, verification_code, document_path, face_path, back_side_path, dti_document, bir_document, business_permit, decision, account_status) 
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
-
-        $params = [
-            $data['firstName'], 
-            $data['middleName'], 
-            $data['lastName'], 
-            $data['suffix'] ?? null, 
-            $data['contactNumber'], 
-            $data['position'], 
-            $data['email'], 
-            $hashed_password, 
-            $verification_code,
-            $document_filename, 
-            $face_filename, 
-            $back_filename, 
-            $dti_document_filename, 
-            $bir_document_filename,
-            $business_permit_filename,
-            $decision,
-            'Pending'
-        ];
+    $params = [
+        $data['firstName'], 
+        $data['middleName'], 
+        $data['lastName'], 
+        $data['suffix'] ?? null, 
+        $data['contactNumber'], 
+        $data['position'], 
+        $data['email'], 
+        $hashed_password, 
+        $verification_code,
+        $document_filename, 
+        $face_filename, 
+        $back_filename, 
+        $dti_document_filename,  
+        $bir_document_filename, 
+        $business_permit_filename, 
+        $decision,
+        'Pending'
+    ];
 
         $stmt = $pdo->prepare($sql);
         $stmt->execute($params);
@@ -230,8 +266,10 @@ try {
         $contact_stmt->execute([$lastInsertId]);
 
         exit;
+        } catch (PDOException $e) {
+            echo json_encode(['error' => 'Database error: ' . $e->getMessage()]);
+        }
     }
-
 } catch (Exception $e) {
     echo json_encode(['error' => 'Failed to process request: ' . $e->getMessage()]);
     exit;

@@ -284,7 +284,7 @@ function SignInForm() {
                         <div className='text-muted text-center mt-3'>or</div>
                         <div className="d-grid">
                             <Button type='button' onClick={loginGoogle} variant="light" className="btn-custom w-100 mt-3 mb-4"  style={{ backgroundColor: '#ffffff', width: '588px', marginTop: '20px', color: 'black'}}>
-                                <img src="/src/assets/google.png" alt="Google Logo" style={{ width: '20px', marginRight: '10px' }} />
+                                <img src="/assets/google.png" alt="Google Logo" style={{ width: '20px', marginRight: '10px' }} />
                                 Sign in with Google
                             </Button>
                         </div>
@@ -293,7 +293,7 @@ function SignInForm() {
                 <Col  xs={12} lg={7} className="d-none d-md-flex align-items-center justify-content-center">
                     <div className="position-relative w-100">
                         <Image 
-                            src="/src/assets/our-services.jpg" 
+                            src="/assets/our-services.jpg" 
                             alt="Registration Visual" 
                             fluid
                             className="w-100 h-100"

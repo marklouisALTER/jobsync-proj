@@ -1,10 +1,11 @@
 import React, {useState, useEffect } from 'react';
-import EmployerSidebar from '../../../components/EmployerSidebar';
 import PostedJobTable from '../../../components/PostedJobTable';
-import { FaBriefcase, FaUser, FaEnvelope, FaArrowRight } from 'react-icons/fa';
+import { Container, Row, Col, Card, Button, Offcanvas } from "react-bootstrap";
+import { FaBriefcase, FaUser, FaEnvelope, FaArrowRight, FaBars } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import { useAuth } from '../../../AuthContext'
 import { postToEndpoint } from '../../../components/apiService';
+import EmployerSidebar from '../../../components/employersidebar';
 
 export default function EmployerOverview() {
     const { user } = useAuth(); 
@@ -26,131 +27,117 @@ export default function EmployerOverview() {
         };
         const intervalId = setInterval(() => {
             fetchCounts();
-        }, 10000); 
+        }, 15000); 
         fetchCounts();
         return () => clearInterval(intervalId);
     }, [user.id]);
+    const [showSidebar, setShowSidebar] = useState(false);
 
     return (
         <>
-            <div className="d-flex">
-                <EmployerSidebar />
-                <div className="flex-grow-1 p-4" style={{ marginTop: '60px', marginLeft: '-10px' }}>
-                    {/* Open Jobs, Saved Applicants, and Messages Cards */}
-                    <div className="row mb-4 justify-content-between">
-                        {/* Open Jobs Card */}
-                        <div className="col-md-1 mb-3">
-                            <div
-                                className="border rounded shadow-sm p-3"
-                                style={{
-                                    height: '120px',
-                                    width: '310px',
-                                    backgroundColor: '#b8e2fe',
-                                    color: 'black',
-                                    margin: '0 5px', 
-                                }}
-                            >
-                                <div className="d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <p className="fs-3" style={{marginBottom: '18px'}}>{counts[0]?.job_post_count}</p>
-                                        <h6 style={{fontSize: '16px', color: '#2d2d2d'}}>Open Jobs</h6>
-                                    </div>
-                                    <div
-                                    style={{
-                                        backgroundColor: '#E7F0FA',
-                                        padding: '8px',
-                                        borderRadius: '8px',
-                                    }}
-                                    >
-                                        <FaBriefcase size={40} style={{ color: '#0A65CC', width: '58%' }} />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Saved Applicants Card */}
-                        <div className="col-md-1 mb-3">
-                            <div
-                                className="border rounded shadow-sm p-3"
-                                style={{
-                                    height: '120px',
-                                    width: '310px', 
-                                    backgroundColor: '#ffd4bb',
-                                    color: 'black',
-                                    margin: '0 5px', 
-                                }}
-                            >
-                                <div className="d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <p className="fs-3" style={{marginBottom: '18px'}}>5</p>
-                                        <h6 style={{fontSize: '16px', color: '#2d2d2d'}}>Saved Applicants</h6>
-                                    </div>
-                                    <div
-                                        style={{
-                                            backgroundColor: '#E7F0FA',
-                                            padding: '7px',
-                                            borderRadius: '8px',
-                                            width: '55px'
-                                        }}
-                                    >
-                                        <FaUser size={40} style={{ color: '#FF8616', width: '48%' }} />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Messages Card */}
-                        <div className="col-md-4 mb-3">
-                            <div
-                                className="border rounded shadow-sm p-3"
-                                style={{
-                                    height: '120px',
-                                    width: '310px', 
-                                    backgroundColor: '#d7ffd4',
-                                    color: 'black',
-                                    margin: '0 5px', 
-                                }}
-                            >
-                                <div className="d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <p className="fs-3" style={{marginBottom: '18px'}}>8</p>
-                                        <h6 style={{fontSize: '16px', color: '#2d2d2d'}}>Messages</h6>
-                                    </div>
-                                    <div
-                                        style={{
-                                            backgroundColor: '#E7F0FA',
-                                            padding: '8px',
-                                            borderRadius: '8px',
-                                        }}
-                                    >
-                                        <FaEnvelope size={40} style={{ color: '#169E5D', width: '48%' }} />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="d-flex justify-content-between align-items-center mb-2">
-                        <h3 style={{ fontSize: '15px', fontWeight: '500', color: '#333', marginBottom: '-20px' }}>Recently Posted Jobs</h3>
-                        <Link to = '/employer/myjobs'>
-                        <button
-                            className="btn"
+            
+            <Container className='container-lg' style={{ marginTop: "3rem" }}>
+                <Row className="mb-4">
+                    <Col lg={3} className="applicant-sidebar bg-light vh-100 p-3 d-none d-lg-block">
+                        <EmployerSidebar />
+                    </Col>
+                    {/* Sidebar Toggle Button (Small Screens) */}
+                    <Col xs={12} className="d-lg-none" style={{display: 'flex'}}>
+                        <Button
+                            variant="link"
+                            onClick={() => setShowSidebar(true)}
                             style={{
-                                color: '#4b4b4b',
-                                fontWeight: '500',
-                                padding: '0.5rem 1.5rem',
-                                display: 'flex',
-                                alignItems: 'center',
+                                position: "relative",
+                                left: "0",
+                                color: "#333", // Dark color
+                                fontSize: "24px", // Bigger icon
+                                padding: "5px"
                             }}
                         >
-                            View All <FaArrowRight style={{ marginLeft: '8px' }} />
-                        </button>
-                        </Link>
-                    </div>
+                            <FaBars />
+                        </Button>
+                    </Col>
+                    {/* Offcanvas Sidebar (Small Screens) */}
+                    <Offcanvas show={showSidebar} onHide={() => setShowSidebar(false)} placement="start">
+                        <Offcanvas.Header closeButton>
+                            <Offcanvas.Title>Employer Dashboard</Offcanvas.Title>
+                        </Offcanvas.Header>
+                        <Offcanvas.Body>
+                            <EmployerSidebar />
+                        </Offcanvas.Body>
+                    </Offcanvas>
+                <Col lg={9} className="p-4">
+                    <Row className="mb-4 g-3">
+                    {/* Open Jobs Card */}
+                        <Col xs={12} sm={6} md={4}>
+                            <Card style={{ backgroundColor: "#b8e2fe" }} className="shadow-sm border-0">
+                                <Card.Body className="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <Card.Title className="fs-3">{counts[0]?.job_post_count}</Card.Title>
+                                        <Card.Text>Open Jobs</Card.Text>
+                                    </div>
+                                    <div className="p-2 bg-light rounded">
+                                        <FaBriefcase size={40} style={{ color: "#0A65CC" }} />
+                                    </div>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                        
+                        {/* Saved Applicants Card */}
+                        <Col xs={12} sm={6} md={4}>
+                            <Card style={{ backgroundColor: "#ffd4bb" }} className="shadow-sm border-0">
+                                <Card.Body className="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <Card.Title className="fs-3">5</Card.Title>
+                                        <Card.Text >Saved Applicants</Card.Text>
+                                    </div>
+                                    <div className="p-2 bg-light rounded">
+                                        <FaUser size={40} style={{ color: "#FF8616" }} />
+                                    </div>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                        
+                        {/* Messages Card */}
+                        <Col xs={12} sm={6} md={4}>
+                            <Card style={{ backgroundColor: "#d7ffd4" }} className="shadow-sm border-0">
+                                <Card.Body className="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <Card.Title className="fs-3">8</Card.Title>
+                                        <Card.Text>Messages</Card.Text>
+                                    </div>
+                                    <div className="p-2 bg-light rounded">
+                                        <FaEnvelope size={40} style={{ color: "#169E5D" }} />
+                                    </div>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                    </Row>
 
-                    <PostedJobTable />
-                </div>
-            </div>
+
+                    <Row className="d-flex justify-content-between align-items-center mb-3">
+                        <Col>
+                            <h5  style={{ fontSize: '15px', fontWeight: '500', color: '#333', marginBottom: '-20px', textAlign: 'left'}} className="fw-bold text-secondary">Recently Posted Jobs</h5>
+                        </Col>
+                        <Col className="text-end">
+                            <Link to="/employer/myjobs">
+                                <Button variant="link" className="text-decoration-none fw-bold text-dark">
+                                    View All <FaArrowRight className="ms-2" />
+                                </Button>
+                            </Link>
+                        </Col>
+                    </Row>
+                    <Col className="table-responsive">
+                        <PostedJobTable />
+                    </Col>
+                </Col>
+            </Row>
+            </Container>
+        <style>{`
+            #root {
+                width: 100%;
+            }
+        `}</style>
         </>
     );
 }

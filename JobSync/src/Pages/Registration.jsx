@@ -355,7 +355,7 @@ function RegistrationForm() {
             <Col xs={12} lg={7} className="d-none d-md-block">
                 <div className="position-relative">
                     <Image
-                        src="/src/assets/our-services.jpg"  
+                        src="/assets/our-services.jpg"  
                         alt="Registration Visual"
                         fluid
                         className="rounded"

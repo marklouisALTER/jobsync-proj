@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { Modal, Button } from 'react-bootstrap';
-import { FaBirthdayCake, FaFontAwesomeFlag, FaUser, FaVenusMars, FaBriefcase, FaGraduationCap, FaGlobe, FaMapMarkerAlt, FaPhone, FaEnvelope, FaDownload, FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaRegBookmark } from 'react-icons/fa';
+import { FaBirthdayCake, FaFontAwesomeFlag, FaUser, FaVenusMars, FaBriefcase, FaGraduationCap, FaGlobe, FaMapMarkerAlt, FaPhone, FaEnvelope, FaDownload, FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaRegBookmark, FaBookmark } from 'react-icons/fa';
 import { postToEndpoint } from './apiService';
+import { useAuth } from '../AuthContext';
+
 const ViewProfileModal = ({ show, handleClose, applicant }) => {
+  const { user } = useAuth();
   const [isBookmarked, setIsBookmarked] = useState(false);
   const iconStyle = { color: '#007bff', fontSize: '1.2em' };
   const [applicants, setApplicants] = useState([]);
   const [cover, setCover] = useState([]);
-  const handleBookmarkClick = () => {
-    setIsBookmarked(!isBookmarked);
-  };
 
   useEffect(() => {
     const fetchApplied = async () => {
@@ -44,17 +44,64 @@ const ViewProfileModal = ({ show, handleClose, applicant }) => {
 
     fetchCoverLetter();
   }, [applicant]);
+  
+  const handleBookmarkClick = async () => {
+    try {
+      const response = await postToEndpoint('/saveFavoriteApplicants.php', {
+        applicant_id: applicant,
+        employer_id: user.id
+      });
+  
+      if (response.data.success) {
+        setIsBookmarked(!isBookmarked);
+      } else {
+        console.error('Failed to save bookmark:', response.data.message);
+      }
+    } catch (error) {
+      console.error('Error saving bookmark:', error);
+    }
+  }
 
+  useEffect(() => {
+    const fetchBookmarks = async () => {
+      if (!user?.id || !applicant) {
+        console.error("Employer ID or Applicant ID is missing.");
+        return;
+      }
+  
+      try {
+        const response = await postToEndpoint("/getFavoritesApplicants.php", {
+          applicant_id: applicant,
+          employer_id: user.id
+        });
+  
+        if (response.data.success) {
+          setIsBookmarked(response.data.bookmarked);
+        } else {
+          console.error("Failed to fetch bookmark status:", response.data.message);
+        }
+      } catch (error) {
+        console.error("Error fetching bookmark status:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+  
+    fetchBookmarks();
+  }, [user?.id, applicant]); 
+  
+  
   return (
-    <Modal show={show} onHide={handleClose} size="xl" centered>
-      <Modal.Header closeButton style={{fontSize: '16px'}}>
-        <Modal.Title className='ps-4'>Applicant Profile</Modal.Title>
-      </Modal.Header>
+    <Modal show={show} onHide={handleClose} fullscreen="lg-down" size="xl" centered>
+    <Modal.Header closeButton>
+      <Modal.Title className="ps-2 ps-md-4">Applicant Profile</Modal.Title>
+    </Modal.Header>
 
-      <Modal.Body style={{ padding: '30px' }}>
-        <div className="d-flex">
-          {/* Left Section */}
-          <div className="border-end pe-5 ps-4" style={{ width: '772px' }}>
+    <Modal.Body className="p-3 p-md-4">
+      <div className="row g-4">
+        {/* Left Section */}
+        <div className="col-12 col-lg-8">
+          <div className="pe-0 pe-lg-4 ps-0 ps-md-4">
             {/* Picture, Name, and Job Title */}
             <div className="d-flex align-items-center mb-4">
               {/* Circular Picture Container */}
@@ -68,7 +115,7 @@ const ViewProfileModal = ({ show, handleClose, applicant }) => {
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  marginRight: '15px',
+                  flexShrink: 0
                 }}
               >
                 <img
@@ -80,153 +127,165 @@ const ViewProfileModal = ({ show, handleClose, applicant }) => {
 
               {/* Name and Job Title */}
               <div>
-                <h5 className="mb-2">{applicants[0]?.firstname || 'John'} {applicants[0]?.middlename || ''} {applicants[0]?.lastname || 'Doe'}</h5>
-                <p className="text-muted mb-0">{applicants[0]?.headline || 'Graphic Designer'}</p>
+                <h5 className="mb-2 ms-3">{applicants[0]?.firstname || 'John'} {applicants[0]?.middlename || ''} {applicants[0]?.lastname || 'Doe'}</h5>
+                <p className="text-muted mb-0 ms-3">{applicants[0]?.headline || 'Graphic Designer'}</p>
               </div>
             </div>
 
             {/* Biography */}
             <h6>Biography</h6>
             <p style={{ textAlign: 'justify' }}>
-                  {applicants[0]?.biography.replace(/<[^>]*>?/gm, '')}
+              {applicants[0]?.biography?.replace(/<[^>]*>?/gm, '')}
             </p>
-                {cover[0]?.coverLetter && (
-                  <>
-                    <h6 className="mt-4">Cover Letter</h6>
-                    <p style={{ textAlign: 'justify' }}>
-                      {cover[0]?.coverLetter.replace(/<[^>]*>?/gm, '')}
-                    </p>
-                  </>
-                )}
+            
+            {/* Cover Letter - if exists */}
+            {cover[0]?.coverLetter && (
+              <>
+                <h6 className="mt-4">Cover Letter</h6>
+                <p style={{ textAlign: 'justify' }}>
+                  {cover[0]?.coverLetter.replace(/<[^>]*>?/gm, '')}
+                </p>
+              </>
+            )}
+            
             {/* Social Media */}
-            <hr />
-            <h6 className="mt-4">Follow Me on Social Media</h6>
-            <div className="d-flex gap-3 mt-2">
+            <hr className="my-4" />
+            <h6>Follow Me on Social Media</h6>
+            <div className="d-flex gap-3 mt-2 flex-wrap">
               {[FaFacebook, FaTwitter, FaInstagram, FaLinkedin].map((Icon, index) => (
                 <Icon key={index} style={{ color: '#007bff', fontSize: '1.8em', cursor: 'pointer' }} />
               ))}
             </div>
           </div>
+        </div>
 
-          {/* Right Section */}
-          <div className="flex-grow-1 ms-5">
-            {/* Bookmark and Send Email Buttons */}
-            <div className="d-flex justify-content-end mb-3" style={{ gap: '10px' }}>
-              <Button
-                variant="outline-primary"
-                style={{
-                  width: '50px',
-                  height: '45px',
-                  fontSize: '15px',
-                  padding: '0',
-                  color: isBookmarked ? '#fff' : '#9c9c9c',
-                  border: isBookmarked ? '1px solid #007bff' : '1px solid #ddf2ff',
-                  backgroundColor: isBookmarked ? '#007bff' : '#ddf2ff',
-                }}
-                onClick={handleBookmarkClick}
-              >
-                <FaRegBookmark style={{ width: '20px', height: '20px', color: isBookmarked ? '#fff' : '#9c9c9c' }} />
-              </Button>
-              <Button
-                variant="outline-primary"
-                style={{
-                  width: '200px',
-                  height: '45px',
-                  fontSize: '15px',
-                  padding: '0',
-                  color: 'white',
-                  backgroundColor: '#0A65CC',
-                }}
-              >
-                <FaEnvelope style={{ color: 'white', marginRight: '5px' }} /> Send Email
-              </Button>
-            </div>
+        {/* Right Section */}
+        <div className="col-12 col-lg-4">
+          {/* Bookmark and Send Email Buttons */}
+          <div className="d-flex justify-content-end mb-3 gap-2">
+            <Button
+              variant="outline-primary"
+              style={{
+                width: '50px',
+                height: '45px',
+                fontSize: '15px',
+                padding: '0',
+                border: 'none',
+                background: isBookmarked ? '#d7ecff' : '#f8f9fa',
+              }}
+              onClick={handleBookmarkClick}
+            >
+              {isBookmarked ? (
+                <FaBookmark style={{ width: '20px', height: '20px', color: '#0A65CC' }} />
+              ) : (
+                <FaRegBookmark style={{ width: '20px', height: '20px', color: '#6c757d' }} />
+              )}
+            </Button>
+            <Button
+              variant="outline-primary"
+              className="d-flex align-items-center justify-content-center gap-2"
+              style={{
+                height: '45px',
+                fontSize: '15px',
+                padding: '0 15px',
+                color: 'white',
+                width: '50%',
+                backgroundColor: '#0A65CC',
+              }}
+            >
+              <FaEnvelope style={{ color: 'white' }} /> Send Email
+            </Button>
+          </div>
 
-            {/* Personal Information */}
-            <div className="p-4 border mb-4" style={{ borderRadius: '8px', width: '300px', marginLeft: '-40px' }}>
-              <h6 className='mb-3'>Personal Information</h6>
-              <div className="d-flex w-100 justify-content-between" style={{ gap: '20px' }}>
-                {/* Left-Aligned Items (Date of Birth, Marital Status, and Experience) */}
-                <div className="d-flex flex-column gap-3" style={{ flex: '1' }}>
-                  {[ 
-                    { icon: <FaBirthdayCake />, label: 'Date of Birth', value: applicants[0]?.birthday },
-                    { icon: <FaUser />, label: 'Marital Status', value: applicants[0]?.status },
-                    { icon: <FaBriefcase />, label: 'Experience', value: applicants[0]?.experience },
-                  ].map((info, index) => (
-                    <div key={index} className="d-flex flex-column align-items-start gap-2">
+          {/* Personal Information */}
+          <div className="p-3 p-md-4 border mb-4" style={{ borderRadius: '8px' }}>
+            <h6 className="mb-3">Personal Information</h6>
+            <div className="row g-3">
+              {/* Left-Aligned Items */}
+              <div className="col-12 col-sm-6">
+                {[ 
+                  { icon: <FaBirthdayCake />, label: 'Date of Birth', value: applicants[0]?.birthday },
+                  { icon: <FaUser />, label: 'Marital Status', value: applicants[0]?.status },
+                  { icon: <FaBriefcase />, label: 'Experience', value: applicants[0]?.experience },
+                ].map((info, index) => (
+                  <div key={index} className="mb-3">
+                    <div className="d-flex align-items-center gap-2">
                       {React.cloneElement(info.icon, { style: { fontSize: '22px', color: '#0A65CC' } })}
                       <div>
                         <h6 className="mb-1" style={{fontSize: '15px'}}>{info.label}</h6>
-                        <p className="mb-0" style={{fontSize: '14px'}}>{info.label === 'Date of Birth' && info.value ? new Date(info.value).toLocaleDateString('en-US', { 
-                        year: 'numeric', 
-                        month: 'long', 
-                        day: 'numeric' 
-                      }) : info.value}</p>
+                        <p className="mb-0" style={{fontSize: '14px'}}>
+                          {info.label === 'Date of Birth' && info.value 
+                            ? new Date(info.value).toLocaleDateString('en-US', { 
+                                year: 'numeric', 
+                                month: 'long', 
+                                day: 'numeric' 
+                              }) 
+                            : info.value || 'N/A'
+                          }
+                        </p>
                       </div>
                     </div>
-                  ))}
-                </div>
+                  </div>
+                ))}
+              </div>
 
-                {/* Right-Aligned Items (Nationality, Gender, and Education) */}
-                <div className="d-flex flex-column gap-3" style={{ flex: '1' }}>
-                  {[ 
-                    { icon: <FaFontAwesomeFlag />, label: 'Nationality', value: applicants[0]?.nationality},
-                    { icon: <FaVenusMars />, label: 'Gender', value: applicants[0]?.gender },
-                    { icon: <FaGraduationCap />, label: 'Education', value: applicants[0]?.attainment },
-                  ].map((info, index) => (
-                    <div key={index} className="d-flex flex-column align-items-start gap-2">
+              {/* Right-Aligned Items */}
+              <div className="col-12 col-sm-6">
+                {[ 
+                  { icon: <FaFontAwesomeFlag />, label: 'Nationality', value: applicants[0]?.nationality },
+                  { icon: <FaVenusMars />, label: 'Gender', value: applicants[0]?.gender },
+                  { icon: <FaGraduationCap />, label: 'Education', value: applicants[0]?.attainment },
+                ].map((info, index) => (
+                  <div key={index} className="mb-3">
+                    <div className="d-flex align-items-center gap-2">
                       {React.cloneElement(info.icon, { style: { fontSize: '22px', color: '#0A65CC' } })}
                       <div>
                         <h6 className="mb-1" style={{fontSize: '15px'}}>{info.label}</h6>
-                        <p className="mb-0" style={{fontSize: '14px'}}>{info.value}</p>
+                        <p className="mb-0" style={{fontSize: '14px'}}>{info.value || 'N/A'}</p>
                       </div>
                     </div>
-                  ))}
-                </div>
+                  </div>
+                ))}
               </div>
             </div>
+          </div>
 
-            {/* Download Resume */}
-            <div className="p-4 border mb-4" style={{ borderRadius: '8px', width: '300px', marginLeft: '-40px' }}>
-              <h6>Download Resume</h6>
-              <Button variant="outline-primary" className="mt-2 d-flex align-items-center gap-2">
-                <FaDownload style={iconStyle} />
-                Download Resume
-              </Button>
-            </div>
+          {/* Download Resume */}
+          <div className="p-3 p-md-4 border mb-4" style={{ borderRadius: '8px' }}>
+            <h6>Download Resume</h6>
+            <Button variant="outline-primary" className="mt-2 d-flex align-items-center gap-2">
+              <FaDownload style={iconStyle} />
+              Download Resume
+            </Button>
+          </div>
 
-            {/* Contact Information */}
-            <div className="p-4 border" style={{ borderRadius: '8px', width: '300px', marginLeft: '-40px' }}>
-              <h6>Contact Information</h6>
-              {[
-                { icon: <FaGlobe />, label: 'Address', value: applicants[0]?.address || 'N/A' },
-                { icon: <FaMapMarkerAlt />, label: 'Location', value: applicants[0]?.city || 'N/A' },
-                { icon: <FaPhone />, label: 'Phone', value: applicants[0]?.contact ? `+63 ${applicants[0]?.contact}` : 'N/A' },
-                { icon: <FaEnvelope />, label: 'Email', value: applicants[0]?.email || 'N/A' },
-              ].map((contact, index) => (
-                <div key={index} className="d-flex align-items-center gap-2 mt-3">
-                  {React.cloneElement(contact.icon, { style: iconStyle })}
-                  <div style={{ minWidth: '0', flex: '1' }}>
-                    <h6 className="mb-0 ms-2">{contact.label}</h6>
-                    <p
-                      className="mb-0 ms-2"
-                      style={{
-                        whiteSpace: 'nowrap',
-                        overflow: 'hidden',
-                        textOverflow: 'ellipsis',
-                      }}
-                      title={contact.value}
-                    >
-                      {contact.value}
-                    </p>
-                  </div>
+          {/* Contact Information */}
+          <div className="p-3 p-md-4 border" style={{ borderRadius: '8px' }}>
+            <h6>Contact Information</h6>
+            {[
+              { icon: <FaGlobe />, label: 'Address', value: applicants[0]?.address || 'N/A' },
+              { icon: <FaMapMarkerAlt />, label: 'Location', value: applicants[0]?.city || 'N/A' },
+              { icon: <FaPhone />, label: 'Phone', value: applicants[0]?.contact ? `+63 ${applicants[0]?.contact}` : 'N/A' },
+              { icon: <FaEnvelope />, label: 'Email', value: applicants[0]?.email || 'N/A' },
+            ].map((contact, index) => (
+              <div key={index} className="d-flex align-items-center gap-2 mt-3">
+                {React.cloneElement(contact.icon, { style: iconStyle })}
+                <div className="overflow-hidden">
+                  <h6 className="mb-0 ms-2">{contact.label}</h6>
+                  <p
+                    className="mb-0 ms-2 text-truncate"
+                    title={contact.value}
+                  >
+                    {contact.value}
+                  </p>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </div>
-      </Modal.Body>
-    </Modal>
+      </div>
+    </Modal.Body>
+  </Modal>
   );
 };
 

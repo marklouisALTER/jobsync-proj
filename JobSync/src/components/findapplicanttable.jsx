@@ -1,44 +1,63 @@
 import React, { useState, useRef, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { FaBookmark, FaArrowRight, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaBookmark, FaArrowRight, FaMapMarkerAlt, FaRegBookmark } from 'react-icons/fa';
 import { postToEndpoint } from './apiService';
 import ViewProfileModal from '../components/viewprofilemodal';
 import Pagination from '../components/Pagination';
 
 const ApplicantRow = ({ applicant, handleShowModal }) => (
-    <tr key={applicant.applicant_id} className="border-bottom">
-        <td style={{ textAlign: 'left' }}>
-            <div className="d-flex align-items-center" style={{height: '90px'}}>
-                <img src={applicant.profile_picture_url} alt={applicant.firstname} className="rounded-circle me-2" style={{ width: '50px', height: '50px', objectFit: 'cover' }} />
-                <div className='ms-0'>  
-                    <h6 className="mb-1 ms-1">{applicant.firstname} {applicant.middlename || ''} {applicant.lastname}</h6>
-                    <small className="text-muted ms-1">{applicant.headline}</small>
-                    <div className="d-flex align-items-center mt-1">
-                        <FaMapMarkerAlt className="me-2" style={{ color: '#6c757d' }} />
-                        <small className="text-muted">{applicant.city}, {applicant.nationality}</small>
+    <div className="card mb-3 border-0 shadow-sm">
+        <div className="card-body p-3">
+            <div className="row align-items-center">
+                <div className="col-12 col-md-8 mb-3 mb-md-0">
+                    <div className="d-flex align-items-center">
+                        <img 
+                            src={applicant.profile_picture_url} 
+                            alt={applicant.firstname} 
+                            className="rounded-circle me-3" 
+                            style={{ width: '50px', height: '50px', objectFit: 'cover' }} 
+                        />
+                        <div>  
+                            <h6 className="mb-1">{applicant.firstname} {applicant.middlename || ''} {applicant.lastname}</h6>
+                            <small className="text-muted d-block mb-1">{applicant.headline}</small>
+                            <div className="d-flex align-items-center">
+                                <FaMapMarkerAlt className="me-1" style={{ color: '#6c757d', fontSize: '0.8rem' }} />
+                                <small className="text-muted">{applicant.city}, {applicant.nationality}</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-12 col-md-4">
+                    <div className="d-flex justify-content-md-end align-items-center mt-2 mt-md-0">
+                        <button 
+                            className="btn p-1 me-3 border-0"
+                            aria-label="Bookmark"
+                            
+                        >
+                            <FaRegBookmark style={{
+                                width: '17px',
+                                height: '17px',
+                                color: '#6c757d'
+                            }} />
+                        </button>
+                        <button
+                            className="btn btn-sm text-primary flex-grow-1 flex-md-grow-0"
+                            style={{
+                                padding: '10px 15px', 
+                                background: '#ddf2ff', 
+                                fontWeight: '500', 
+                                border: 'none',
+                                minWidth: '140px'
+                            }}
+                            onClick={() => handleShowModal(applicant.applicant_id)}
+                        >
+                            View Profile <FaArrowRight className="ms-1" />
+                        </button>
                     </div>
                 </div>
             </div>
-        </td>
-        <td style={{ textAlign: 'right' }}>
-            <div className="d-flex align-items-center justify-content-end" style={{marginTop: '8px'}}>
-                <FaBookmark className="me-2" 
-                style={{
-                    width: '17px',
-                    height: '17px',
-                    marginTop: '18px'
-                }}
-                />
-                <button
-                    className="btn btn-sm btn-light text-primary"
-                    style={{marginTop: '17px', padding: '10px', width: '156px', background: '#ddf2ff', fontWeight: '500', marginLeft: '12px', height: '52px', border: 'none'}}
-                    onClick={() => handleShowModal(applicant.applicant_id)}
-                >
-                    View Profile <FaArrowRight className="ms-1" />
-                </button>
-            </div>
-        </td>
-    </tr>
+        </div>
+    </div>
 );
 
 const ApplicantsTable = () => {
@@ -49,22 +68,26 @@ const ApplicantsTable = () => {
     const [applicants, setApplicants] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
     const itemsPerPage = 10; 
+    const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-      const fetchApplicants = async () => {
-          try {
-              const response = await postToEndpoint('/findApplicant.php');
-              if (response.data.applicants) {
-                  setApplicants(response.data.applicants);
-              } else {
-                  console.error('No jobs found or an error occurred:', response.data.error);
-              }
-          } catch (error) {
-              console.error('Error fetching jobs:', error);
-          }
-      };
-      fetchApplicants();
-  }, []);
+        const fetchApplicants = async () => {
+            setIsLoading(true);
+            try {
+                const response = await postToEndpoint('/findApplicant.php');
+                if (response.data.applicants) {
+                    setApplicants(response.data.applicants);
+                } else {
+                    console.error('No applicants found or an error occurred:', response.data.error);
+                }
+            } catch (error) {
+                console.error('Error fetching applicants:', error);
+            } finally {
+                setIsLoading(false);
+            }
+        };
+        fetchApplicants();
+    }, []);
 
     const handleShowModal = (applicant) => {
         setSelectedApplicant(applicant);
@@ -97,30 +120,47 @@ const ApplicantsTable = () => {
     const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
     return (
-        <div className="container" style={{padding: '16px', marginTop: '-50px'}}>
-            <div className="table-responsive">
-                <table className="table" style={{ width: '100%', tableLayout: 'auto' }}>
-                    <tbody>
+        <div className="container-fluid px-2 px-md-4">
+            {isLoading ? (
+                <div className="text-center my-5">
+                    <div className="spinner-border text-primary" role="status">
+                        <span className="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+            ) : applicants.length === 0 ? (
+                <div className="alert alert-info text-center my-5">
+                    No applicants found. Try adjusting your search criteria.
+                </div>
+            ) : (
+                <>
+                    <div className="mb-4">
                         {currentApplicants.map((applicant) => (
-                            <ApplicantRow key={applicant.applicant_id} applicant={applicant} handleShowModal={handleShowModal} />
+                            <ApplicantRow 
+                                key={applicant.applicant_id} 
+                                applicant={applicant} 
+                                handleShowModal={handleShowModal} 
+                            />
                         ))}
-                    </tbody>
-                </table>
-            </div>
+                    </div>
 
-            {/* Pagination Component */}
-            <Pagination
-                currentPage={currentPage}
-                itemsPerPage={itemsPerPage}
-                totalItems={applicants.length}
-                paginate={paginate}
-            />
+                    {/* Pagination Component */}
+                    <div className="d-flex justify-content-center">
+                        <Pagination
+                            currentPage={currentPage}
+                            itemsPerPage={itemsPerPage}
+                            totalItems={applicants.length}
+                            paginate={paginate}
+                        />
+                    </div>
+                </>
+            )}
 
             {/* View Profile Modal */}
             <ViewProfileModal
                 show={showModal}
                 handleClose={handleCloseModal}
                 applicant={selectedApplicant}
+                ref={modalRef}
             />
         </div>
     );

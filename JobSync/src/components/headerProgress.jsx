@@ -33,7 +33,7 @@ function HeaderProgress() {
 
         fetchProgress();
 
-        const interval = setInterval(fetchProgress, 1000);
+        const interval = setInterval(fetchProgress, 5000);
 
         return () => clearInterval(interval);
     }, [user]);

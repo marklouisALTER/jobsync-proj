@@ -1,7 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Table, Modal, Button, ListGroup, Container } from 'react-bootstrap';
 import { FaBookmark, FaArrowRight, FaEllipsisV, FaEnvelope, FaDownload, FaComment, FaArrowLeft } from 'react-icons/fa';
-
+import Pagination from './Pagination';
 const applicantData = [
     {
         id: 1,
@@ -32,74 +33,61 @@ const applicantData = [
         name: 'David Wilson',
         desiredPosition: 'Data Analyst',
         image: '../../src/assets/profes.jpg',
-    },
-    {
-        id: 6,
-        name: 'Sophia Brown',
-        desiredPosition: 'Project Manager',
-        image: '../../src/assets/profes.jpg',
-    },
-    {
-        id: 7,
-        name: 'James Taylor',
-        desiredPosition: 'Backend Developer',
-        image: '../../src/assets/profes.jpg',
-    },
-    {
-        id: 8,
-        name: 'Olivia Martinez',
-        desiredPosition: 'Front-end Developer',
-        image: '../../src/assets/profes.jpg',
-    },
-    {
-        id: 9,
-        name: 'Lucas Anderson',
-        desiredPosition: 'Sales Representative',
-        image: '../../src/assets/profes.jpg',
-    },
-    {
-        id: 10,
-        name: 'Mia Thomas',
-        desiredPosition: 'Content Writer',
-        image: '../../src/assets/profes.jpg',
-    },
-    {
-        id: 11,
-        name: 'Lebron James',
-        desiredPosition: 'Tindero',
-        image: '../../src/assets/profes.jpg',
-    },
-    {
-        id: 12,
-        name: 'Jason Tatum',
-        desiredPosition: 'Mambabalut',
-        image: '../../src/assets/profes.jpg',
-    },
+    }
 ];
 
 const ApplicantRow = ({ applicant, handleShowModal }) => (
+    <>
     <tr key={applicant.id} className="border-bottom">
-        <td style={{ textAlign: 'left', padding: '15px' }}>
-            <div className="d-flex align-items-center">
-                <img src={applicant.image} alt={applicant.name} className="rounded-circle me-2" style={{ width: '50px', height: '50px', objectFit: 'cover' }} />
-                <div>
-                    <h6 className="mb-0">{applicant.name}</h6>
-                    <small className="text-muted">{applicant.desiredPosition}</small>
-                </div>
+    <td style={{ textAlign: 'left', padding: '15px' }}>
+        <div className="d-flex align-items-center flex-wrap">
+            <img 
+                src={applicant.image} 
+                alt={applicant.name} 
+                className="rounded-circle me-2" 
+                style={{ width: '50px', height: '50px', objectFit: 'cover' }} 
+            />
+            <div>
+                <h6 className="mb-0">{applicant.name}</h6>
+                <small className="text-muted">{applicant.desiredPosition}</small>
             </div>
-        </td>
-        <td style={{ textAlign: 'right' }}>
-            <div className="d-flex align-items-center justify-content-end">
-                <FaBookmark className="me-2" style={{ color: '#096fc8', height: '21px' }} />
-                <button className="btn btn-sm btn-light text-primary" style={{ marginLeft: '13px', width: '40%', fontWeight: '500', marginTop: '5px', background: '#ddf2ff', padding: '13px', borderRadius: '6px' }}>
-                    View Profile <FaArrowRight className="ms-1" />
-                </button>
-                <button className="btn btn-sm btn-light text-primary fw-bold ms-2" style={{ marginTop: '7px' }} onClick={(event) => handleShowModal(applicant, event)}>
-                    <FaEllipsisV />
-                </button>
-            </div>
-        </td>
+        </div>
+    </td>
+    <td className="text-md-right">
+        <div className="d-flex flex-column flex-md-row align-items-md-center justify-content-md-end">
+            <FaBookmark className="me-md-2 mb-2 mb-md-0" style={{ color: '#096fc8', height: '21px' }} />
+            
+            <button 
+                className="btn btn-sm btn-light text-primary w-md-auto but" 
+                style={{ 
+                    fontWeight: '500', 
+                    background: '#ddf2ff', 
+                    padding: '10px', 
+                    borderRadius: '6px', 
+                    height: '50px',
+                    width: '40%'
+                }}
+            >
+                View Profile <FaArrowRight className="ms-1" />
+            </button>
+
+            <button 
+                className="btn btn-sm btn-light text-primary fw-bold ms-md-2 mt-2 mt-md-0 w-md-auto" 
+                onClick={(event) => handleShowModal(applicant, event)}
+            >
+                <FaEllipsisV />
+            </button>
+        </div>
+    </td>
     </tr>
+    <style>{`
+    @media (max-width: 768px) {
+        .but {
+            width: 100% !important;
+        }
+    }
+    `}</style>
+</>
 );
 
 const ApplicantsTable = () => {
@@ -148,62 +136,27 @@ const ApplicantsTable = () => {
     const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
     return (
-        <div className="container-fluid px-0">
+        <Container>
             <div className="table-responsive">
-                <table className="table" style={{ width: '100%', tableLayout: 'fixed' }}>
+                <Table style={{ width: '100%', tableLayout: 'fixed' }}>
                     <tbody>
                         {currentApplicants.map((applicant) => (
                             <ApplicantRow key={applicant.id} applicant={applicant} handleShowModal={handleShowModal} />
                         ))}
                     </tbody>
-                </table>
+                </Table>
             </div>
 
             {/* Pagination with left and right arrows */}
-            <nav aria-label="Page navigation">
-                <ul className="pagination justify-content-center">
-                    <li className={`page-item ${currentPage === 1 ? 'disabled' : ''}`} style={{ borderRadius: '50%', margin: '0 5px', padding: '7px 15px' }}>
-                        <button
-                            className="page-link"
-                            onClick={() => currentPage > 1 && paginate(currentPage - 1)} // Go to the previous page
-                            style={{ backgroundColor: '#ebebebc2', color: '#0A65CC', borderRadius: '50%', fontWeight: '500', padding: '10px 15px' }}
-                        >
-                            <FaArrowLeft style={{marginTop: '-3px'}}/>
-                        </button>
-                    </li>
+            <Pagination
+                currentPage={currentPage}
+                itemsPerPage={itemsPerPage}
+                totalItems={applicantData.length}
+                paginate={paginate}
+            />
 
-                    {Array.from({ length: Math.ceil(applicantData.length / itemsPerPage) }, (_, index) => (
-                        <li key={index + 1} className={`page-item ${currentPage === index + 1 ? 'active' : ''}`} style={{ borderRadius: '50%', margin: '0 5px' }}>
-                            <button
-                                className="page-link"
-                                onClick={() => paginate(index + 1)}
-                                style={{
-                                    backgroundColor: currentPage === index + 1 ? '#0A65CC' : 'white',
-                                    color: currentPage === index + 1 ? 'white' : 'black',
-                                    borderRadius: '50%',
-                                    fontWeight: '500',
-                                    padding: '7px 15px',
-                                }}
-                            >
-                                {index + 1}
-                            </button>
-                        </li>
-                    ))}
-
-                    <li className={`page-item ${currentPage === Math.ceil(applicantData.length / itemsPerPage) ? 'disabled' : ''}`} style={{ borderRadius: '50%', margin: '0 5px', padding: '7px 15px' }}>
-                        <button
-                            className="page-link"
-                            onClick={() => currentPage < Math.ceil(applicantData.length / itemsPerPage) && paginate(currentPage + 1)} // Go to the next page
-                            style={{ backgroundColor: '#ebebebc2', color: '#0A65CC', borderRadius: '50%', fontWeight: '500', padding: '10px 15px' }}
-                        >
-                            <FaArrowRight style={{marginTop: '-3px'}}/>
-                        </button>
-                    </li>
-                </ul>
-            </nav>
-
-            {/* Modal */}
-            {showModal && (
+   {/* Modal */}
+   {showModal && (
                 <div
                     ref={modalRef}
                     className="modal-content"
@@ -260,7 +213,7 @@ const ApplicantsTable = () => {
                     </div>
                 </div>
             )}
-        </div>
+        </Container>
     );
 };
 

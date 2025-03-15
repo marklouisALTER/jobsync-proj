@@ -96,7 +96,14 @@ function AppliedJobsTable() {
                             </tr>
                         </tfoot>
                         <tbody>
-                            {currentJobs.map((appliedJob) => (
+                            {currentJobs.length === 0 ? (
+                                <tr>
+                                    <td colSpan="5" className="text-center p-4">
+                                        <h5 className="text-muted">You have not applied for any jobs yet.</h5>
+                                    </td>
+                                </tr>
+                            ) : (
+                            currentJobs.map((appliedJob) => (
                                 <React.Fragment key={appliedJob.job_id}>
                                     {/* Main Row */}
                                     <tr className="border-bottom">
@@ -238,7 +245,10 @@ function AppliedJobsTable() {
                                         </tr>
                                     )}
                                 </React.Fragment>
-                            ))}
+                            ))
+                            )}
+                            
+                            
                         </tbody>
                     </Table>
                 </div>

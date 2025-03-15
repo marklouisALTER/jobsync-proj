@@ -10,6 +10,7 @@ import 'react-quill/dist/quill.snow.css';
 import '../css/loader.css';
 import Swal from 'sweetalert2';
 import ApplyModal from '../components/applynowmodal';
+import MapComponent from './Applicants/Mapp';
 
 const JobPosting = () => {
     const { user } = useAuth();
@@ -126,7 +127,7 @@ const JobPosting = () => {
                 } else {
                     Swal.fire({
                         title: 'Profile Incomplete',
-                        text: message || "Please complete your profile before applying.",
+                        html: message || "Please complete your profile before applying.",
                         icon: 'warning',
                         confirmButtonText: 'Go to Profile',
                         preConfirm: () => {
@@ -339,7 +340,7 @@ const JobPosting = () => {
                             <Card.Body>
                                 {/* Share Job Section */}
                                 <h4 className="text-start" style={{ fontSize: '22px', color: '#4d4d4d' }}>Share this Job</h4>
-                                <div className="d-flex justify-content-start align-items-center" style={{ marginTop: '-10px' }}>
+                                <div className="d-flex justify-content-start align-items-center" style={{ marginTop: '10px' }}>
                                 <Button 
                                     variant="primary" 
                                     onClick={copyLink} 
@@ -347,9 +348,6 @@ const JobPosting = () => {
                                 >
                                     <FaLink className="me-2" style={{ width: '20px', height: '20px' }} />
                                     Copy Link
-                                </Button>
-                                <Button variant="link" aria-label="Share on LinkedIn" style={{ padding: '0', maxWidth: '50px', marginRight: '10px' }}>
-                                    <FaLinkedin style={{ color: '#0a60bb', width: '20px', height: '20px' }} />
                                 </Button>
                                 <Button variant="link" aria-label="Share on Facebook" style={{ padding: '0', maxWidth: '50px', marginRight: '10px' }}>
                                     <FaFacebook style={{ color: '#0a60bb', width: '20px', height: '20px' }} />
@@ -365,7 +363,7 @@ const JobPosting = () => {
                                 <hr className='text-muted' style={{ marginTop: '20px' }}/>
 
                                 {/* Address Section */}
-                                <h4 className="text-start" style={{ fontSize: '22px', color:'#4d4d4d' }}>Address</h4>
+                                <h4 className="text-start" style={{ fontSize: '22px', color:'#4d4d4d' }}>Job Location</h4>
                                 <div className="d-flex justify-content-center align-items-center" style={{ textAlign: 'center' }}>
                                 <div
                                     style={{
@@ -384,18 +382,11 @@ const JobPosting = () => {
                             </Card>
 
 
-                        {/* Job Location Map */}
-                        <div className="mt-4">
-                            <iframe
-                                title="Google Map"
-                                src="https://www.google.com/maps/embed?pb=!1m18..."
-                                width="100%"
-                                height="300"
-                                style={{ border: 0 }}
-                                allowFullScreen
-                                loading="lazy"
-                            />
-                        </div>
+                            {/* Job Location Map */}
+                            <div className="mt-4">
+                                <MapComponent job_id={job_id} />
+                            </div>
+
                     </Col>
                 </Row>
             </Container>
@@ -467,7 +458,7 @@ const FavoritesAndApplyButton = ({ handleShowModal, isBookmarked, handleBookmark
                     <FaRegBookmark style={{ color: '#6c757d' }} />
                 )}
             </Button>
-            {applied === 'Pending' || applied === 'On hold' || applied === 'Qualified' || applied === 'To Interview'  ? (
+            {applied === 'Pending' || applied === 'On hold' || applied === 'Qualified' || applied === 'To Interview' || applied === 'Final Evaluation'  ? (
             <Button
                 variant="primary"
                 size="lg"

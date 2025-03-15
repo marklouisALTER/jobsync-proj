@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import Slider from 'rc-slider';
 import 'rc-slider/assets/index.css';
+import { useNavigate } from 'react-router-dom';  
 
 const Filter = ({
   showFilter,
@@ -22,6 +23,28 @@ const Filter = ({
   handleSalaryRangeChange,
   handlePresetSalarySelect,
 }) => {
+
+  const navigate = useNavigate(); 
+
+  const applyFilters = () => {
+    const params = new URLSearchParams();
+
+    if (industry && industry !== 'All Category') {
+      params.append('industry', industry);
+    } else {
+      params.delete('industry'); 
+    }
+    if (jobType) {
+      params.append('jobType', jobType);
+    }
+    if (salaryRange) {
+      params.append('minSalary', salaryRange[0]);
+      params.append('maxSalary', salaryRange[1]);
+    }
+
+    navigate(`/findjob?${params.toString()}`); // Navigate to /findjob with filters
+    handleFilter(); // Close the filter modal
+  };
   return (
     <div>
       {/* Filter Overlay */}
@@ -128,6 +151,7 @@ const Filter = ({
           <Form.Label style={{ textAlign: 'left', width: '100%' , marginTop: '20px' , fontWeight: 'bold' }}>Industry</Form.Label>
           <Form.Control as="select" value={industry} onChange={handleIndustryChange}>
             <option>All Category</option>
+            <option>Computer Games</option>
             <option>IT</option>
             <option>Healthcare</option>
             <option>Business</option>
@@ -147,7 +171,7 @@ const Filter = ({
         <Form.Group controlId="jobTypeSelect" className="mb-3">
           <Form.Label style={{ textAlign: 'left', width: '100%' , marginTop: '35px' , fontWeight : 'bold' }}>Job Type</Form.Label>
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
-            {['Full Time', 'Part-Time', 'Internship', 'Temporary'].map((type) => (
+            {['Full-time', 'Part-time', 'Internship', 'Contract'].map((type) => (
               <Form.Check
                 key={type}
                 type="radio"
@@ -217,7 +241,7 @@ const Filter = ({
               padding: '10px',
               marginLeft: '55%',
             }}
-            onClick={handleFilter}
+            onClick={applyFilters} 
           >
             Apply Filters
           </Button>

@@ -26,7 +26,7 @@ const CustomerSupport = () => {
         <Col md={6} xs={12}>
           <div className="d-flex align-items-center mb-3">
             <img
-              src="/src/assets/logo jobsync2.png"
+              src="/assets/logo jobsync2.png"
               alt="Support Icon"
               className="me-2"
               style={{ width: '100px', height: 'auto' }}
@@ -78,7 +78,7 @@ const CustomerSupport = () => {
         {/* Image Column (Right Side) */}
         <Col md={6} xs={12} className="d-flex justify-content-center align-items-center">
           <img
-            src="/src/assets/customersupport.png"
+            src="/assets/customersupport.png"
             alt="Customer Support"
             className="img-fluid"
             style={{ maxWidth: '100%', height: 'auto' }}

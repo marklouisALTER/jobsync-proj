@@ -16,7 +16,7 @@ export default function FindJob() {
   const [jobSearch, setJobSearch] = useState('');
   const [locationSearch, setLocationSearch] = useState('');
   const [showFilter, setShowFilter] = useState(false);
-  const [industry, setIndustry] = useState('Business');
+  const [industry, setIndustry] = useState('Computer Games');
   const [jobType, setJobType] = useState('Full Time');
   const [salaryRange, setSalaryRange] = useState([70000, 120000]);
   const [selectedSalaryRange, setSelectedSalaryRange] = useState('');
@@ -24,41 +24,87 @@ export default function FindJob() {
   const [skills, setSkills] = useState([]);
 
   const [SearchJob, setSearchJob] = useState([]);
+  const [FilterSearch, setFilterSearch] = useState([]);
+
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
+  
   const searchQuery = queryParams.get('query') || '';
   const locationQuery = queryParams.get('location') || '';
-
+  const industryQuery = queryParams.get('industry') || '';
+  const jobTypeQuery = queryParams.get('jobType') || '';
+  const minSalaryQuery = queryParams.get('minSalary') || '';
+  const maxSalaryQuery = queryParams.get('maxSalary') || '';
+  
   useEffect(() => {
-      const fetchSearchResults = async () => {
-          if (!searchQuery && !locationQuery) {
-              setSearchJob([]);
-              setLoading(false);
-              return;
-          }
+    const fetchSearchResults = async () => {
+        setLoading(true);
 
-          try {
-              setLoading(true);
-              const response = await getFromEndpoint('/getJobSearch.php', {
-                  query: searchQuery,
-                  location: locationQuery,
-              });
-
-              if (response && Array.isArray(response.data)) {
-                  setSearchJob(response.data);
-              } else {
-                  setSearchJob([]);
-              }
-          } catch (error) {
-              console.error('Error fetching search results:', error);
-              setSearchJob([]);
-          } finally {
-              setLoading(false);
-          }
+        const params = {
+          query: jobSearch || searchQuery,
+          location: locationSearch || locationQuery,
       };
+      
 
-      fetchSearchResults();
-  }, [searchQuery, locationQuery]); 
+        console.log("Sending request with params:", params);
+
+        try {
+            const response = await getFromEndpoint('/getJobSearch.php', params);
+
+            console.log("Raw backend response:", response); // Debug response structure
+            console.log("Jobs data:", response.data); // Check if jobs array exists
+
+            if (response && Array.isArray(response.data)) {
+                setSearchJob(response.data);
+            } else {
+                setSearchJob([]);
+            }
+        } catch (error) {
+            console.error('Error fetching search results:', error);
+            setSearchJob([]);
+        } finally {
+            setLoading(false);
+        }
+    };
+
+    fetchSearchResults();
+}, [jobSearch, locationSearch, searchQuery, locationQuery]);
+
+useEffect(() => {
+  const fetchFilterSearchResults = async () => {
+      setLoading(true);
+
+      const params = {
+        industry: industry || industryQuery,
+        jobType: jobType || jobTypeQuery,
+        minSalary: Number(salaryRange[0]) || Number(minSalaryQuery) || 0, // Ensure it's a number
+        maxSalary: Number(salaryRange[1]) || Number(maxSalaryQuery) || 0, // Ensure it's a number
+    };
+    
+
+      console.log("Sending request with params:", params);
+
+      try {
+          const response = await getFromEndpoint('/getJobSearch.php', params);
+
+          console.log("Raw backend response:", response); // Debug response structure
+          console.log("Jobs data:", response.data); // Check if jobs array exists
+
+          if (response && Array.isArray(response.data)) {
+              setFilterSearch(response.data);
+          } else {
+              setFilterSearch([]);
+          }
+      } catch (error) {
+          console.error('Error fetching search results:', error);
+          setFilterSearch([]);
+      } finally {
+          setLoading(false);
+      }
+  };
+
+  fetchFilterSearchResults();
+}, [, industry, jobType, salaryRange, industryQuery, jobTypeQuery, minSalaryQuery, maxSalaryQuery]);
 
   const [jobmatches, setMatchJob] = useState([]);
   const [loader, setLoader] = useState(true);
@@ -89,7 +135,7 @@ export default function FindJob() {
       };
       fetchJobmatches();  
     
-      const interval = setInterval(fetchJobmatches, 1300);  
+      const interval = setInterval(fetchJobmatches, 20000);  
       return () => clearInterval(interval);  
     }, [user?.id]); 
     
@@ -216,25 +262,27 @@ export default function FindJob() {
 
   return (
     <>
-     <div className="main-container">
-          {loader ? (
-            <div id="preloader" style={{zIndex: '1'}}>
-            <p style={{ marginTop: "20px", animation: "blink 1.8s infinite", fontSize: '23px', position: 'relative', top: '505px', color: '#6e84bb'}}>
-              Matching you with the best job opportunities...
-            </p>
-            <style>
-              {`
-                @keyframes blink {
-                  0%, 100% { opacity: 1; }
-                  50% { opacity: 0.1; }
-                }
-              `}
-            </style>
-          </div>  
-          ) : (
-      <>
-        {/* Keep JobSearchBar separate from the container below */}
-        <div style={{ width: "100%", position: "relative", zIndex: 10 }}>
+<div className="main-container" style={{marginTop: '8rem'}}>
+  {loader ? (
+    <div id="preloader" style={{zIndex: '1'}}>
+      <p style={{ marginTop: "20px", animation: "blink 1.8s infinite", fontSize: '23px', position: 'relative', top: '505px', color: '#6e84bb'}}>
+        Matching you with the best job opportunities...
+      </p>
+      <style>
+        {`
+          @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.1; }
+          }
+        `}
+      </style>
+    </div>  
+  ) : (
+    <div className="content-wrapper">
+      {/* Fixed position search components */}
+      <div className="fixed-search-area">
+        {/* JobSearchBar */}
+        <div className="search-bar-container">
           <JobSearchBar
             jobSearch={jobSearch}
             setJobSearch={setJobSearch}
@@ -242,82 +290,66 @@ export default function FindJob() {
             setLocationSearch={setLocationSearch}
             handleSearch={handleSearch}
             handleFilter={handleFilter}
-            marginTop="20px"
+            marginTop="0"
           />
         </div>
 
-        <Filter
-          showFilter={showFilter}
-          handleFilter={handleFilter}
-          activeFilters={activeFilters}
-          removeFilter={removeFilter}
-          industry={industry}
-          jobType={jobType}
-          salaryRange={salaryRange}
-          selectedSalaryRange={selectedSalaryRange}
-          presetRanges={presetRanges}
-          handleIndustryChange={handleIndustryChange}
-          handleJobTypeChange={handleJobTypeChange}
-          handleSalaryRangeChange={handleSalaryRangeChange}
-          handlePresetSalarySelect={handlePresetSalarySelect}
-        />
+        {/* Filter */}
+        <div className="filter-container">
+          <Filter
+            showFilter={showFilter}
+            handleFilter={handleFilter}
+            activeFilters={activeFilters}
+            removeFilter={removeFilter}
+            industry={industry}
+            jobType={jobType}
+            salaryRange={salaryRange}
+            selectedSalaryRange={selectedSalaryRange}
+            presetRanges={presetRanges}
+            handleIndustryChange={handleIndustryChange}
+            handleJobTypeChange={handleJobTypeChange}
+            handleSalaryRangeChange={handleSalaryRangeChange}
+            handlePresetSalarySelect={handlePresetSalarySelect}
+          />
+        </div>
+      </div>
 
-        {/* Job Listings */}
-        <Container fluid="md" className="d-flex flex-column align-items-center" style={{marginTop: SearchJob?.length > 0 ? "7rem" : "5rem",}}>
-        <Row
-        className="gy-4 justify-content-center w-100"
-        style={{ minWidth: "350px", maxWidth: "1200px" }}
-      >
-        {SearchJob?.length > 0 ? (
-          <JobCards jobs={SearchJob} applicantId={user?.id} />
-        ) : searchQuery || locationQuery ? (
-          <div className='no-result'>
-            No jobs found for "{searchQuery}" in "{locationQuery}". Try adjusting your search terms or filters.
-          </div>
-        ) : user?.id ? (
-          matchJob?.length > 0 ? (
-            paginatedMatchJobs.length > 0 ? (
-              <>
-                <h5 className="mb-1" style={{ textAlign: "left" }}>
-                  Recommended Jobs:
-                </h5>
-                <JobCards
-                  jobs={paginatedMatchJobs}
-                  jobType={jobType}
-                  salaryRange={salaryRange}
-                  applicantId={user.id}
-                />
-              </>
+      {/* Job Listings with a fixed top margin to ensure content appears below search area */}
+      <div className="job-listings-area">
+        <Container fluid="md" className="d-flex flex-column align-items-center">
+          <Row
+            className="gy-4 justify-content-center w-100"
+            style={{ minWidth: "350px", maxWidth: "1200px" }}
+          >
+            {matchJob?.length > 0 ? (
+              paginatedMatchJobs.length > 0 ? (
+                <>
+                  <h5 className="mb-3" style={{ textAlign: "left" }}>Recommended Jobs:</h5>
+                  <JobCards jobs={paginatedMatchJobs} jobType={jobType} salaryRange={salaryRange} applicantId={user?.id} />
+                </>
+              ) : (
+                <div className="text-center mt-5" style={{ fontSize: "20px", color: "#777" }}>
+                  No job matches based on your skills and experience. Try adjusting your filters or search terms.
+                </div>
+              )
+            ) : FilterSearch?.length > 0 ? (
+              <JobCards jobs={FilterSearch} applicantId={user?.id} />
+            ) : SearchJob?.length > 0 ? (
+              <JobCards jobs={SearchJob} applicantId={user?.id} />
+            ) : searchQuery || locationQuery ? (
+              <div className='no-result'>
+                No jobs found for "{searchQuery}" in "{locationQuery}". Try adjusting your search terms or filters.
+              </div>
+            ) : paginatedJobs.length > 0 ? (
+              <JobCards jobs={paginatedJobs} jobType={jobType} salaryRange={salaryRange} applicantId={user?.id} />
             ) : (
               <div className="text-center mt-5" style={{ fontSize: "20px", color: "#777" }}>
-                No job matches based on your skills and experience. Try adjusting your filters or search terms.
+                {jobSearch || locationSearch
+                  ? "No jobs match your search criteria. Please try adjusting your filters or search terms."
+                  : "Start your job search by entering a job title or location above!"}
               </div>
-            )
-          ) : paginatedJobs.length > 0 ? (
-            <JobCards
-              jobs={paginatedJobs}
-              jobType={jobType}
-              salaryRange={salaryRange}
-              applicantId={user.id}
-            />
-          ) : (
-            <div className="text-center mt-5" style={{ fontSize: "20px", color: "#777" }}>
-              {jobSearch || locationSearch
-                ? "No jobs match your search criteria. Please try adjusting your filters or search terms."
-                : "Start your job search by entering a job title or location above!"}
-            </div>
-          )
-        ) : paginatedJobs.length > 0 ? (
-          <JobCards jobs={paginatedJobs} jobType={jobType} salaryRange={salaryRange} />
-        ) : (
-          <div className="text-center mt-5" style={{ fontSize: "20px", color: "#777" }}>
-            {jobSearch || locationSearch
-              ? "No jobs match your search criteria. Please try adjusting your filters or search terms."
-              : "Start your job search by entering a job title or location above!"}
-          </div>
-        )}
-      </Row>;
-
+            )}
+          </Row>
 
           {/* Pagination */}
           {totalItems > itemsPerPage && (
@@ -328,28 +360,60 @@ export default function FindJob() {
             </Row>
           )}
         </Container>
-      </>
-
-      )}
+      </div>
     </div>
-    <style>{`
-    .no-result {
-      text-align: center;
-      margin-top: 50px;
-      font-size: 20px;
-      color: #777;
-      width: 1200px;
-      height: 40vh;
+  )}
+</div>
+
+<style>{`
+  #root {
+    width: 100%;
+  }
+  .main-container {
+    position: relative;
+    margin-top: 8rem; /* Space for your header */
+  }
+  
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure minimum height even with few results */
+  }
+  
+  .fixed-search-area {
+    position: relative;
+    background-color: white;
+    margin-bottom: 10px; /* Create space between search and results */
+  }
+  
+  .search-bar-container {
+    padding: 15px 0;
+  }
+  
+  .filter-container {
+    padding: 5px 0 15px 0;
+  }
+  
+  .job-listings-area {
+    flex-grow: 1; /* Take remaining space */
+  }
+  
+  .no-result {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+    color: #777;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 300px; /* Ensure minimum height even with no results */
+  }
+  
+  @media (max-width: 768px) {
+    .fixed-search-area {
+      padding: 0 10px;
     }
-    @media (max-width: 768px) {
-      .no-result {
-        width: 100%;
-      }
-      .main-container {
-        margin-top: 8rem !important;
-      }
-    }
-    `}</style>
+  }
+`}</style>
     </>
 
   );

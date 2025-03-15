@@ -10,7 +10,9 @@ import { getFromEndpoint } from '../components/apiService.jsx';
 import { useAuth } from '../AuthContext.jsx'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-
+import JobDetails from '../Pages/JobDetails';
+import FindEmployer from './findemployer.jsx';
+import NewestJob from './NewestJobDetail.jsx';
 export default function Home() {
     const { user } = useAuth(); 
     const [jobs, setJobs] = useState([]);
@@ -57,16 +59,16 @@ export default function Home() {
                 </div>
 
                 <div className="suggestions text-md-start mb-4">
-                    <p style={{ fontWeight: '600' }}>Suggestion: Designer, Programming, Digital Marketing, Video, Animation</p>
+                    <p style={{ fontWeight: '600' }}>Designer, Programming, Digital Marketing, Video, Animation</p>
                 </div>
 
                 {/* Statistics Section */}
                 <div className="row text-center g-3">
                     {[
-                        { icon: FaBriefcase, text: "1,455 Live Jobs", bg: '#E7F0FA', color: '#0A65CC' },
-                        { icon: FaBuilding, text: "744 Companies", bg: '#0A65CC', color: '#FFFFFF' },
-                        { icon: FaUser, text: "3,154 Candidates", bg: '#E7F0FA', color: '#0A65CC' },
-                        { icon: FaPlus, text: "7,532 New Jobs", bg: '#E7F0FA', color: '#0A65CC' }
+                        { icon: FaBriefcase, text: "Live Jobs", bg: '#E7F0FA', color: '#0A65CC' },
+                        { icon: FaBuilding, text: "Companies", bg: '#0A65CC', color: '#FFFFFF' },
+                        { icon: FaUser, text: "Candidates", bg: '#E7F0FA', color: '#0A65CC' },
+                        { icon: FaPlus, text: "New Jobs", bg: '#E7F0FA', color: '#0A65CC' }
                     ].map((item, index) => (
                         <div key={index} className="col-6 col-md-3">
                             <div className="border p-3 d-flex align-items-center justify-content-center flex-column">
@@ -82,7 +84,7 @@ export default function Home() {
                 </div>
 
                 <div className="my-5">
-                    <PopularCategories />
+                    <NewestJob />
                 </div>
 
                 {/* Featured Jobs Section */}

@@ -648,83 +648,98 @@ export default function EmployerRegistrationForm() {
     
     const renderFormFieldsStep3 = () => (
         <>
-        <h6 style={{textAlign: 'left', color: '#505050'}}>Account Setup:</h6>
+    <div>
+            <h6 style={{ textAlign: 'left', color: '#505050' }}>Account Setup:</h6>
             <div className="mb-3">
-                <input 
-                    type="email" 
-                    className="form-control register" 
-                    placeholder="Email *" 
-                    value={email} 
-                    onChange={(e) => setEmail(e.target.value)} 
+                <input
+                    type="email"
+                    className="form-control register"
+                    placeholder="Email *"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                 />
             </div>
             <div className="mb-3">
-                <input 
-                    type="password" 
-                    className="form-control register" 
-                    placeholder="Password *" 
-                    value={password} 
-                    onChange={(e) => setPassword(e.target.value)} 
+                <input
+                    type="password"
+                    className="form-control register"
+                    placeholder="Password *"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
                 />
             </div>
             <div className="mb-3">
-                <input 
-                    type="password" 
-                    className="form-control register" 
-                    placeholder="Confirm Password *" 
-                    value={confirmPassword} 
-                    onChange={(e) => setConfirmPassword(e.target.value)} 
+                <input
+                    type="password"
+                    className="form-control register"
+                    placeholder="Confirm Password *"
+                    value={confirmPassword}
+                    onChange={(e) => setConfirmPassword(e.target.value)}
                 />
             </div>
 
-            
             <div className="form-check mb-3 d-flex align-items-center">
-                <input 
-                    type="checkbox" 
-                    className="form-check-input" 
-                    checked={isAgreed} 
-                    onChange={() => setIsAgreed(!isAgreed)} 
+                <input
+                    type="checkbox"
+                    className="form-check-input"
+                    checked={isAgreed}
+                    onChange={() => setIsAgreed(!isAgreed)}
                 />
                 <label className="form-check-label" style={{ marginLeft: 10 }}>
                     I've read and agreed with your Terms and Services
                 </label>
             </div>
-            <div className="d-flex justify-content-center mb-3" style={{ position: 'relative' }}>
-                <button 
-                    type="button" 
-                    className="btn btn-secondary btn-custom" 
-                    style={{ backgroundColor: 'transparent', width: '500px', marginTop: '20px', color: '#000000' }}
+
+            {/* Button Section */}
+            <div className="d-flex flex-column align-items-center mb-3" style={{ position: 'relative' }}>
+                <Button
+                    type="button"
+                    className="btn btn-secondary btn-custom w-100"
+                    style={{
+                        backgroundColor: 'transparent',
+                        color: '#000000',
+                        marginTop: '20px',
+                        borderColor: '#000000',
+                    }}
                     onClick={handleBack2}
-                    disabled={isLoading} 
+                    disabled={isLoading}
                 >
                     <FontAwesomeIcon icon={faArrowLeft} /> Back
-                </button>
+                </Button>
+
                 {isLoading ? (
-                    <div 
-                        className="loader" 
+                    <div
+                        className="loader"
                         style={{
                             position: 'absolute',
-                            top: '45%',
-                            left: '74%',
+                            top: '50%',
+                            left: '50%',
                             transform: 'translate(-50%, -50%)',
-                            border: '5px solid #f3f3f3', 
-                            borderTop: '5px solid #3498db', 
+                            border: '5px solid #f3f3f3',
+                            borderTop: '5px solid #3498db',
                             borderRadius: '50%',
                             width: '30px',
                             height: '30px',
-                            animation: 'spin 2s linear infinite'
+                            animation: 'spin 2s linear infinite',
                         }}
                     />
                 ) : null}
-                <button 
-                    type="submit" 
-                    className="btn btn-success btn-custom" 
-                    style={{ backgroundColor: '#0A65CC', width: '500px', marginTop: '20px', marginLeft: '20px', border: 'none', opacity: (!isAgreed || isLoading) ? 0.4 : 1 }} 
-                    disabled={!isStep4Valid() || isLoading || !isAgreed}  
+
+                <Button
+                    type="submit"
+                    className="btn btn-success btn-custom w-100"
+                    style={{
+                        backgroundColor: '#0A65CC',
+                        marginTop: '20px',
+                        border: 'none',
+                        opacity: !isAgreed || isLoading ? 0.4 : 1,
+                    }}
+                    disabled={!isStep4Valid() || isLoading || !isAgreed}
                 >
                     {isLoading ? 'Verifying your ID...' : <>Create Account <FontAwesomeIcon icon={faArrowRight} /></>}
-                </button>
+                </Button>
             </div>
+        </div>
         </>
     );
 
@@ -772,7 +787,7 @@ export default function EmployerRegistrationForm() {
                             <div className="d-flex flex-column flex-sm-row justify-content-center">
                                 <Link to="/registration" className="text-decoration-none">
                                     <Button 
-                                         className={`btn btn-primary mx-1 custom-button ${formType === 'candidate' ? 'active' : ''} resp btn5`}
+                                         className={`btn btn-primary mx-1 custom-button ${formType === 'candidate' ? 'active' : ''} resp btn5 customss`}
                                          style={{ backgroundColor: formType === 'candidate' ? '#042852' : 'white', color: formType === 'candidate' ? 'white' : 'black', width: '225px', borderColor: 'black' }} 
                                         onClick={() => setFormType('candidate')}
 
@@ -900,6 +915,9 @@ export default function EmployerRegistrationForm() {
             .paddings{
                 padding: 0 25px !important;     
                 margin-top: 8rem !important;
+            }
+            .customss {
+                margin-bottom: 1rem
             }
             .btn5 {
                 width: 100% !important;

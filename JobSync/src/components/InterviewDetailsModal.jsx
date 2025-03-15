@@ -24,7 +24,7 @@ const InterviewDetailsModal = ({ show, handleClose, interviewDetails }) => {
     useEffect(() => {
         const fetchInterview = async () => {
             try {
-                const response = await postToEndpoint('/getApplicantInfo.php', {
+                const response = await postToEndpoint('/getApplicantinfo.php', {
                     applicant_id: user.id
                 });
 
@@ -62,7 +62,7 @@ const InterviewDetailsModal = ({ show, handleClose, interviewDetails }) => {
             }
         };
         fetchInterview();
-        const interval = setInterval(fetchInterview, 10000); 
+        const interval = setInterval(fetchInterview, 20000); 
         return () => clearInterval(interval);  
     }, [interviewDetails.application_id, interviewDetails.job_id]);
     
@@ -241,42 +241,43 @@ const InterviewDetailsModal = ({ show, handleClose, interviewDetails }) => {
                     </Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <Row className="align-items-center no-margin m-0">
-                        <Col>
-                            <div className="d-flex align-items-center mb-4" style={{ gap: "10px" }}>
-                                <img
-                                    src={company.logo || "https://via.placeholder.com/50"}
-                                    alt={`${company.company_name}'s profile`}
-                                    style={{
-                                        width: "80px",
-                                        height: "80px",
-                                        borderRadius: "50%",
-                                        objectFit: "cover",
-                                    }}
-                                />
-                                <div style={{ textAlign: 'left' }}>
-                                    <h5 className="no-margin text-start">{company.jobTitle}</h5>
-                                    <span className="company-name no-margin text-start" style={{ fontSize: '13px', fontWeight: '500' }}>at {company.company_name}</span>
-                                    <span className="badge ms-2 no-margin" style={{ padding: '7px', textTransform: 'uppercase', borderRadius: '3px', fontSize: '9px', background: '#119d5c' }}>{company.jobType}</span>
-                                </div>
-                            </div>
-                        </Col>
-                        <Col>
-                            <div className="d-flex align-items-center mb-4" style={{ gap: "10px" }}>
-                                <div style={{ textAlign: 'left' }}>
-                                    <h6 className="no-margin text-start">Interview Schedule</h6>
-                                    <h6 className="no-margin text-start" style={{ display: 'flex' }}>Date: <p style={{ marginLeft: '5px', marginBottom: '0px' }}>{interview.schedule}</p></h6>
-                                    <h6 className="no-margin text-start" style={{ display: 'flex' }}>Time: <p style={{ marginLeft: '5px', marginBottom: '0px' }}>{interview.time}</p></h6>
-                                </div>
-                            </div>
-                        </Col>
-                    </Row>
                     <Container>
-                    <div
-                        className="mt-2 sanitized-content"
-                        style={{ marginLeft: '20px', whiteSpace: 'pre-line' }}
-                        dangerouslySetInnerHTML={{ __html: sanitizedDescription }}
-                    />
+                        {/* Company details - Always on top */}
+                        <Row className="align-items-center no-margin m-0">
+                            <Col xs={12} md={6} className="order-md-1 order-1">
+                                <div className="d-flex align-items-center mb-4" style={{ gap: "10px" }}>
+                                    <img
+                                        src={company.logo || "https://via.placeholder.com/50"}
+                                        alt={`${company.company_name}'s profile`}
+                                        style={{
+                                            width: "80px",
+                                            height: "80px",
+                                            borderRadius: "50%",
+                                            objectFit: "cover",
+                                        }}
+                                    />
+                                    <div style={{ textAlign: 'left' }}>
+                                        <h5 className="no-margin text-start">{company.jobTitle}</h5>
+                                        <span className="company-name no-margin text-start" style={{ fontSize: '13px', fontWeight: '500' }}>at {company.company_name}</span>
+                                        <span className="badge ms-2 no-margin" style={{ padding: '7px', textTransform: 'uppercase', borderRadius: '3px', fontSize: '9px', background: '#119d5c' }}>{company.jobType}</span>
+                                    </div>
+                                </div>
+                            </Col>
+
+                            {/* Interview schedule - Moves below on mobile */}
+                            <Col xs={12} md={6} className="order-md-2 order-2">
+                                <div className="d-flex align-items-center mb-4" style={{ gap: "10px" }}>
+                                    <div style={{ textAlign: 'left' }}>
+                                        <h6 className="no-margin text-start">Interview Schedule</h6>
+                                        <h6 className="no-margin text-start" style={{ display: 'flex' }}>Date: <p style={{ marginLeft: '5px', marginBottom: '0px' }}>{interview.schedule}</p></h6>
+                                        <h6 className="no-margin text-start" style={{ display: 'flex' }}>Time: <p style={{ marginLeft: '5px', marginBottom: '0px' }}>{interview.time}</p></h6>
+                                    </div>
+                                </div>
+                            </Col>
+                        </Row>
+
+                        {/* Interview description */}
+                        <div className="mt-2 sanitized-content" style={{ marginLeft: '20px', whiteSpace: 'pre-line' }} dangerouslySetInnerHTML={{ __html: sanitizedDescription }} />
                     </Container>
                 </Modal.Body>
                 <Modal.Footer

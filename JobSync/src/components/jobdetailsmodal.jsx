@@ -7,6 +7,7 @@ import DOMPurify from 'dompurify';
 import axios from 'axios';
 import Swal from 'sweetalert2';
 import apiClient from './apiClient';
+import MapComponent from '../Pages/Applicants/Mapp';
 
 const JobDetailsModal = ({ show, handleClose, job_id, application_id }) => {
   const iconStyle = { color: '#0a60bb', fontSize: '1.5em' };
@@ -213,191 +214,199 @@ const JobDetailsModal = ({ show, handleClose, job_id, application_id }) => {
   return (
 
     <>
-   <Modal show={show && !showAssessmentModal} onHide={handleClose} size="xl" centered>
-      <Modal.Header closeButton>
-        <Modal.Title>Job Details</Modal.Title>
-      </Modal.Header>
+<Modal show={show && !showAssessmentModal} onHide={handleClose} size="xl" centered>
+  <Modal.Header closeButton>
+    <Modal.Title>Job Details</Modal.Title>
+  </Modal.Header>
 
-      <Modal.Body style={{paddingRight: '2rem'}}>
-        <div className="d-flex">
-          {/* Left Section */}
-          <div className="flex-grow-1 me-5 ps-4">
-            <div className="d-flex align-items-center mb-3">
-              <img
-                src={job.logo || './src/assets/default-logo.png'}
-                alt="Company Logo"
-                className="me-2"
-                style={{ width: '100px', height: 'auto' }}
-              />
-              <div>
-                <h5 className="mb-0">{job.jobTitle}</h5>
-                <small>{job.city}</small>
-              </div>
-            </div>
-
-            {/* Job Description */}
-            <h6 className="mt-4">Job Description</h6>
-            <p className='mb-0' style={{ textAlign: 'justify'}} dangerouslySetInnerHTML={{ __html: sanitizedDescription }} />
-
-            {/* Job Benefits */}
-            <h6 className="mt-0">Job Benefits</h6>
-            <div className="d-flex flex-wrap gap-2 mb-3">
-              <JobBenefits selectedBenefits={job.selectedBenefits} />
-            </div>
-
-            {/* Google Maps Location */}
-            <div className="mt-4">
-              <iframe
-                src="https://www.google.com/maps/embed?..."
-                width="100%"
-                height="288"
-                style={{ border: 0 }}
-                allowFullScreen=""
-                loading="lazy"
-                title="Location Map"
-              ></iframe>
+  <Modal.Body className="p-3">
+    <div className="container-fluid">
+      <div className="row flex-column-reverse flex-lg-row">
+        {/* Left Section - Job Details */}
+        <div className="col-12 col-lg-8 pe-lg-4 mb-4 mb-lg-0">
+          {/* Company Logo and Title */}
+          <div className="d-flex flex-column flex-sm-row align-items-center mb-3">
+            <img
+              src={job.logo || './src/assets/default-logo.png'}
+              alt="Company Logo"
+              className="me-0 me-sm-2 mb-2 mb-sm-0"
+              style={{ width: '100px', height: 'auto', maxWidth: '100%' }}
+            />
+            <div className="text-center text-sm-start">
+              <h5 className="mb-1">{job.jobTitle}</h5>
+              <small>{job.city}</small>
             </div>
           </div>
 
-          {/* Right Section */}
-          <div className="border-start ps-3" style={{ minWidth: '330px' }}>
-            {/* Apply Buttons */}
-            <div className="d-flex mb-3">
+          {/* Job Description */}
+          <h6 className="mt-4">Job Description</h6>
+          <p className='mb-3 sanitized-content' style={{ textAlign: 'justify'}} dangerouslySetInnerHTML={{ __html: sanitizedDescription }} />
+
+          {/* Job Benefits */}
+          <h6>Job Benefits</h6>
+          <div className="d-flex flex-wrap gap-2 mb-3">
+            <JobBenefits selectedBenefits={job.selectedBenefits} />
+          </div>
+
+          {/* Google Maps Location */}
+          <div className="mt-4">
+            <MapComponent job_id={job_id} />
+          </div>
+        </div>
+
+        {/* Right Section - Detailed Job Information */}
+        <div className="col-12 col-lg-4">
+          {/* Apply Buttons */}
+          <div className="d-flex flex-column flex-lg-row align-items-stretch mb-3" style={{justifyContent: 'space-evenly'}}>
+            {/* First Button */}
             <Button
               variant="outline-primary"
-              style={{ width: '200px', height: '45px', fontSize: '15px', padding: '0', backgroundColor: '#0A65CC' , color: 'white', border: 'none' }}
-              className={`me-2 ${job.applied_status === "Interview"
-                          ? "bg-success"
-                          : job.applied_status === "Pending"
-                          ? "bg-warning"
-                          : job.applied_status === "On hold"
-                          ? "bg-secondary"
-                          : job.applied_status === "Qualified"
-                          ? "bg-primary"
-                          : job.applied_status === "Final Evaluation"
-                          ? "bg-secondary"
-                          : "bg-danger"}`}
+              className={`mb-2 mb-lg-0 ${job.applied_status === "Interview"
+                ? "bg-success"
+                : job.applied_status === "Pending"
+                ? "bg-warning"
+                : job.applied_status === "On hold"
+                ? "bg-secondary"
+                : job.applied_status === "Qualified"
+                ? "bg-primary"
+                : job.applied_status === "Final Evaluation"
+                ? "bg-secondary"
+                : "bg-danger"} btn-status`}
+              style={{ height: '45px', fontSize: '15px', backgroundColor: '#0A65CC', color: 'white', border: 'none' }}
             >
-            <FaRegClock /> {job.applied_status}
+              <FaRegClock className="me-2" /> {job.applied_status}
             </Button>
+            <Button
+              variant="outline-primary"
+              className='btn-status'
+              style={{ height: '45px', fontSize: '13px' }}
+            >
+              <FaComments className="me-2" /> Chat Employer
+            </Button>
+
+            <style>{`
+              .btn-status {
+                width: 47%;
+              }
+              @media (max-width: 1199px) {
+                .btn-status {
+                  font-size: 9px !important;
+                }
+              }
+              @media (max-width: 992px) { 
+                .btn-status {
+                  width: 100% !important;
+                  font-size: 15px !important;
+                }
+              }
+            `}</style>
+          </div>
+
+          {/* Take Assessment Button */}
+          {job.type === 'assessment' && !['Pending', 'To Interview', 'Rejected', 'Qualified', 'Final Evaluation', 'Hired', 'Not Selected'].includes(job.applied_status) && (
+            <div className="text-center mb-3">
               <Button
-                variant="outline-primary"
-                style={{ width: '200px', height: '45px', fontSize: '13px', padding: '0' }}
-              >
-                <FaComments style={iconStyle} /> Chat Employer
-              </Button>
-            </div>
-            <div className="d-flex mb-3 justify-content-center">
-            {job.type === 'assessment' && !['Pending', 'To Interview', 'Rejected', 'Qualified', 'Final Evaluation', 'Hired', 'Not Selected'].includes(job.applied_status) && (
-              <Button
-                style={{
-                  width: '200px', height: '45px', fontSize: '13px', padding: '0', background: '#559aff', border: 'none'
-                }}
-                className="mt-1"
+                style={{ width: '100%', height: '45px', fontSize: '13px', background: '#559aff', border: 'none' }}
                 onClick={handleTakeAssessment}
               >
                 Take Assessment
               </Button>
-            )}
             </div>
+          )}
 
-            {/* Job Role and Tags */}
-            <div className="mb-3">
-              <div className="d-flex justify-content-start align-items-center p-4 border" style={{ border: '2px solid #ccc', borderRadius: '8px' }}>
-                <div className="d-flex flex-column align-items-start me-4">
+          {/* Job Role and Tags */}
+          <div className="card mb-3">
+            <div className="card-body">
+              <div className="row">
+                <div className="col-6">
                   <FaUserTie style={iconStyle} className="mb-2" />
-                  <h6 className="mb-0" style={{fontSize: '15px'}}>Job Role</h6>
-                  <p className="mb-0 mt-1" style={{ fontSize: '14px', padding: '0', margin: '0' }}>{job.jobRole}</p>
+                  <h6 className="mb-1" style={{fontSize: '15px'}}>Job Role</h6>
+                  <p className="mb-0" style={{ fontSize: '14px' }}>{job.jobRole}</p>
                 </div>
-                <div className="d-flex flex-column align-items-start">
+                <div className="col-6">
                   <FaTag style={iconStyle} className="mb-2" />
-                  <h6 className="mb-0" style={{fontSize: '15px'}}>Tags</h6>
-                  <p className="mb-0 mt-1" style={{ fontSize: '14px', padding: '0', margin: '0' }}>{job.jobTags}</p>
+                  <h6 className="mb-1" style={{fontSize: '15px'}}>Tags</h6>
+                  <p className="mb-0" style={{ fontSize: '14px' }}>{job.jobTags}</p>
                 </div>
-              </div>
-            </div>
-
-            {/* Salary & Type */}
-            <div className="d-flex flex-column p-4 border" style={{ border: '2px solid #ccc', borderRadius: '8px' }}>
-              <div className="d-flex align-items-center">
-                <FaMoneyBillWave style={iconStyle} className="me-3" />
-                <div>
-                  <h6 className="mb-0 " style={{fontSize: '15px'}}>Salary</h6>
-                  <p className="mb-0 mt-1"  style={{fontSize: '14px'}}>₱{job.minSalary} - ₱{job.maxSalary}</p>
-                </div>
-              </div>
-
-              <div className="d-flex align-items-center mt-3">
-                <FaClock style={iconStyle} className="me-3" />
-                <div>
-                  <h6 className="mb-0" style={{fontSize: '15px'}}>Salary Type</h6>
-                  <p className="mb-2 mt-1" style={{fontSize: '14px'}}>{job.salaryType}</p>
-                </div>
-              </div>
-
-              <hr style={{ margin: '5px 0' }} />
-
-              {/* Advance Information */}
-              <div className="mb-0 mt-3">
-                <h6 style={{fontSize: '17px'}}>Advance Information</h6>
-                <ul className="list-unstyled">
-                {[
-                    { icon: <FaGraduationCap style={iconStyle} className="me-3" />, title: 'Education', value: job.education },
-                    { icon: <FaUserClock style={iconStyle} className="me-3" />, title: 'Experience', value: job.experience },
-                    { icon: <FaBriefcase style={iconStyle} className="me-3" />, title: 'Job Type', value: job.jobType },
-                    { icon: <FaSuitcase style={iconStyle} className="me-3" />, title: 'Job Level', value: job.jobLevel },
-                    { 
-                      icon: <FaCalendarAlt style={iconStyle} className="me-3" />, 
-                      title: 'Expiration Date', 
-                      value: new Date(job.expirationDate).toLocaleDateString('en-US', { 
-                        year: 'numeric', 
-                        month: 'long', 
-                        day: 'numeric' 
-                      }) 
-                    }
-                  ].map((item, index) => (
-                    <div key={item.title}>  {/* Use item.title or another unique property */}
-                      <li className="d-flex align-items-center mt-3">
-                        {item.icon}
-                        <div>
-                          <h6 className="mb-0" style={{ fontSize: '15px' }}>{item.title}</h6>
-                          <p className="mb-2 mt-1" style={{ fontSize: '14px' }}>{item.value}</p>
-                        </div>
-                      </li>
-                      {index !== 4 && <hr style={{ margin: '5px 0' }} />}
-                    </div>
-                  ))}
-                </ul>
-              </div>
-            </div>
-
-            {/* Location Section */}
-            <div>
-              <div className='border p-4' style={{ borderRadius: '8px', padding: '10px', marginTop: '10px' }}>
-                <h6 style={{fontSize: '17px'}}>Location</h6>
-                <ul className="list-unstyled" style={{ margin: '0' }}>
-                {[
-                    { icon: <FaMapMarkerAlt style={iconStyle} className="me-3" />, title: 'Address', value: job.address },
-                    { icon: <FaMapMarkerAlt style={iconStyle} className="me-3" />, title: 'City', value: job.city },
-                  ].map((item, index) => (
-                    <div key={item.title}>  {/* Use item.title or another unique property */}
-                      <li className="d-flex align-items-center mt-3">
-                        {item.icon}
-                        <div>
-                          <h6 className="mb-1" style={{fontSize: '15px'}}>{item.title}</h6>
-                          <p className="mb-2 mt-1" style={{fontSize: '14px'}}>{item.value}</p>
-                        </div>
-                      </li>
-                      {index !== 1 && <hr style={{ margin: '5px 0' }} />}
-                    </div>
-                  ))}
-                </ul>
               </div>
             </div>
           </div>
+
+          {/* Salary & Type */}
+          <div className="card mb-3">
+            <div className="card-body">
+              <div className="mb-3">
+                <div className="d-flex align-items-center">
+                  <FaMoneyBillWave style={iconStyle} />
+                  <div>
+                    <h6 className="mb-0 ms-3" style={{fontSize: '15px'}}>Salary</h6>
+                    <p className="mb-0 mt-1 ms-3" style={{fontSize: '14px'}}>₱{job.minSalary} - ₱{job.maxSalary}</p>
+                  </div>
+                </div>
+              </div>
+
+              <hr className="my-2" />
+
+              <div>
+                <div className="d-flex align-items-center">
+                  <FaClock style={iconStyle} />
+                  <div>
+                    <h6 className="mb-0 ms-3" style={{fontSize: '15px'}}>Salary Type</h6>
+                    <p className="mb-0 mt-1 ms-3" style={{fontSize: '14px'}}>{job.salaryType}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Advance Information */}
+          <div className="card mb-3">
+            <div className="card-body">
+              <h6 style={{fontSize: '17px'}} className="mb-3">Advance Information</h6>
+              {[{ icon: <FaGraduationCap style={iconStyle} />, title: 'Education', value: job.education },
+                { icon: <FaUserClock style={iconStyle} />, title: 'Experience', value: job.experience },
+                { icon: <FaBriefcase style={iconStyle} />, title: 'Job Type', value: job.jobType },
+                { icon: <FaSuitcase style={iconStyle} />, title: 'Job Level', value: job.jobLevel },
+                { icon: <FaCalendarAlt style={iconStyle} />, title: 'Expiration Date', value: new Date(job.expirationDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) }].map((item, index) => (
+                <div key={item.title}>
+                  <div className="d-flex align-items-center mb-2">
+                    {item.icon}
+                    <div>
+                      <h6 className="mb-0 ms-3" style={{ fontSize: '15px' }}>{item.title}</h6>
+                      <p className="mb-0 mt-1 ms-3" style={{ fontSize: '14px' }}>{item.value}</p>
+                    </div>
+                  </div>
+                  {index !== 4 && <hr className="my-2" />}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Location Section */}
+          <div className="card">
+            <div className="card-body">
+              <h6 style={{fontSize: '17px'}} className="mb-3">Location</h6>
+              {[{ icon: <FaMapMarkerAlt style={iconStyle} />, title: 'Address', value: job.address },
+                { icon: <FaMapMarkerAlt style={iconStyle} />, title: 'City', value: job.city }].map((item, index) => (
+                <div key={item.title}>
+                  <div className="d-flex align-items-center mb-2">
+                    {item.icon}
+                    <div>
+                      <h6 className="mb-0 ms-3" style={{fontSize: '15px'}}>{item.title}</h6>
+                      <p className="mb-0 mt-1 ms-3" style={{fontSize: '14px'}}>{item.value}</p>
+                    </div>
+                  </div>
+                  {index !== 1 && <hr className="my-2" />}
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
-      </Modal.Body>
-    </Modal>
+      </div>
+    </div>
+  </Modal.Body>
+</Modal>
+
 
       {/* Assessment Modal */}
       <Modal show={showAssessmentModal} onHide={handleCloseAssessment} size="lg" >

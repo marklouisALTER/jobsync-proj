@@ -22,7 +22,8 @@ function SearchJobs() {
     const navigate = useNavigate();
     
     const [loading, setLoading] = useState(false);
-
+    const [isNavbarOpen, setIsNavbarOpen] = useState(false);
+    
     const handleLogout = () => {
         setLoading(true);
         setTimeout(() => {
@@ -56,7 +57,7 @@ function SearchJobs() {
 
             const intervalId = setInterval(() => {
                 fetchCompanyInfo(); 
-            }, 5000); 
+            }, 50000); 
 
             return () => clearInterval(intervalId); 
         }
@@ -139,7 +140,7 @@ function SearchJobs() {
             }
         };
         fetchNotification();
-        const intervalId = setInterval(fetchNotification, 5000); 
+        const intervalId = setInterval(fetchNotification, 50000); 
         return () => clearInterval(intervalId);
     }, [user?.id]);  
     
@@ -149,8 +150,12 @@ function SearchJobs() {
         setModalVisible(true);
     };
     function getRelativeTime(timestamp) {
-        const now = new Date();
+        const now = new Date(); 
         const past = new Date(timestamp);
+    
+        const userTimezoneOffset = now.getTimezoneOffset() * 60000;
+        past.setTime(past.getTime() - userTimezoneOffset);
+    
         const diff = Math.floor((now - past) / 1000);
     
         if (diff < 60) return `${diff} sec${diff !== 1 ? 's' : ''} ago`;
@@ -175,7 +180,7 @@ function SearchJobs() {
             <div id="preloader">
             </div>
         )}
-            <Navbar expand="lg" className="job-sync-header1 border-bottom">
+            <Navbar expand="lg" expanded={isNavbarOpen} className="job-sync-header1 border-bottom" onToggle={() => setIsNavbarOpen(!isNavbarOpen)}>
                 <Container>
                     {/* Logo */}
                     <Navbar.Brand as={Link} to="/">
@@ -270,7 +275,10 @@ function SearchJobs() {
                                                         <Link
                                                             to="/applicantprofile"
                                                             className="dropdown-item d-flex align-items-center"
-                                                            onClick={handleOptionClick}
+                                                            onClick={() => {
+                                                                handleOptionClick();
+                                                                setIsNavbarOpen(false);
+                                                              }}
                                                             style={{
                                                                 padding: '0.5rem 1rem',
                                                                 transition: 'all 0.3s ease',
@@ -289,6 +297,7 @@ function SearchJobs() {
                                                                 e.target.style.color = '#212529';
                                                                 e.target.style.borderRadius = '0';
                                                             }}
+                                                            
                                                         >
                                                             <FontAwesomeIcon icon={faUserCircle} className="me-2" style={{ color: '#126fc1' }} />
                                                             View Profile
@@ -296,7 +305,10 @@ function SearchJobs() {
                                                         <Link
                                                             to="/applicants/applicantsettings"
                                                             className="dropdown-item d-flex align-items-center"
-                                                            onClick={handleOptionClick}
+                                                            onClick={() => {
+                                                                handleOptionClick();
+                                                                setIsNavbarOpen(false);
+                                                              }}
                                                             style={{
                                                                 padding: '0.5rem 1rem',
                                                                 transition: 'all 0.3s ease',
@@ -323,7 +335,10 @@ function SearchJobs() {
                                                         <div className="dropdown-divider" style={{ margin: '0', borderTop: 'none' }}></div>
                                                         <button
                                                             className="dropdown-item d-flex align-items-center"
-                                                            onClick={handleLogout}
+                                                            onClick={() => {
+                                                                handleLogout();
+                                                                setIsNavbarOpen(false);
+                                                              }}
                                                             style={{
                                                                 padding: '0.5rem 1rem',
                                                                 border: 'none',

@@ -155,130 +155,201 @@ export default function Socmedlinks() {
   };
 
   return (
-    <Container fluid className="text-start"
+
+    <>
+<Container fluid className="text-start"
+  style={{
+    margin: '0',
+    padding: '0',
+    width: '100%',
+  }}>
+  <Form onSubmit={handleSubmit}
     style={{
-      margin: '0',
-      padding: '0',
+      padding: '20px',
       width: '100%',
+      height: socialLinks.length === 0 || socialLinks.length === 1 || socialLinks.length === 2 || socialLinks.length === 3 || socialLinks.length === 4 ? '660px' : 'auto',
+      display: 'flex',
+      flexDirection: 'column',
     }}>
-      <Form onSubmit={handleSubmit} style={{ padding: '20px', width: '100%', height: socialLinks.length === 0 || socialLinks.length === 1 || socialLinks.length === 2 || socialLinks.length === 3 || socialLinks.length === 4 ? '630px' : 'auto', display: 'flex', flexDirection: 'column' }}>
-        <h4 style={{ marginBottom: '25px', fontSize: '28px', textAlign: 'left' }}>Social Media Accounts</h4>
-        <small style={{marginBottom: '25px',}}>We recommend adding 3 or more social media accounts</small>
-        {/* Social Links Mapping */}
-        {socialLinks.map((socialLink, index) => {
-          const selectedOption = platformOptions.find((option) => option.name === socialLink.platform);
-          const updatedPlatformOptions = getUpdatedPlatformOptions(socialLinks.map(link => link.platform));
+    <h4 style={{ marginBottom: '25px', fontSize: '28px', textAlign: 'left' }}>Social Media Accounts</h4>
+    <small style={{ marginBottom: '25px' }}>We recommend adding 3 or more social media accounts</small>
+    
+    {/* Social Links Mapping */}
+    {socialLinks.map((socialLink, index) => {
+      const selectedOption = platformOptions.find((option) => option.name === socialLink.platform);
+      const updatedPlatformOptions = getUpdatedPlatformOptions(socialLinks.map(link => link.platform));
 
-          return (
-            <Row className="mb-4" key={index}>
-              <Col>
-                <InputGroup className="register" style={{ width: '100%' }}>
-                  <DropdownButton
-                    as={InputGroup.Prepend}
-                    variant="outline-secondary"
-                    title={
-                      <>
-                        {selectedOption?.icon && (
-                          <img
-                            src={selectedOption.icon}
-                            alt={selectedOption.name}
-                            style={{ marginRight: '8px', width: '20px' }}
-                          />
-                        )}
-                        {socialLink.platform}
-                      </>
-                    }
-                    id={`dropdown-custom-components-${index}`}
-                    onSelect={(value) => handleSocialLinkChange(index, 'platform', value)}
-                    style={{ width: '150px', border: 'none', boxShadow: 'none' }}
-                  >
-                    {updatedPlatformOptions.map((option) => (
-                      <Dropdown.Item
-                        key={option.name}
-                        eventKey={option.name}
-                        disabled={option.disabled}
-                        style={{
-                          backgroundColor: 'transparent',
-                          border: 'none',
-                          padding: '8px 16px',
-                        }}
-                      >
-                        {option.icon && (
-                          <img
-                            src={option.icon}
-                            alt={option.name}
-                            style={{ marginRight: '8px', width: '25px' }}
-                          />
-                        )}
-                        {option.name}
-                      </Dropdown.Item>
-                    ))}
-                  </DropdownButton>
+      return (
+<Row className="mb-4 input-link" key={index}>
+  <Col xs={12} md={10}>
+    <InputGroup className="register1 position-relative">
+      <DropdownButton
+        as={InputGroup.Prepend}
+        variant="outline-secondary"
+        title={
+          <>
+            {/* Display the logo and platform name only on mobile (xs) */}
+            <div className="d-block d-md-none">
+              {selectedOption?.icon && (
+                <img
+                  src={selectedOption.icon}
+                  alt={selectedOption.name}
+                  style={{ marginRight: '8px', width: '20px' }}
+                />
+              )}
+            </div>
+            {/* Display full dropdown on md (medium) and larger screens */}
+            <div className="d-none d-md-block">
+              {selectedOption?.icon && (
+                <img
+                  src={selectedOption.icon}
+                  alt={selectedOption.name}
+                  style={{ marginRight: '8px', width: '20px' }}
+                />
+              )}
+              {socialLink.platform}
+            </div>
+          </>
+        }
+        id={`dropdown-custom-components-${index}`}
+        onSelect={(value) => handleSocialLinkChange(index, 'platform', value)}
+        style={{ width: '150px', border: 'none', boxShadow: 'none'}}
+      >
+        {updatedPlatformOptions.map((option) => (
+          <Dropdown.Item
+            key={option.name}
+            eventKey={option.name}
+            disabled={option.disabled}
+            style={{
+              backgroundColor: 'transparent',
+              border: 'none',
+              padding: '8px 16px',
+            }}
+          >
+            {option.icon && (
+              <img
+                src={option.icon}
+                alt={option.name}
+                style={{ marginRight: '8px', width: '25px' }}
+              />
+            )}
+            {option.name}
+          </Dropdown.Item>
+        ))}
+      </DropdownButton>
 
-                  <Form.Control
-                    type="url"
-                    placeholder={`Enter ${socialLink.platform} link`}
-                    value={socialLink.link}
-                    onChange={(e) => handleSocialLinkChange(index, 'link', e.target.value)}
-                    style={{ flexGrow: 1 }}
-                  />
+      {/* Input field */}
+      <Form.Control
+        type="url"
+        placeholder={`Enter ${socialLink.platform} link`}
+        value={socialLink.link}
+        onChange={(e) => handleSocialLinkChange(index, 'link', e.target.value)}
+        style={{
+          flexGrow: 1,
+          minWidth: '200px',
+          paddingRight: '40px', // Add space for the button inside the input
+        }}   
+      />
 
-                  <Button
-                    variant="outline-danger"
-                    onClick={() => handleDeleteSocialLink(index)}
-                    style={{
-                      marginLeft: '10px',
-                      height: '38px',
-                      width: '38px',
-                      padding: 0,
-                      borderRadius: '30%',
-                      backgroundColor: '#f8d7da',
-                    }}
-                  >
-                    <FontAwesomeIcon icon={faTimes} />
-                  </Button>
-                </InputGroup>
-              </Col>
-            </Row>
-          );
-        })}
+      {/* "X" Button for mobile view inside the input */}
+      <Button
+        variant="outline-danger"
+        onClick={() => handleDeleteSocialLink(index)}
+        style={{
+          position: 'absolute',
+          right: '10px', // Position the button inside the input field
+          top: '60%',
+          transform: 'translateY(-50%)',
+          height: '30px',
+          width: '30px',
+          padding: 0,
+          borderRadius: '50%',
+          backgroundColor: '#f8d7da',
+        }}
+        className="d-block d-md-block" // Show the button in both mobile and desktop views
+      >
+        <FontAwesomeIcon icon={faTimes} />
+      </Button>
+    </InputGroup>
+  </Col>
+</Row>
 
+
+
+
+      );
+    })}
+
+    <Button
+      variant="secondary"
+      onClick={addSocialLink}
+      style={{
+        width: '70%',
+        backgroundColor: '#757575',
+        display: 'block',
+        margin: '0 auto',
+        alignContent: 'center',
+        height: '50px',
+        marginBottom: 'auto',
+      }}
+    >
+      <FontAwesomeIcon icon={faPlus} /> Add New Social Link
+    </Button>
+
+    <Row className="mt-3" style={{ marginTop: 'auto' }}>
+      <Col xs={12} className="d-flex flex-column flex-md-row" style={{ justifyContent: 'space-between' }}>
         <Button
-          variant="secondary"
-          onClick={addSocialLink}
+          variant="primary"
+          onClick={() => {
+            window.history.back();
+            window.scrollTo({ top: 0 });
+          }}
+          className="mt-3 btn-social"
           style={{
-            width: '70%',
-            backgroundColor: '#757575',
-            display: 'block',
-            margin: '0 auto',
-            alignContent: 'center',
-            height: '50px',
-            marginBottom: 'auto',
+            width: '100%',
+            maxWidth: '185px',
+            height: '55px',
+            color: '#0d6efd',
+            background: 'transparent',
+            marginBottom: '10px',
           }}
         >
-          <FontAwesomeIcon icon={faPlus} /> Add New Social Link
+          <FaArrowLeft style={{ fontSize: '14px', marginRight: '12px' }} /> Back
         </Button>
-
-        <Row className="mt-3" style={{ marginTop: 'auto' }}>
-          <Col md={12} className="d-flex" style={{justifyContent: 'space-between'}}>
-            <Button variant="primary"  onClick={() => {
-                  window.history.back();
-                  window.scrollTo({ top: 0});
-              }} className="mt-3" style={{width: '185px', height: '55px', color: '#0d6efd', background: 'transparent'}}>
-            <FaArrowLeft style={{fontSize: '14px', marginRight: '12px'}}/> Back
-          </Button>
-            <Button
-              type="submit"
-              variant="primary"
-              className="mt-3"
-              style={{ width: '185px', height: '55px' }}
-              disabled={!isFormChanged() || areInputsEmpty()}
-            >
-              Save Changes
-            </Button>
-          </Col>
-        </Row>
-      </Form>
-    </Container>
+        <Button
+          type="submit"
+          variant="primary"
+          className="mt-3 btn-social"
+          style={{
+            width: '100%',
+            maxWidth: '185px',
+            height: '55px',
+          }}
+          disabled={!isFormChanged() || areInputsEmpty()}
+        >
+          Save Changes
+        </Button>
+      </Col>
+    </Row>
+  </Form>
+</Container>
+<style>{`
+    .register1 {
+      max-width: 100% !important;
+      align-items: normal;
+    }
+    .input-link {
+      justify-content: center;
+    }
+    .down-link {
+      display: flex !important;
+    }
+    @media (max-width: 768px) {
+      .btn-social {
+          max-width: 100% !important
+      }
+    }    
+`}</style>
+</>
   );
 }

@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Tabs, Tab } from 'react-bootstrap';
-import { FaBuilding, FaCalendar, FaLink ,FaGraduationCap } from 'react-icons/fa';
+import { Tabs, Tab, Container } from 'react-bootstrap';
+import { FaBuilding, FaCalendar, FaLink, FaGraduationCap } from 'react-icons/fa';
 import AddressInfo from '../../Pages/Applicants/ApplicantProfile/address';
 import Socmedlinks from '../../pages/applicants/applicantprofile/socmedlinks';
 import Qualifications from '../../Pages/Applicants/ApplicantProfile/qualifications';
 import Personal from './ApplicantProfile/personal';
-
 
 export default function ApplicantProfile() {
   const [activeKey, setActiveKey] = useState('personal');
@@ -13,7 +12,7 @@ export default function ApplicantProfile() {
 
   useEffect(() => {
     const timer = setTimeout(() => setIsLoading(false), 1000);
-    return () => clearTimeout(timer); 
+    return () => clearTimeout(timer);
   }, []);
 
   const tabStyles = (isActive) => ({
@@ -22,28 +21,23 @@ export default function ApplicantProfile() {
 
   if (isLoading) {
     return (
-      <div id="preloader">
+      <div id="preloader" className="d-flex justify-content-center align-items-center">
+        {/* Add preloader content or spinner here */}
       </div>
     );
   }
+
   return (
-    <div className='containter' style={{ padding: 0, marginTop: '100px', maxWidth: '1200px', width: '100%' }}>
+    <>
+    <Container style={{ marginTop: '8rem' }}>
       {/* Tab Bar Container */}
-      <div
-        style={{
-          borderBottom: '1px solid #ddd',
-          position: 'relative', 
-          marginleft: '0px'
-        }}
-      >
+      <div className="border-bottom mb-4">
         <Tabs
           activeKey={activeKey}
           onSelect={(k) => setActiveKey(k)}
           id="applicant-tabs"
           className="px-4"
-          style={{
-            width: '100%',
-          }}
+          style={{ width: '100%' }}
         >
           <Tab
             eventKey="personal"
@@ -53,15 +47,14 @@ export default function ApplicantProfile() {
               boxShadow: '0px 4px 11px rgba(0, 0, 0, 0.2)'
             }}
             title={
-              <div style={{width: '160px', textAlign: 'left'}}>
+              <div style={{ width: '160px', textAlign: 'left' }}>
                 <FaBuilding style={{ marginRight: '10px', ...tabStyles(activeKey === 'personal') }} />
                 <span style={tabStyles(activeKey === 'personal')}>Personal</span>
               </div>
             }
+            className="p-3"
           >
-            <div style={{ padding: '20px'}}>
-              <Personal />
-            </div>
+            <Personal />
           </Tab>
 
           <Tab
@@ -72,15 +65,14 @@ export default function ApplicantProfile() {
               boxShadow: '0px 4px 11px rgba(0, 0, 0, 0.2)'
             }}
             title={
-              <div style={{width: '160px', textAlign: 'left'}}>
+              <div style={{ width: '160px', textAlign: 'left' }}>
                 <FaCalendar style={{ marginRight: '10px', ...tabStyles(activeKey === 'address') }} />
                 <span style={tabStyles(activeKey === 'address')}>Address</span>
               </div>
             }
+            className="p-3"
           >
-            <div style={{ padding: '20px'}}>
-              <AddressInfo />
-            </div>
+            <AddressInfo />
           </Tab>
 
           <Tab
@@ -91,15 +83,14 @@ export default function ApplicantProfile() {
               boxShadow: '0px 4px 11px rgba(0, 0, 0, 0.2)'
             }}
             title={
-              <div style={{width: '200px', textAlign: 'left'}}>
+              <div style={{ width: '200px', textAlign: 'left' }}>
                 <FaLink style={{ marginRight: '10px', ...tabStyles(activeKey === 'socmedlinks') }} />
                 <span style={tabStyles(activeKey === 'socmedlinks')}>Social Media Links</span>
               </div>
             }
+            className="p-3"
           >
-            <div style={{ padding: '20px', width: '1220px'}}>
-              <Socmedlinks />
-            </div>
+            <Socmedlinks />
           </Tab>
 
           <Tab
@@ -110,32 +101,28 @@ export default function ApplicantProfile() {
               boxShadow: '0px 4px 11px rgba(0, 0, 0, 0.2)'
             }}
             title={
-              <div style={{width: '200px', textAlign: 'left'}}>
+              <div style={{ width: '200px', textAlign: 'left' }}>
                 <FaGraduationCap style={{ marginRight: '10px', ...tabStyles(activeKey === 'qualifications') }} />
                 <span style={tabStyles(activeKey === 'qualifications')}>Qualifications</span>
               </div>
             }
+            className="p-3"
           >
-            <div style={{ padding: '20px', width: '1220px'}}>
-              <Qualifications />
-            </div>
+            <Qualifications />
           </Tab>
-       
-
         </Tabs>
-
       </div>
-      
 
       {/* Content Area */}
-      <div
-        style={{
-          marginTop: '30px',
-          position: 'relative',
-        }}
-      >
+      <div className="mt-4">
         {/* Tab content will render here */}
       </div>
-    </div>
+    </Container>
+    <style>{`
+    #root {
+      width: 100% !important;
+    }
+    `}</style>
+</>
   );
 }

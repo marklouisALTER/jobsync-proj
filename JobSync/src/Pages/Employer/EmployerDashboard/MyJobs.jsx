@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import EmployerSidebar from '../../../components/EmployerSidebar';
 import PostedJobTable from '../../../components/PostedJobTable';
 import { useAuth } from '../../../AuthContext'; 
 import { postToEndpoint } from '../../../components/apiService';
-
+import { Container, Row, Col, Breadcrumb, Button, Offcanvas } from "react-bootstrap";
+import EmployerSidebar from '../../../components/employersidebar';
+import { FaBars } from "react-icons/fa";
 
 export default function MyJobs() {
     const { user } = useAuth(); 
     const [jobs, setJobs] = useState([]); 
+    const [showSidebar, setShowSidebar] = useState(false);
 
     useEffect(() => {
         const fetchJobs = async () => {
@@ -27,23 +29,74 @@ export default function MyJobs() {
     }, [user.id]); 
 
     return (
-        <div className="d-flex">
-            <div className="sidebar" style={{ width: '20%', minWidth: '250px' }}>
-                <EmployerSidebar /> 
-            </div>
-            <div className="flex-grow-1 p-3" style={{ marginTop: '60px', marginRight: '194px', width: '120%' }}>
-            <nav aria-label="breadcrumb" style={{marginTop: '-28px'}}>
-                <ol className="breadcrumb">
-                <li className="breadcrumb-item">
-                    <a href="/employer/myjobs" style={{textDecoration: 'none', color: '#757575' }} >My Jobs</a>
-                </li>
-                </ol> 
-            </nav>
-                <h2 className="mb-3 text-left" style={{ fontSize: '20px', color: '#575757', fontWeight: '600', marginBottom: '20px', marginTop: '25px', textAlign: 'left', marginLeft: '15px' }}>
-                    My Jobs {jobs.total_jobs > 0 ? `(${jobs.total_jobs})` : ''}
-                </h2>
-                <PostedJobTable /> 
-            </div>
-        </div>
+        <>
+        <Container style={{marginTop: '3rem'}}>
+        <Row>
+          {/* Sidebar */}
+          <Col lg={3} className="applicant-sidebar bg-light vh-100 p-3 d-none d-lg-block">
+                        <EmployerSidebar />
+                    </Col>
+                    {/* Sidebar Toggle Button (Small Screens) */}
+                    <Col xs={12} className="d-lg-none" style={{display: 'flex'}}>
+                        <Button
+                            variant="link"
+                            onClick={() => setShowSidebar(true)}
+                            style={{
+                                position: "relative",
+                                left: "0",
+                                color: "#333", // Dark color
+                                fontSize: "24px", // Bigger icon
+                                padding: "5px"
+                            }}
+                        >
+                            <FaBars />
+                        </Button>
+                    </Col>
+                    {/* Offcanvas Sidebar (Small Screens) */}
+                    <Offcanvas show={showSidebar} onHide={() => setShowSidebar(false)} placement="start">
+                        <Offcanvas.Header closeButton>
+                            <Offcanvas.Title>Employer Dashboard</Offcanvas.Title>
+                        </Offcanvas.Header>
+                        <Offcanvas.Body>
+                            <EmployerSidebar />
+                        </Offcanvas.Body>
+                    </Offcanvas>
+  
+          {/* Main Content */}
+          <Col lg={9} className="p-4">
+
+            {/* Breadcrumb */}
+            <Breadcrumb className="mb-3">
+              <Breadcrumb.Item href="/employer/myjobs" style={{ textDecoration: "none", color: "#757575" }}>
+                My Jobs
+              </Breadcrumb.Item>
+            </Breadcrumb>
+  
+            {/* Heading */}
+            <h2
+              className="mb-3 text-left"
+              style={{
+                fontSize: "20px",
+                color: "#575757",
+                fontWeight: "600",
+                marginBottom: "20px",
+                marginTop: "25px",
+                textAlign: "left",
+              }}
+            >
+              My Jobs {jobs.total_jobs > 0 ? `(${jobs.total_jobs})` : ""}
+            </h2>
+  
+            {/* Job Table */}
+            <PostedJobTable />
+          </Col>
+        </Row>
+      </Container>
+      <style>{`
+        #root {
+            width: 100% !important;
+        }
+      `}</style>
+      </>
     );
 }

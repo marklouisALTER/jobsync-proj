@@ -41,7 +41,7 @@ try {
             echo json_encode([
                 'success' => true,
                 'isComplete js_personal_info' => false,
-                'message' => "$friendlyName is missing or incomplete. Please ensure your profile is fully updated."
+                'message' => "<span style='color: red;'>$friendlyName</span> is missing or incomplete. Please ensure your profile is fully updated."
             ]);
             exit;
         }
@@ -84,7 +84,7 @@ try {
             echo json_encode([
                 'success' => true,
                 'isComplete js_personal_info' => false,
-                'message' => "$friendlyName is missing or incomplete. Please ensure your profile is fully updated."
+                'message' => "<span style='color: red;'>$friendlyName</span> is missing or incomplete. Please ensure your profile is fully updated."
             ]);
             exit;
         }

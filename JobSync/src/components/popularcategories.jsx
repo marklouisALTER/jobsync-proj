@@ -2,14 +2,14 @@ import React from 'react';
 import { FaPaintBrush, FaCode, FaBullhorn, FaVideo, FaMusic, FaChartLine, FaHeartbeat, FaDatabase } from 'react-icons/fa';
 
 const categories = [
-  { icon: <FaPaintBrush />, title: "Graphics & Design", positions: 357 },
-  { icon: <FaCode />, title: "Code & Programming", positions: 357 },
-  { icon: <FaBullhorn />, title: "Digital Marketing", positions: 357 },
-  { icon: <FaVideo />, title: "Video & Animation", positions: 357 },
-  { icon: <FaMusic />, title: "Music & Audio", positions: 357 },
-  { icon: <FaChartLine />, title: "Account & Finance", positions: 357 },
-  { icon: <FaHeartbeat />, title: "Health & Care", positions: 357 },
-  { icon: <FaDatabase />, title: "Data Science", positions: 357 },
+  { icon: <FaPaintBrush />, title: "Graphics & Design" },
+  { icon: <FaCode />, title: "Code & Programming" },
+  { icon: <FaBullhorn />, title: "Digital Marketing" },
+  { icon: <FaVideo />, title: "Video & Animation" },
+  { icon: <FaMusic />, title: "Music & Audio" },
+  { icon: <FaChartLine />, title: "Account & Finance" },
+  { icon: <FaHeartbeat />, title: "Health & Care" },
+  { icon: <FaDatabase />, title: "Data Science" },
 ];
 
 const PopularCategories = () => (

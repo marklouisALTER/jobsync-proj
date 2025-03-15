@@ -1,0 +1,1687 @@
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.salary >= :minSalary AND j.salary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.salary >= :minSalary AND j.salary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.salary >= :minSalary AND j.salary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.salary >= :minSalary AND j.salary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.salary >= :minSalary AND j.salary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.salary >= :minSalary AND j.salary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.salary >= :minSalary AND j.salary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '100000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '100000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '92000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '92000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '88000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '88000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '68000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '68000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '10000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '10000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10' AND j.maxSalary <= '100'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10' AND j.maxSalary <= '100'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '10' AND j.maxSalary <= '100'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '10' AND j.maxSalary <= '100'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Contract' AND j.minSalary >= '10' AND j.maxSalary <= '100'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Contract' AND j.minSalary >= '10' AND j.maxSalary <= '100'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.salary >= '10' AND j.salary <= '100'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Healthcare' AND j.jobType = 'Part-time' AND j.salary >= '10' AND j.salary <= '100'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Healthcare' AND j.jobType = 'Part-time' AND j.minSalary >= '1000' AND j.maxSalary <= '10000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Healthcare' AND j.jobType = 'Part-time' AND j.minSalary >= '1000' AND j.maxSalary <= '1000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Healthcare' AND j.jobType = 'Part-time' AND j.minSalary >= '10000' AND j.maxSalary <= '1000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Healthcare' AND j.jobType = 'Contract' AND j.minSalary >= '10000' AND j.maxSalary <= '1000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Healthcare' AND j.jobType = 'Internship' AND j.salary >= '10000' AND j.salary <= '1000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Healthcare' AND j.jobType = 'Part-time' AND j.salary >= '10000' AND j.salary <= '1000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Healthcare' AND j.jobType = 'Part-time' AND j.minSalary >= '10000' AND j.maxSalary <= '1000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Healthcare' AND j.jobType = 'Part-time' AND j.minSalary >= '10000' AND j.maxSalary <= '1000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Healthcare' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '1000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Healthcare' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '1000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Healthcare' AND j.jobType = 'Part-time' AND j.minSalary >= '10000' AND j.maxSalary <= '1000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Healthcare' AND j.jobType = 'Part-time' AND j.minSalary >= '10000' AND j.maxSalary <= '1000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Healthcare' AND j.jobType = 'Contract' AND j.minSalary >= '10000' AND j.maxSalary <= '1000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Healthcare' AND j.jobType = 'Contract' AND j.minSalary >= '10000' AND j.maxSalary <= '1000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '70000' AND j.maxSalary <= '120000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '70000' AND j.maxSalary <= '120000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '70000' AND j.maxSalary <= '120000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '70000' AND j.maxSalary <= '120000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '70000' AND j.maxSalary <= '120000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '70000' AND j.maxSalary <= '120000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '60000' AND j.maxSalary <= '120000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '60000' AND j.maxSalary <= '120000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '53000' AND j.maxSalary <= '120000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '53000' AND j.maxSalary <= '120000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '120000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '120000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '128000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '128000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '132000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '132000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '152000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '152000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '175000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '175000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '115000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '115000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '107000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '107000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '104000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '104000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '100000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '100000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '80000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '80000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '67000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '67000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '31000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '31000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '18000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '18000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '17000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '17000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '55000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '55000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '111000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '111000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '111000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '111000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '105000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '105000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '102000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '102000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '101000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '101000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '97000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '97000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '93000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '93000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '90000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '90000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '81000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '73000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '81000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '73000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '57000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '57000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '44000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '44000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '38000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '38000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '35000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '35000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '27000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '27000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '23000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '23000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '32000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '32000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '16000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '16000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Internship'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Internship'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '7000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '7000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '8000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '8000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '16000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '16000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '51000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '51000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '61000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '61000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '78000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '78000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '85000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '85000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '89000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '89000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '94000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '94000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '98000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '98000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '112000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '112000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '119000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '119000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '122000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '122000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '124000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '124000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '125000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '125000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '10000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '10000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '12000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '12000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '26000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '26000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '28000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '28000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '29000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '29000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '31000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '31000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '33000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '33000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '35000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '35000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '37000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '37000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '35000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '35000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '34000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '34000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '29000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '29000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '26000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '26000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '25000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '25000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '23000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '23000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '22000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '22000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '19000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '19000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '21000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '21000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '15000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '15000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '16000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '16000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '18000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '18000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '19000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '19000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '20000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '20000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '18000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '18000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '17000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '17000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '5000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '5000' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '135000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '127000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '127000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '126000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '126000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '123000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '123000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '118000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '118000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '116000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '116000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '110000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '110000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '25000' AND j.maxSalary <= '110000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '25000' AND j.maxSalary <= '110000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '19000' AND j.maxSalary <= '110000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '19000' AND j.maxSalary <= '110000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '18000' AND j.maxSalary <= '110000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '18000' AND j.maxSalary <= '110000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '17000' AND j.maxSalary <= '110000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '17000' AND j.maxSalary <= '110000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '10000' AND j.maxSalary <= '110000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '10000' AND j.maxSalary <= '110000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '9000' AND j.maxSalary <= '110000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '9000' AND j.maxSalary <= '110000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '8000' AND j.maxSalary <= '110000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '8000' AND j.maxSalary <= '110000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '6000' AND j.maxSalary <= '110000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '6000' AND j.maxSalary <= '110000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '110000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '110000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '102000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '102000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '100000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '100000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '99000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '99000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '98000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '98000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '96000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '96000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '88000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '88000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '87000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '87000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '94000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '94000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '101000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '101000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '119000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '119000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '159000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '159000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '161000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '161000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '152000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '152000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '148000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '148000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '136000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '136000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '129000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '129000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '128000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '128000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '126000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '126000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '122000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '122000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '119000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '119000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '115000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '115000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '113000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '113000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '110000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '110000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '109000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '109000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '103000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '103000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '99000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '99000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '96000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '7000' AND j.maxSalary <= '96000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '96000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '96000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '102000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '102000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '104000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '104000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '106000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '106000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '111000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '111000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '115000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '115000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '116000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '116000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '119000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '119000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '121000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '121000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '124000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.maxSalary <= '124000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Internship' AND j.maxSalary <= '124000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Internship' AND j.maxSalary <= '124000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '124000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '124000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '77000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '77000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '70000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '70000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '69000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '69000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '63000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '63000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '62000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '62000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '59000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '59000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '51000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '51000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '50000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '50000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '45000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '45000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '35000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '35000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '30000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '30000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '26000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '26000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '24000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '24000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '34000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '34000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '39000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '39000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '50000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '50000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '133000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '133000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '99000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '99000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '146000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '146000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '143000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '143000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '139000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '139000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '132000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '132000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '125000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '125000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '99000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '99000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '91000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.maxSalary <= '91000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10' AND j.maxSalary <= '100'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10' AND j.maxSalary <= '100'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '1000' AND j.maxSalary <= '10000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '1000' AND j.maxSalary <= '10000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '100000' AND j.maxSalary <= '200000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '100000' AND j.maxSalary <= '200000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '100000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '100000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '100000' AND j.maxSalary <= '200000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '100000' AND j.maxSalary <= '200000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10' AND j.maxSalary <= '100'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10' AND j.maxSalary <= '100'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10' AND j.maxSalary <= '100'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10' AND j.maxSalary <= '100'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '100000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '100000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '10000' AND j.maxSalary <= '100000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '10000' AND j.maxSalary <= '100000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '100000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '100000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Internship' AND j.minSalary >= '10000' AND j.maxSalary <= '100000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Internship' AND j.minSalary >= '10000' AND j.maxSalary <= '100000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '10000' AND j.maxSalary <= '100000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '10000' AND j.maxSalary <= '100000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '100000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '100000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '100000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '100000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '2000' AND j.maxSalary <= '100000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '2000' AND j.maxSalary <= '100000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '100000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '100000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '92000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '92000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '88000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '88000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '83000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '83000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '65000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '65000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '73000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '73000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '77000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '77000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '88000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '88000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '113000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '113000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '114000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '114000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '115000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '115000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '118000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '118000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '130000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '130000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '134000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '134000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '10000' AND j.maxSalary <= '134000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '10000' AND j.maxSalary <= '134000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '134000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '134000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Healthcare' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '134000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Healthcare' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '134000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '134000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '134000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Internship' AND j.minSalary >= '10000' AND j.maxSalary <= '134000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Internship' AND j.minSalary >= '10000' AND j.maxSalary <= '134000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '10000' AND j.maxSalary <= '134000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Part-time' AND j.minSalary >= '10000' AND j.maxSalary <= '134000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '134000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '134000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '152000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '152000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '87000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '87000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '78000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '78000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '73000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '73000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '63000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '63000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '46000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '46000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '45000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '45000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '8000' AND j.maxSalary <= '45000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '8000' AND j.maxSalary <= '45000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '9000' AND j.maxSalary <= '45000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '9000' AND j.maxSalary <= '45000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '17000' AND j.maxSalary <= '45000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '17000' AND j.maxSalary <= '45000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '21000' AND j.maxSalary <= '45000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '21000' AND j.maxSalary <= '45000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '21000' AND j.maxSalary <= '53000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '21000' AND j.maxSalary <= '53000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '21000' AND j.maxSalary <= '55000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '21000' AND j.maxSalary <= '55000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '21000' AND j.maxSalary <= '59000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '21000' AND j.maxSalary <= '59000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '21000' AND j.maxSalary <= '61000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '21000' AND j.maxSalary <= '61000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '21000' AND j.maxSalary <= '64000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '21000' AND j.maxSalary <= '64000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '21000' AND j.maxSalary <= '78000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '21000' AND j.maxSalary <= '78000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '21000' AND j.maxSalary <= '87000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '21000' AND j.maxSalary <= '87000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '21000' AND j.maxSalary <= '90000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '21000' AND j.maxSalary <= '90000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '21000' AND j.maxSalary <= '81000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '21000' AND j.maxSalary <= '81000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '21000' AND j.maxSalary <= '78000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '21000' AND j.maxSalary <= '78000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '21000' AND j.maxSalary <= '75000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '21000' AND j.maxSalary <= '75000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '21000' AND j.maxSalary <= '72000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '21000' AND j.maxSalary <= '72000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '21000' AND j.maxSalary <= '68000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '21000' AND j.maxSalary <= '68000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '15000' AND j.maxSalary <= '68000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '15000' AND j.maxSalary <= '68000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '13000' AND j.maxSalary <= '68000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '13000' AND j.maxSalary <= '68000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '9000' AND j.maxSalary <= '68000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '9000' AND j.maxSalary <= '68000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '68000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '68000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '61000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '61000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '46000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '46000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '33000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '33000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '19000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '19000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '48000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '48000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '96000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10000' AND j.maxSalary <= '96000'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = :industry AND j.jobType = :jobType AND j.minSalary >= :minSalary AND j.maxSalary <= :maxSalary
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10' AND j.maxSalary <= '100'
+SELECT j.*, c.industry FROM active_job_postings j
+    JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full-time' AND j.minSalary >= '10' AND j.maxSalary <= '100'

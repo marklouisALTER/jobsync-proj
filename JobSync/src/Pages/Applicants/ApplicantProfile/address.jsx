@@ -141,7 +141,7 @@ export default function AddressInfo() {
 
         {/* Address and City Fields */}
         <Row className="gy-3 mb-4">
-          <Col md={6}>
+          <Col xs={12} md={6}>
             <Form.Label style={{ textAlign: 'left', display: 'block' }}>Address</Form.Label>
             <Form.Control
               className="register1"
@@ -151,7 +151,7 @@ export default function AddressInfo() {
               onChange={(e) => setAddress(e.target.value)}
             />
           </Col>
-          <Col md={6}>
+          <Col xs={12} md={6}>
             <Form.Label style={{ textAlign: 'left', display: 'block' }}>City</Form.Label>
             <Form.Control
               className="register1"
@@ -165,7 +165,7 @@ export default function AddressInfo() {
 
         {/* Barangay and Postcode Fields */}
         <Row className="gy-3 mb-4">
-          <Col md={6}>
+          <Col xs={12} md={6}>
             <Form.Label style={{ textAlign: 'left', display: 'block' }}>Barangay</Form.Label>
             <Form.Control
               className="register1"
@@ -175,7 +175,7 @@ export default function AddressInfo() {
               onChange={(e) => setBarangay(e.target.value)}
             />
           </Col>
-          <Col md={6}>
+          <Col xs={12} md={6}>
             <Form.Label style={{ textAlign: 'left', display: 'block' }}>Postcode</Form.Label>
             <Form.Control
               className="register1"
@@ -190,7 +190,7 @@ export default function AddressInfo() {
         {/* Biography Field */}
         <hr className="my-4" />
         <Row>
-          <Col md={12}>
+          <Col xs={12}>
             <Form.Label
               style={{
                 textAlign: 'left',
@@ -201,7 +201,7 @@ export default function AddressInfo() {
             >
               Biography
             </Form.Label>
-            <div style={{ textAlign: 'left', textWrap: 'balance', marginBottom: '10px' }}>
+            <div style={{ textAlign: 'left', marginBottom: '10px' }}>
               <small style={{ fontStyle: 'italic' }}>
                 Note: Make sure to include a well-written biography that showcases your unique abilities, experiences,
                 and accomplishments, offering prospective employers a compelling reason to consider you for the position.
@@ -224,25 +224,50 @@ export default function AddressInfo() {
 
         {/* Save Changes Button */}
         <Row className="mt-5">
-          <Col md={12} className="d-flex" style={{justifyContent: 'space-between'}}>
-          <Button variant="primary"  onClick={() => {
+          <Col xs={12} className="d-flex flex-column flex-md-row" style={{ justifyContent: 'space-between' }}>
+            <Button
+              variant="primary"
+              onClick={() => {
                 window.history.back();
-                window.scrollTo({ top: 0});
-            }} className="mt-3" style={{width: '185px', height: '55px', color: '#0d6efd', background: 'transparent'}}>
-          <FaArrowLeft style={{fontSize: '14px', marginRight: '12px'}}/> Back
-        </Button>
+                window.scrollTo({ top: 0 });
+              }}
+              className="mt-3 btn-address"
+              style={{
+                width: '100%',
+                maxWidth: '185px', // Ensures the button does not exceed 185px on larger screens
+                height: '55px',
+                color: '#0d6efd',
+                background: 'transparent',
+                marginBottom: '10px', // Adds space between buttons on mobile view
+              }}
+            >
+              <FaArrowLeft style={{ fontSize: '14px', marginRight: '12px' }} /> Back
+            </Button>
             <Button
               type="submit"
               variant="primary"
-              className="mt-3"
-              style={{ width: '185px', height: '55px' }}
+              className="mt-3 btn-address"
+              style={{
+                width: '100%',
+                maxWidth: '185px', // Ensures the button does not exceed 185px on larger screens
+                height: '55px',
+              }}
               disabled={!isChanged()}
             >
               Save Changes
             </Button>
           </Col>
         </Row>
+
       </Form>
+
+      <style>{`
+          @media (max-width: 768px) {
+            .btn-address {
+                max-width: 100% !important
+            }
+          }          
+      `}</style>
     </Container>
   );
 }

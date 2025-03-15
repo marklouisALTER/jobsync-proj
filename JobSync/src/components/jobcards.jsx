@@ -80,7 +80,7 @@ const JobCards = ({ jobs, applicantId }) => {
             }
             `}</style>
             </>
-        );
+        )
     }
 
     return (

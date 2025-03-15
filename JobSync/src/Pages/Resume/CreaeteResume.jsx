@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Container, Form, Button, Card, Row, Col, Spinner } from "react-bootstrap";
-import { Link, useNavigate } from "react-router-dom"; 
+import { Link, useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import logo from '../../assets/logo3.png';
 import { useAuth } from "../../AuthContext";
@@ -58,7 +58,7 @@ const ResumeAIForm = () => {
         </div>
       </header>
       <Container className="d-flex justify-content-center">
-        <Card className="p-4 shadow-lg text-center" style={{ maxWidth: "600px", borderRadius: "12px" }}>
+        <Card className="p-4 shadow-lg text-center" style={{ maxWidth: "600px", borderRadius: "12px", width: '100%' }}>
           <Card.Body>
             <h3 className="fw-bold">Create your resume with AI.</h3>
             <p className="text-muted">
@@ -67,13 +67,13 @@ const ResumeAIForm = () => {
             </p>
             <Form onSubmit={handleSubmit} style={{ textAlign: "left" }}>
               <Row className="mb-3">
-                <Col md={6}>
+                <Col xs={12} md={6}>
                   <Form.Group controlId="name">
                     <Form.Label>First Name</Form.Label>
                     <Form.Control className="register2" type="text" placeholder="Enter your name" value={user.firstname} onChange={(e) => setName(e.target.value)} required />
                   </Form.Group>
                 </Col>
-                <Col md={6}>
+                <Col xs={12} md={6}>
                   <Form.Group controlId="jobTitle">
                     <Form.Label>Job title</Form.Label>
                     <Form.Control className="register2" type="text" placeholder="Enter your job title" value={jobTitle} onChange={(e) => setJobTitle(e.target.value)} required />
@@ -100,6 +100,76 @@ const ResumeAIForm = () => {
           </Card.Body>
         </Card>
       </Container>
+      <style>{`
+      .logo_only{
+        top: 0;
+        background-color: transparent;
+      }
+
+      /* Custom responsive styles */
+      @media (max-width: 768px) {
+        .logo {
+          display: block;
+          text-align: center;
+          margin-bottom: 20px;
+        }
+
+        .logo img {
+          width: 70px;
+          height: 60px;
+        }
+
+        .logo span {
+          font-size: 1.5rem;
+        }
+
+        .card {
+          padding: 20px;
+        }
+
+        .form-label {
+          font-size: 14px;
+        }
+
+        .form-control {
+          font-size: 14px;
+        }
+
+        .btn {
+          width: 50%;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .btn {
+          width: 100% !important;
+        }
+        .logo img {
+          width: 60px;
+          height: 50px;
+        }
+
+        .logo span {
+          font-size: 1.3rem;
+        }
+
+        .card {
+          padding: 15px;
+        }
+
+        .form-label {
+          font-size: 13px;
+        }
+
+        .form-control {
+          font-size: 13px;
+        }
+
+        .btn {
+          width: 70%;
+        }
+      }
+      `}</style>
     </div>
   );
 };

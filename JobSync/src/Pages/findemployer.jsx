@@ -52,84 +52,89 @@ const FindEmployer = () => {
 
   return (
     <>
-    <Container className="my-5 job-grid-container">
-      {/* Search Bar */}
-      <Form className="mb-5 search-form" onSubmit={(e) => e.preventDefault()}>
-        <Row className="align-items-center">
-          <Col md={5} sm={6} xs={12}>
-            <Form.Control
-              type="text"
-              placeholder="Search by company name"
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-            />
-          </Col>
-          <Col md={5} sm={6} xs={12}>
-            <Form.Control
-              type="text"
-              className="margins"
-              placeholder="Search by location"
-              value={locationSearch}
-              onChange={(e) => setLocationSearch(e.target.value)}
-            />
-          </Col>
-          <Col md={2} xs={12} className="text-center">
-            <Button className="search-btn">
-              <FontAwesomeIcon icon={faSearch} /> Search
-            </Button>
-          </Col>
-        </Row>
-      </Form>
-      
-      {/* Job Grid */}
-      {loading ? (
-        <div id="preloader"></div>
-      ) : error ? (
-        <div>{error}</div>
-      ) : (
-    <div className="company-res">
-      <Row className="gy-5 job-grid d-flex flex-wrap justify-content-start">
-        {currentCompanies.map((company) => (
-          <Col 
-            md={4} sm={6} xs={12} 
-            key={`${company.id}-${company.company_name}`} 
-            className="job-col d-flex justify-content-center"
-            style={{ minWidth: '320px', maxWidth: '400px' }} // Keep consistent width
-          >
-            <div className="job-card w-100">
-              <Row className="align-items-center">
-                {/* Job Image */}
-                <Col md={4} sm={4} xs={4} className="d-flex justify-content-center p-0">
-                  <img src={company.logo} alt="Company Logo" className="company-logo" />
-                </Col>
-
-                {/* Job Info */}
-                <Col md={8} sm={8} xs={8}>
-                  <div className="company-details">
-                    <span className="company-name" style={{ fontSize: '18px' }}>{company.company_name}</span>
-                    <span className="badge featured-badge">Featured</span>
-                  </div>
-                  <div className="company-location">
-                    <FontAwesomeIcon icon={faMapMarkerAlt} className="location-icon" />
-                    <span>{company.city}</span>
-                  </div>
-                </Col>
-              </Row>
-
-              {/* Open Position Button */}
-              <Link to={`/employerdetails/${encodeURIComponent(company.company_name)}`}>
-                <Button className="open-position-btn">
-                  Open Position ({company.job_post_count})
-                </Button>
-              </Link>
-            </div>
-          </Col>
-        ))}
+<Container className="job-grid-container">
+  <div className="fixed-search-container">
+    {/* Search Bar */}
+    <Form className="search-form" onSubmit={(e) => e.preventDefault()}>
+      <Row className="align-items-center">
+        <Col md={5} sm={6} xs={12}>
+          <Form.Control
+            type="text"
+            placeholder="Search by company name"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+          />
+        </Col>
+        <Col md={5} sm={6} xs={12}>
+          <Form.Control
+            type="text"
+            className="margins"
+            placeholder="Search by location"
+            value={locationSearch}
+            onChange={(e) => setLocationSearch(e.target.value)}
+          />
+        </Col>
+        <Col md={2} xs={12} className="text-center">
+          <Button className="search-btn">
+            <FontAwesomeIcon icon={faSearch} /> Search
+          </Button>
+        </Col>
       </Row>
-    </div>
-      )}
-      {/* Pagination */}
-      {filteredCompanies.length > itemsPerPage && (
+    </Form>
+  </div>
+  
+  {/* Job Grid with top padding to account for fixed search bar */}
+  <div className="jobs-content-area">
+    {loading ? (
+      <div id="preloader"></div>
+    ) : error ? (
+      <div className="error-message">{error}</div>
+    ) : (
+      <div className="company-res">
+        <Row className="gy-5 job-grid d-flex flex-wrap justify-content-center">
+          {currentCompanies.map((company) => (
+            <Col 
+              md={4} sm={6} xs={12} 
+              key={`${company.id}-${company.company_name}`} 
+              className="job-col d-flex justify-content-center"
+              style={{ minWidth: '320px', maxWidth: '400px' }} // Keep consistent width
+            >
+              <div className="job-card w-100">
+                <Row className="align-items-center">
+                  {/* Job Image */}
+                  <Col md={4} sm={4} xs={4} className="d-flex justify-content-center p-0">
+                    <img src={company.logo} alt="Company Logo" className="company-logo" />
+                  </Col>
+
+                  {/* Job Info */}
+                  <Col md={8} sm={8} xs={8}>
+                    <div className="company-details">
+                      <span className="company-name" style={{ fontSize: '18px' }}>{company.company_name}</span>
+                     
+                    </div>
+                    <div className="company-location">
+                      <FontAwesomeIcon icon={faMapMarkerAlt} className="location-icon" />
+                      <span>{company.city}</span>
+                    </div>
+                  </Col>
+                </Row>
+
+                {/* Open Position Button */}
+                <Link to={`/employerdetails/${encodeURIComponent(company.company_name)}`}>
+                  <Button className="open-position-btn">
+                    Open Position ({company.job_post_count})
+                  </Button>
+                </Link>
+              </div>
+            </Col>
+          ))}
+        </Row>
+      </div>
+    )}
+    
+    {/* Pagination */}
+    {filteredCompanies.length > itemsPerPage && (
+      <div className="pagination-container">
         <Pagination
           currentPage={currentPage}
           itemsPerPage={itemsPerPage}
@@ -137,34 +142,59 @@ const FindEmployer = () => {
           paginate={paginate}
           showArrows={Math.ceil(filteredCompanies.length / itemsPerPage) >= 10}
         />
-      )}
-    </Container>
-  <style>{`
-  .company-res {
-        width: 1215px;
-        margin: auto;
-    }
+      </div>
+    )}
+  </div>
+</Container>
+
+<style>{`
+  .job-grid-container {
+    max-width: 1200px;
+    width: 100%;
+    position: relative;
+    padding-top: 120px; /* Space for fixed search bar */
+  }
+  
+  .fixed-search-container {
+    position: fixed;
+    top: 190px;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: #f8f9fa;
+    padding: 15px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
   .search-form {
     background: #fff;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0;
   }
+  
+  .jobs-content-area {
+    width: 100%;
+    min-height: 50vh; /* Ensure there's enough space */
+  }
+  
   .search-btn {
     width: 100%;
     background-color: #0A65CC;
     color: white;
     border: none;
   }
+  
   .search-btn:hover {
     background-color: #0858b5;
   }
-  .my-5 {
-    margin-top: 0px !important
-  }
-  .job-grid-container {
-    max-width: 1200px;
-    width: 100%;
+  
+  .company-res {
+    width: 1215px;
+    margin: auto;
   }
   
   .job-grid {
@@ -236,6 +266,23 @@ const FindEmployer = () => {
     background-color: #85b8ff;
   }
   
+  .error-message {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .pagination-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  
   /* Responsive Design */
   @media (max-width: 992px) {
     .job-card {
@@ -251,6 +298,12 @@ const FindEmployer = () => {
   }
   
   @media (max-width: 768px) {
+    .jobs-content-area {
+      margin-top: 6rem !important
+    }
+    .job-grid-container {
+      padding-top: 170px; /* More space for stacked search form */
+    }
     .company-res {
       width: 100%;
       padding: 0 10px;
@@ -258,9 +311,6 @@ const FindEmployer = () => {
     .margins {
       margin-top: 8px;
       margin-bottom: 8px;
-    }
-    .job-grid-container {
-      margin-top: 8rem !important
     }
     .job-col {
       width: 100%;
@@ -272,9 +322,15 @@ const FindEmployer = () => {
     .company-location {
       font-size: 12px;
     }
+    .fixed-search-container {
+      padding: 10px;
+    }
   }
   
   @media (max-width: 576px) {
+    .job-grid-container {
+      padding-top: 220px; /* Even more space for mobile layout */
+    }
     .job-card {
       padding: 16px;
       margin-top: 20px;
@@ -292,8 +348,7 @@ const FindEmployer = () => {
       padding: 5px 10px;
     }
   }
-  
-  `}</style>
+`}</style>
   </>
   );
 };
