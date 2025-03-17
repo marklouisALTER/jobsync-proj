@@ -96,6 +96,7 @@ import ResumeBuilder from './Pages/Resume/ResumeBuilder';
 import ResumeAIForm from './Pages/Resume/CreaeteResume';
 import ForgotPassword from './Pages/ForgotPassword';
 import MapComponent from './Pages/Applicants/Mapp';
+import EditJobPosted from './Pages/EditJobPosted';
 
 function Layout({ userId, setUserId }) {
   const location = useLocation();
@@ -341,6 +342,7 @@ const getBreadcrumbs = () => {
         <Route path='/employer/profile' element={<ProtectedRoute> <EmployerProfile /> </ProtectedRoute>} />
         <Route path='/employer/postjob' element={ <ProtectedRoute> <PostJobs  key={useLocation().pathname}/> </ProtectedRoute> } />
         <Route path='/employer/myjobs' element={<ProtectedRoute> <MyJobs /> </ProtectedRoute>} />
+        <Route path='/employer/edit-job-posted/:id' element={<ProtectedRoute> <EditJobPosted /> </ProtectedRoute>} />
         <Route path='/employer/message' element={<ProtectedRoute> <EmployerMessage /> </ProtectedRoute>} />
         <Route path='/employer/savedapplicant' element={<ProtectedRoute> <SavedApplicant /> </ProtectedRoute>} />  
         <Route path='/employer/settings' element={<ProtectedRoute> <EmployerSettings /> </ProtectedRoute>} />

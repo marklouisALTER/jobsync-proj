@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import logo_support from '../assets/logo jobsync2.png';
+import customer_support_image from '../assets/customersupport.png';
 const CustomerSupport = () => {
   const [issueType, setIssueType] = useState('');
   const [subject, setSubject] = useState('');
@@ -26,7 +27,7 @@ const CustomerSupport = () => {
         <Col md={6} xs={12}>
           <div className="d-flex align-items-center mb-3">
             <img
-              src="/assets/logo jobsync2.png"
+              src={logo_support}
               alt="Support Icon"
               className="me-2"
               style={{ width: '100px', height: 'auto' }}
@@ -78,7 +79,7 @@ const CustomerSupport = () => {
         {/* Image Column (Right Side) */}
         <Col md={6} xs={12} className="d-flex justify-content-center align-items-center">
           <img
-            src="/assets/customersupport.png"
+            src={customer_support_image }
             alt="Customer Support"
             className="img-fluid"
             style={{ maxWidth: '100%', height: 'auto' }}

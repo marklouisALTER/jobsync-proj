@@ -318,7 +318,7 @@ useEffect(() => {
       <div className="job-listings-area">
         <Container fluid="md" className="d-flex flex-column align-items-center">
           <Row
-            className="gy-4 justify-content-center w-100"
+            className="gy-4 flex flex-column justify-content-center w-100"
             style={{ minWidth: "350px", maxWidth: "1200px" }}
           >
             {matchJob?.length > 0 ? (
@@ -370,16 +370,19 @@ useEffect(() => {
     width: 100%;
   }
   .main-container {
-    position: relative;
-    margin-top: 8rem; /* Space for your header */
+    /* Let it fill at least one full screen of height */
+    min-height: 100vh;
+    margin-top: 8rem; /* or whatever space you need at the top */
+    margin-bottom: 2rem; /* or whatever space you need at the bottom */
   }
   
   .content-wrapper {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensure minimum height even with few results */
+    /* Remove the min-height here if you want auto height within the container */
+    /* min-height: 100vh; <-- remove or comment this out */
   }
-  
+    
   .fixed-search-area {
     position: relative;
     background-color: white;

@@ -245,7 +245,7 @@ function SearchJobs() {
                                 </div>
                                 <div className="profile-pic" style={{ position: 'relative' }}>
                                 <img
-                                                    src={profileUrl || defaultProfilePicture}
+                                                    src={defaultProfilePicture}
                                                     alt="Profile"
                                                     style={{
                                                         width: '40px',

@@ -6,6 +6,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import { useAuth } from '../AuthContext'; 
 import { FaUsers, FaEllipsisV, FaBullhorn, FaEye, FaClock, FaCheck, FaTimes } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
+import { useSelectedJobStore } from '../store/SelectedJobStore';
 
 const JobRow = ({ job, handleShowModal }) => {
     const navigate = useNavigate();
@@ -102,6 +103,13 @@ const PostedJobTable = () => {
     ? jobs.filter(job => job.status !== 'Expired').slice(0, 9)
     : jobs;
 
+    const navigate = useNavigate();
+
+    const { 
+        setSelectedJob: setSelectedJobStore,
+     } = useSelectedJobStore();
+
+    
     useEffect(() => {
         const fetchJobs = async () => {
             try {
@@ -171,7 +179,7 @@ const PostedJobTable = () => {
         return () => document.removeEventListener('mousedown', handleOutsideClick);
     }, [showModal]);
 
-    
+
     const handleOptionClick = async (option) => {
         if (option === 'Promote Job') {
             if (selectedJob?.status === 'Active') {
@@ -211,6 +219,9 @@ const PostedJobTable = () => {
             } catch (error) {
                 console.error('Error in making job expire:', error);
             }
+        } else if (option === 'Edit A Job') {
+            navigate(`/employer/edit-job-posted/${selectedJob.job_id}`);
+            setSelectedJobStore(selectedJob);
         } else {
             console.log(`${option} for job: ${selectedJob?.jobTitle}`);
             setShowModal(false);
@@ -358,8 +369,8 @@ const PostedJobTable = () => {
                         }}
                         onMouseOver={(e) => e.target.style.backgroundColor = '#d1ecf1'}
                         onMouseOut={(e) => e.target.style.backgroundColor = 'transparent'}
-                        onClick={() => handleOptionClick('Promote Job')}
-                        disabled={selectedJob?.status === 'Active'}
+                        onClick={() => handleOptionClick('Edit A Job')}
+                        // disabled={selectedJob?.status === 'Active'}
                     >
                         <FaBullhorn className="me-2" />
                         Edit Job

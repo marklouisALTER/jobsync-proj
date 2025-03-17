@@ -9117,3 +9117,1106 @@ Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
 {"query":"","location":""}
 Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
             JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"a","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%a%' OR j.jobDescription LIKE '%a%' OR j.company_name LIKE '%a%')
+{"query":"as","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%as%' OR j.jobDescription LIKE '%as%' OR j.company_name LIKE '%as%')
+{"query":"asd","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%asd%' OR j.jobDescription LIKE '%asd%' OR j.company_name LIKE '%asd%')
+{"query":"asda","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%asda%' OR j.jobDescription LIKE '%asda%' OR j.company_name LIKE '%asda%')
+{"query":"asdas","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%asdas%' OR j.jobDescription LIKE '%asdas%' OR j.company_name LIKE '%asdas%')
+{"query":"asdas","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%asdas%' OR j.jobDescription LIKE '%asdas%' OR j.company_name LIKE '%asdas%')
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"112000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"113000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"117000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"124000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"131000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"127000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"138000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"135000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"140000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"141000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"143000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"144000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"149000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"152000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"160000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"169000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"177000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"186000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"184000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"185000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"180000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"170000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"156000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"144000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"129000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"106000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"90000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"77000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"64000","maxSalary":"70000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '64000' OR j.minSalary IS NULL) AND (j.maxSalary <= '64000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"57000","maxSalary":"70000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '57000' OR j.minSalary IS NULL) AND (j.maxSalary <= '57000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"51000","maxSalary":"70000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '51000' OR j.minSalary IS NULL) AND (j.maxSalary <= '51000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"50000","maxSalary":"70000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '50000' OR j.minSalary IS NULL) AND (j.maxSalary <= '50000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"52000","maxSalary":"70000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '52000' OR j.minSalary IS NULL) AND (j.maxSalary <= '52000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"51000","maxSalary":"70000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '51000' OR j.minSalary IS NULL) AND (j.maxSalary <= '51000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"54000","maxSalary":"70000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '54000' OR j.minSalary IS NULL) AND (j.maxSalary <= '54000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"59000","maxSalary":"70000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '59000' OR j.minSalary IS NULL) AND (j.maxSalary <= '59000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+{"query":"asdas","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%asdas%' OR j.jobDescription LIKE '%asdas%' OR j.company_name LIKE '%asdas%')
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+{"query":"asdas","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%asdas%' OR j.jobDescription LIKE '%asdas%' OR j.company_name LIKE '%asdas%')
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+,"jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+[]
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+[]
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+,"jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+,"jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+,"jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+,"jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+,"jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+,"jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+,"jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+,"jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+,"jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+ND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+,"jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"a","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%a%' OR j.jobDescription LIKE '%a%' OR j.company_name LIKE '%a%')
+{"query":"as","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%as%' OR j.jobDescription LIKE '%as%' OR j.company_name LIKE '%as%')
+{"query":"asd","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%asd%' OR j.jobDescription LIKE '%asd%' OR j.company_name LIKE '%asd%')
+{"query":"asd","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%asd%' OR j.jobDescription LIKE '%asd%' OR j.company_name LIKE '%asd%')
+{"query":"as","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%as%' OR j.jobDescription LIKE '%as%' OR j.company_name LIKE '%as%')
+{"query":"a","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%a%' OR j.jobDescription LIKE '%a%' OR j.company_name LIKE '%a%')
+{"query":"a","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%a%' OR j.jobDescription LIKE '%a%' OR j.company_name LIKE '%a%')
+{"query":"ab","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%ab%' OR j.jobDescription LIKE '%ab%' OR j.company_name LIKE '%ab%')
+{"query":"a","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%a%' OR j.jobDescription LIKE '%a%' OR j.company_name LIKE '%a%')
+{"query":"a","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%a%' OR j.jobDescription LIKE '%a%' OR j.company_name LIKE '%a%')
+{"query":"b","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%b%' OR j.jobDescription LIKE '%b%' OR j.company_name LIKE '%b%')
+{"query":"ba","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%ba%' OR j.jobDescription LIKE '%ba%' OR j.company_name LIKE '%ba%')
+{"query":"bac","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%bac%' OR j.jobDescription LIKE '%bac%' OR j.company_name LIKE '%bac%')
+{"query":"back","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%back%' OR j.jobDescription LIKE '%back%' OR j.company_name LIKE '%back%')
+{"query":"backe","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%backe%' OR j.jobDescription LIKE '%backe%' OR j.company_name LIKE '%backe%')
+{"query":"backen","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%backen%' OR j.jobDescription LIKE '%backen%' OR j.company_name LIKE '%backen%')
+{"query":"backend","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%backend%' OR j.jobDescription LIKE '%backend%' OR j.company_name LIKE '%backend%')
+{"query":"backend","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%backend%' OR j.jobDescription LIKE '%backend%' OR j.company_name LIKE '%backend%')
+{"query":"backend","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%backend%' OR j.jobDescription LIKE '%backend%' OR j.company_name LIKE '%backend%')
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+,"jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+,"jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
