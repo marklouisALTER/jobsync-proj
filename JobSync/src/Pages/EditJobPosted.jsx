@@ -595,7 +595,7 @@ export default function EditJobPosted(){
                 onClick={handleSubmit}
               
             >
-                Next
+                Submit
             </Button>
             </div>
             </Form>
