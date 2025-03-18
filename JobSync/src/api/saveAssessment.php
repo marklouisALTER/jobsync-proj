@@ -5,6 +5,7 @@ use Dotenv\Dotenv;
 
 $dotenv = Dotenv::createImmutable(__DIR__);
 $dotenv->load();
+
 try {
     $objDb = new Dbconnect();
     $conn = $objDb->connect(); 
@@ -21,6 +22,7 @@ if (isset($data['assessmentData']) && is_array($data['assessmentData'])) {
         $correctAnswersCount = 0;
         $incorrectAnswersCount = 0;
         $evaluationMessages = [];
+
         foreach ($data['assessmentData'] as $task) {
             $assessment_id = $task['assessment_id'];
             $answer = $task['answer'];
@@ -28,40 +30,46 @@ if (isset($data['assessmentData']) && is_array($data['assessmentData'])) {
             $application_id = $task['application_id'];
             $job_id = $task['job_id'];
             $jobTitle = $task['jobTitle'];
+
+            // Insert the answer
             $sql = "INSERT INTO js_assessment_answer (assessment_id, answer, applicant_id) 
                     VALUES (:assessment_id, :answer, :applicant_id)";
-            
             $stmt = $conn->prepare($sql);
             $stmt->bindParam(':assessment_id', $assessment_id, PDO::PARAM_INT);
             $stmt->bindParam(':answer', $answer, PDO::PARAM_STR);
             $stmt->bindParam(':applicant_id', $applicant_id, PDO::PARAM_INT);
-
             if (!$stmt->execute()) {
                 throw new Exception('Failed to save assessment data.');
             }
 
+            // Get the question/instructions for this assessment
             $sql_question = "SELECT instructions FROM js_assessment WHERE assessment_id = :assessment_id";
             $stmt_question = $conn->prepare($sql_question);
             $stmt_question->bindParam(':assessment_id', $assessment_id, PDO::PARAM_INT);
             $stmt_question->execute();
             $question = $stmt_question->fetchColumn();
-
             if (!$question) {
                 throw new Exception('Assessment question not found.');
             }
 
+            // Prepare the OpenAI API request
             $apiKey = $_ENV['API_KEY'];
             $url = 'https://api.openai.com/v1/chat/completions';
-
-            $data = [
+            $requestData = [
                 'model' => 'gpt-3.5-turbo', 
                 'messages' => [
-                    ['role' => 'system', 'content' => 'You are an expert evaluator who checks answers to assessment questions and provides feedback on correctness and reasoning.'],
-                    ['role' => 'user', 'content' => "Here is the question: \"$question\"\n\nThe applicant's answer is: \"$answer\"\n\nPlease evaluate if the answer is correct or incorrect. Respond only with 'answer: correct' if it is correct, or 'answer: incorrect' if it is incorrect."]
+                    [
+                        'role' => 'system', 
+                        'content' => 'You are an expert evaluator who checks answers to assessment questions and provides feedback on correctness and reasoning.'
+                    ],
+                    [
+                        'role' => 'user', 
+                        'content' => "Here is the question: \"$question\"\n\nThe applicant's answer is: \"$answer\"\n\nPlease evaluate if the answer is correct or incorrect. Respond only with 'answer: correct' if it is correct, or 'answer: incorrect' if it is incorrect."
+                    ]
                 ]
             ];
-            
 
+            // Send the request to OpenAI API via cURL
             $ch = curl_init($url);
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
             curl_setopt($ch, CURLOPT_HTTPHEADER, [
@@ -69,31 +77,29 @@ if (isset($data['assessmentData']) && is_array($data['assessmentData'])) {
                 'Content-Type: application/json'
             ]);
             curl_setopt($ch, CURLOPT_POST, true);
-            curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
-
+            curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($requestData));
             $response = curl_exec($ch);
             curl_close($ch);
             
             $responseData = json_decode($response, true);
-            
             $logFile = __DIR__ . '/uploads/openai_api_response.log';
             error_log("OpenAI API Response: " . print_r($responseData, true), 3, $logFile);
             
             if (isset($responseData['choices']) && count($responseData['choices']) > 0) {
                 $evaluation = $responseData['choices'][0]['message']['content'];
-            
                 error_log("Evaluation Response: " . $evaluation, 3, $logFile);
-            
+                
+                // Determine if the answer is correct or incorrect.
+                // (We assume if the response contains 'correct' it's a correct answer;
+                //  if it contains 'incorrect', it's not.)
                 $is_qualified = false;
-            
                 if (strpos(strtolower($evaluation), 'correct') !== false) {
                     $is_qualified = true; 
                 }
-            
                 if (strpos(strtolower($evaluation), 'incorrect') !== false) {
                     $is_qualified = false; 
                 }
-            
+                
                 if ($is_qualified) {
                     $correctAnswersCount++;
                 } else {
@@ -102,7 +108,6 @@ if (isset($data['assessmentData']) && is_array($data['assessmentData'])) {
             } else {
                 $evaluation = 'Response is malformed or failed to evaluate.';
                 error_log("Malformed API Response or Failure", 3, $logFile);
-            
                 echo json_encode([
                     'success' => false,
                     'error' => 'Response is malformed or failed to evaluate. Please try again.',
@@ -110,35 +115,36 @@ if (isset($data['assessmentData']) && is_array($data['assessmentData'])) {
                 $conn->rollBack(); 
                 exit;
             }
-            
 
             error_log("Correct Answers: " . print_r($correctAnswersCount, true), 3, $logFile);
-            error_log(" Incorrect Answers: " . print_r($incorrectAnswersCount, true), 3, $logFile);
-            $applied_status = 'Rejected'; 
+            error_log("Incorrect Answers: " . print_r($incorrectAnswersCount, true), 3, $logFile);
 
-            $sql_questions = "SELECT COUNT(*) FROM js_assessment WHERE application_id = :application_id AND job_id = :job_id";
-            $stmt_questions = $conn->prepare($sql_questions);
-            $stmt_questions->bindParam(':application_id', $application_id, PDO::PARAM_INT);
-            $stmt_questions->bindParam(':job_id', $job_id, PDO::PARAM_INT);
-            $stmt_questions->execute();
-            $total_questions = $stmt_questions->fetchColumn();
-
-            if ($correctAnswersCount > $incorrectAnswersCount) {
-                $applied_status = 'Qualified';
-            } else {
-                $applied_status = 'Rejected';
-            }
-            
-            error_log("Final Decision: " . $applied_status, 3, $logFile);
-        }          
-           // Determine final applied status
-           $applied_status = ($correctAnswersCount > $incorrectAnswersCount) ? 'Qualified' : 'Rejected';
-           $custom_message = ($applied_status === 'Qualified')
-               ? "Congratulations! You have successfully qualified for the next step. We look forward to your continued success!"
-               : "Thank you for your application. After careful consideration, we’ve decided to move forward with other candidates. We appreciate your time and wish you success in the future.";
+            // Optionally, you can accumulate individual evaluation messages in $evaluationMessages.
+            // $evaluationMessages[] = $evaluation;
+        }
+        
+        // Determine final applied status based on total counts:
+        // If there are more correct than incorrect, they are Qualified.
+        // If not, and if there are 3 or more incorrect answers, mark as On Hold.
+        // Otherwise, mark as Rejected.
+        if ($correctAnswersCount > $incorrectAnswersCount) {
+            $applied_status = 'Qualified';
+        } else if ($incorrectAnswersCount >= 3) {
+            $applied_status = 'On Hold';
+        } else {
+            $applied_status = 'Rejected';
+        }
+        
+        // Set a custom message based on the final status.
+        if ($applied_status === 'Qualified') {
+            $custom_message = "Congratulations! You have successfully qualified for the next step. We look forward to your continued success!";
+        } else if ($applied_status === 'On Hold') {
+            $custom_message = "We have placed your application on hold for further review. Please await further instructions.";
+        } else {
+            $custom_message = "Thank you for your application. After careful consideration, we’ve decided to move forward with other candidates. We appreciate your time and wish you success in the future.";
+        }
    
-           // Update js_applicant_application_resume
-           $evaluationMessageStr = implode('; ', $evaluationMessages);
+        $evaluationMessageStr = implode('; ', $evaluationMessages);
            
            $update_sql = "UPDATE js_applicant_application_resume 
                           SET applied_status = :applied_status, message = :evaluation_message 
@@ -212,6 +218,7 @@ if (isset($data['assessmentData']) && is_array($data['assessmentData'])) {
             'success' => true,
             'applied_status' => $applied_status, 
         ]);
+
     } catch (Exception $e) {
         $conn->rollBack();
         echo json_encode(['success' => false, 'error' => $e->getMessage()]);
