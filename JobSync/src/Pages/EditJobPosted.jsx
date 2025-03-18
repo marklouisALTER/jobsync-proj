@@ -8,52 +8,142 @@ import { Container, Row, Col, Button, Offcanvas, Form  } from "react-bootstrap";
 import { FaBars } from "react-icons/fa";
 import { useSelectedJobStore } from '../store/SelectedJobStore';
 import { useNavigate } from 'react-router-dom';
-
+import { useAuth } from '../AuthContext';
+import axios from 'axios';
+import Swal from 'sweetalert2';
 
 export default function EditJobPosted(){
     const [showSidebar, setShowSidebar] = useState(false);
-    const [selectedBenefits, setSelectedBenefits] = useState([]);
     const navigate = useNavigate();
     const { selectedJob } = useSelectedJobStore();
-
     const [jobBenefits, setJobBenefits] = useState([
-        'Health Insurance', 'Paid Time Off', '401(k)', 'Bonuses', 'Work from Home',
-        'Paid Holidays', 'Gym Membership', 'Stock Options', 'Retirement Plans', 'Child Care',
-        'Dental Insurance', 'Life Insurance', 'Flexible Hours', 'Commuter Benefits', 'Tuition Reimbursement',
-        'Relocation Assistance', 'Employee Assistance Program', 'Pet Insurance', 'Mental Health Days', 'Disability Insurance'
+      'Health Insurance', 'Paid Time Off', '401(k)', 'Bonuses', 'Work from Home',
+      'Paid Holidays', 'Gym Membership', 'Stock Options', 'Retirement Plans', 'Child Care',
+      'Dental Insurance', 'Life Insurance', 'Flexible Hours', 'Commuter Benefits', 'Tuition Reimbursement',
+      'Relocation Assistance', 'Employee Assistance Program', 'Pet Insurance', 'Mental Health Days', 'Disability Insurance'
     ]);
     
+    const [selectedBenefits, setSelectedBenefits] = useState(
+      Array.isArray(selectedJob?.selectedBenefits)
+        ? selectedJob.selectedBenefits
+        : (selectedJob?.selectedBenefits || "").split(",")
+    );
+    const { user } = useAuth(); 
+    const [newBenefit, setNewBenefit] = useState("");
+    const [showInput, setShowInput] = useState(false);
+    const [loading, setLoading] = useState(false);
+
+    const [formData, setFormData] = useState({
+        jobTitle: selectedJob.jobTitle || "",
+        jobTags: selectedJob.jobTags || "",
+        jobRole: selectedJob.jobRole || "",
+        minSalary: selectedJob.minSalary || "",
+        maxSalary: selectedJob.maxSalary || "",
+        salaryType: selectedJob.salaryType || "",
+        education: selectedJob.education || "",
+        experience: selectedJob.experience || "",
+        jobType: selectedJob.jobType || "",
+        expirationDate: selectedJob.expirationDate || "",
+        jobLevel: selectedJob.jobLevel || "",
+        address: selectedJob.address || "",
+        city: selectedJob.city || "",
+        jobDescription: selectedJob.jobDescription || "",
+        selectedBenefits: selectedJob.selectedBenefits || "",
+    });
+
+    
     const handleBenefitSelect = (benefit) => {
-        setSelectedBenefits((prev) => {
-            const newSelection = prev.includes(benefit)
-                ? prev.filter((item) => item !== benefit)  
-                : [...prev, benefit];  
-    
-            setFormData((prevFormData) => ({
-                ...prevFormData,
-                selectedBenefits: newSelection, 
-            }));
-    
-            return newSelection;
-        });
+      setSelectedBenefits((prev) => {
+        const newSelection = prev.includes(benefit)
+          ? prev.filter((item) => item !== benefit)
+          : [...prev, benefit];
+        // Optionally, update your form data state if needed:
+        setFormData((prevFormData) => ({
+          ...prevFormData,
+          selectedBenefits: newSelection,
+        }));
+        return newSelection;
+      });
     };
+    
+    const handleAddBenefit = () => {
+      if (newBenefit.trim() && !jobBenefits.includes(newBenefit)) {
+        setJobBenefits([...jobBenefits, newBenefit]); 
+
+        setSelectedBenefits((prev) => [...prev, newBenefit]);
+      }
+      setNewBenefit("");
+      setShowInput(false);
+    };
+
 
     useEffect(() => {
         if(!selectedJob.jobTitle){
             navigate('/employer/myjobs');
         }
     })
-    const handleAddBenefit = () => {
-        if (newBenefit.trim() && !jobBenefits.includes(newBenefit)) {
-            setJobBenefits([...jobBenefits, newBenefit]);
-        }
-        setNewBenefit("");  // Clear input after adding
-        setShowInput(false); // Hide input field
+    
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData((prev) => ({ ...prev, [name]: value }));
     };
 
-    const selectedBenefitsArray = Array.isArray(selectedJob?.selectedBenefits) 
-    ? selectedJob.selectedBenefits 
-    : (selectedJob?.selectedBenefits || "").split(",");
+    const handleSubmit = async () => {
+
+        setLoading(true);
+
+        const job = {
+            employer_id: user.id, 
+            job_id: selectedJob.job_id,
+            jobTitle: formData.jobTitle,
+            jobTags: formData.jobTags,
+            jobRole: formData.jobRole,
+            minSalary: formData.minSalary,
+            maxSalary: formData.maxSalary,
+            salaryType: formData.salaryType,
+            education: formData.education,
+            experience: formData.experience,
+            jobType: formData.jobType,
+            expirationDate: formData.expirationDate,
+            jobLevel: formData.jobLevel,
+            address: formData.address,
+            city: formData.city,
+            jobDescription: formData.jobDescription,
+            selectedBenefits: selectedBenefits.join(","),
+        };
+          try {
+            const response = await axios.post('http://localhost:80/jobsync-proj/jobsync/src/api/editJobPost.php', job,
+            {headers: {'Content-Type': 'application/json'}});
+               Swal.fire({
+                  icon: 'success',
+                  title: 'Success!',
+                  text: 'Your job was edited successfully.',
+                  showCancelButton: true,
+                  cancelButtonText: 'Close',
+                  confirmButtonText: 'Go to My Jobs',
+                  allowOutsideClick: false,
+                  allowEscapeKey: false
+              }).then((result) => {
+                  if (result.isConfirmed) {
+                      navigate('/employer/myjobs');
+                  }
+              });
+
+        } catch (error) {
+
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Something went wrong!',
+                footer: '<a href>Why do I have this issue?</a>'
+            });
+
+          } finally {
+            setLoading(false); 
+        }
+
+    }
+
 
   return (
     <Container className="d-flex flex-column flex-md-row" style={{ marginTop: "3rem" }}>
@@ -65,7 +155,7 @@ export default function EditJobPosted(){
             <Col xs={12} className="d-lg-none" style={{display: 'flex'}}>
                 <Button
                     variant="link"
-                    // onClick={() => setShowSidebar(true)}
+                    onClick={() => setShowSidebar(true)}
                     style={{
                         position: "relative",
                         left: "0",
@@ -108,8 +198,8 @@ export default function EditJobPosted(){
       <Form.Control
         type="text"
         name="jobTitle"
-        value={selectedJob.jobTitle || ""}
-        // onChange={handleChange}
+        value={formData.jobTitle || ""}
+        onChange={handleChange}
         className="register1"
         style={{ width: "100%" }}
         placeholder="Add job title"
@@ -126,8 +216,8 @@ export default function EditJobPosted(){
           <Form.Control
             type="text"
             name="jobTags"
-            value={selectedJob.jobTags || ""}
-            // onChange={handleChange}
+            value={formData.jobTags || ""}
+            onChange={handleChange}
             className="register1"
             placeholder="Job keywords, tags"
             required
@@ -143,8 +233,8 @@ export default function EditJobPosted(){
           <Form.Control
             type="text"
             name="jobRole"
-            value={selectedJob.jobRole || ""}
-            // onChange={handleChange}
+            value={formData.jobRole || ""}
+            onChange={handleChange}
             className="register1"
             placeholder="Add job role"
             required
@@ -179,8 +269,8 @@ export default function EditJobPosted(){
               <Form.Control
                 type="text"
                 name="minSalary"
-                value={selectedJob.minSalary || ""}
-                // onChange={handleChange}
+                value={formData.minSalary || ""}
+                onChange={handleChange}
                 // onKeyDown={handleKeyDown}
                 className="register1"
                 style={{ flex: "1", borderRadius: "0px 10px 10px 0px" }}
@@ -214,8 +304,8 @@ export default function EditJobPosted(){
               <Form.Control
                 type="text"
                 name="maxSalary"
-                value={selectedJob.maxSalary || ""}
-                // onChange={handleChange}
+                value={formData.maxSalary || ""}
+                onChange={handleChange}
                 // onKeyDown={handleKeyDown}
                 className="register1"
                 style={{ flex: "1", borderRadius: "0px 10px 10px 0px" }}
@@ -234,8 +324,8 @@ export default function EditJobPosted(){
             <Form.Control
               as="select"
               name="salaryType"
-              value={selectedJob.salaryType || ""}
-            //   onChange={handleChange}
+              value={formData.salaryType || ""}
+              onChange={handleChange}
               className="register1"
               required
             >
@@ -265,8 +355,8 @@ export default function EditJobPosted(){
                 </Form.Label>
                 <Form.Select
                     name="education"
-                    value={selectedJob.education || ""}
-                    // onChange={handleChange}
+                    value={formData.education || ""}
+                    onChange={handleChange}
                     className="register1"
                     required
                 >
@@ -288,8 +378,8 @@ export default function EditJobPosted(){
                 </Form.Label>
                 <Form.Select
                     name="experience"
-                    value={selectedJob.experience || ""}
-                    // onChange={handleChange}
+                    value={formData.experience || ""}
+                    onChange={handleChange}
                     required
                     className="register1"
                 >
@@ -310,8 +400,8 @@ export default function EditJobPosted(){
                 </Form.Label>
                 <Form.Select
                     name="jobType"
-                    value={selectedJob.jobType || ""}
-                    // onChange={handleChange}
+                    value={formData.jobType || ""}
+                    onChange={handleChange}
                     required
                     className="register1"
                 >
@@ -338,8 +428,8 @@ export default function EditJobPosted(){
                 <DatePicker
                     id="expirationDate"
                     name="expirationDate"
-                    selected={selectedJob.expirationDate}
-                    // onChange={(date) => handleChange({ target: { name: "expirationDate", value: date } })}
+                    selected={formData.expirationDate}
+                    onChange={(date) => handleChange({ target: { name: "expirationDate", value: date } })}
                     className="form-control register1"
                     required
                     dateFormat="MM-dd-yyyy"
@@ -357,8 +447,8 @@ export default function EditJobPosted(){
                 </Form.Label>
                 <Form.Select
                     name="jobLevel"
-                    value={selectedJob.jobLevel || ""}
-                    // onChange={handleChange}
+                    value={formData.jobLevel || ""}
+                    onChange={handleChange}
                     required
                     className="register1"
                 >
@@ -391,8 +481,8 @@ export default function EditJobPosted(){
                     <Form.Control
                         type="text"
                         name="address"
-                        value={selectedJob.address || ""}
-                        // onChange={handleChange}
+                        value={formData.address || ""}
+                        onChange={handleChange}
                         placeholder="Enter address"
                         className="register1"
                         required
@@ -409,8 +499,8 @@ export default function EditJobPosted(){
                     <Form.Control
                         type="text"
                         name="city"
-                        value={selectedJob.city || ""}
-                        // onChange={handleChange}
+                        value={formData.city || ""}
+                        onChange={handleChange}
                         placeholder="Enter city"
                         className="register1"
                         required
@@ -428,44 +518,46 @@ export default function EditJobPosted(){
                 <Row className="mt-2">
 
 
-                    <Col>
-                    <div className="d-flex flex-wrap gap-2">
-                        {jobBenefits.map((benefit, index) => (
-                        <Button
-                            key={index}
-                            variant={selectedBenefitsArray.includes(benefit) ? "primary" : "outline-secondary"}
-                            onClick={() => handleBenefitSelect(benefit)}
-                            className="mb-2"
-                        >
-                            {benefit}
+                <Col>
+                  <div className="d-flex flex-wrap gap-2">
+                    {jobBenefits.map((benefit, index) => (
+                      <Button
+                        key={index}
+                        variant={selectedBenefits.includes(benefit) ? "primary" : "outline-secondary"}
+                        onClick={() => handleBenefitSelect(benefit)}
+                        className="mb-2"
+                      >
+                        {benefit}
+                      </Button>
+                    ))}
+                  </div>
+                  {showInput ? (
+                    <Row className="mt-3">
+                      <Col md={6} className="d-flex">
+                        <Form.Control
+                          type="text"
+                          value={newBenefit}
+                          onChange={(e) => setNewBenefit(e.target.value)}
+                          placeholder="Enter a custom benefit..."
+                          autoFocus
+                          onKeyDown={(e) => {
+                            if (e.key === "Enter") handleAddBenefit();
+                            if (e.key === "Escape") setShowInput(false);
+                          }}
+                        />
+                        <Button onClick={handleAddBenefit} variant="success" className="ms-2">
+                          +
                         </Button>
-                        ))}
-                    </div>
-                    </Col>
+                      </Col>
+                    </Row>
+                  ) : (
+                    <Button onClick={() => setShowInput(true)} variant="primary" className="mt-3">
+                      Add Custom Benefit
+                    </Button>
+                  )}
+                </Col>
 
                 </Row>
-
-                {/* Input Field for Custom Benefits */}
-                {/* {showInput ? (
-                <Row className="mt-3">
-                    <Col md={6} className="d-flex">
-                    <Form.Control
-                        type="text"
-                        value={newBenefit}
-                        onChange={(e) => setNewBenefit(e.target.value)}
-                        placeholder="Enter a new benefit..."
-                        autoFocus
-                        onKeyDown={(e) => {
-                        if (e.key === "Enter") handleAddBenefit();
-                        if (e.key === "Escape") setShowInput(false);
-                        }}
-                    />
-                    <Button onClick={handleAddBenefit} variant="success" className="ms-2">+</Button>
-                    </Col>
-                </Row>
-                ) : (
-                <Button onClick={() => setShowInput(true)} variant="primary" className="mt-3">+</Button>
-                )} */}
             </Form.Group>
             <Form.Group style={{ padding: "0px 20px" }} className='no-paddings'>
                 <Row className="align-items-center mb-2">
@@ -476,29 +568,11 @@ export default function EditJobPosted(){
                     </Form.Label>
                 </Col>
 
-                {/* AI Generate Button */}
-                <Col xs={12} md="auto">
-                    <Button 
-                    variant="primary" 
-                    // onClick={handleGenerateJobDescription} 
-                    // disabled={loading} 
-                    className="d-flex align-items-center"
-                    >
-                    {/* {loading ? (
-                        <>
-                        Generating...
-                        <div className="spinner" style={{ border: "2px solid #fff", borderTop: "2px solid transparent", borderRadius: "50%", width: "16px", height: "16px", animation: "spin 1s linear infinite", marginTop: '5px', marginLeft: '10px' }}></div>
-                        </>
-                    ) : (
-                        "Write Job Description with AI"
-                    )} */}
-                    </Button>
-                </Col>
                 </Row>
 
                 {/* Job Description Editor */}
                 <ReactQuill
-                    value={selectedJob.jobDescription || ""}
+                    value={formData.jobDescription || ""}
                     // onChange={(value) => handleChange({ target: { name: "jobDescription", value } })}
                     theme="snow"
                     placeholder="Describe the job"
@@ -518,10 +592,10 @@ export default function EditJobPosted(){
                 variant="primary" 
                 size="lg" 
                 style={{ width: "150px" }} 
-                // onClick={handleNext}
+                onClick={handleSubmit}
               
             >
-                Next
+                Submit
             </Button>
             </div>
             </Form>
