@@ -340,7 +340,7 @@ export default function ProfilePage() {
 
 
 
-            {applications[0]?.applied_status === "On hold" && (
+            {applications[0]?.applied_status === "On Hold" && (
              <>
               <Button variant="danger" className="d-flex align-items-center" style={{ width: '150px', justifyContent: 'center', height: '50px' }} onClick={handleAppStatus('Rejected')}>
                 Reject
