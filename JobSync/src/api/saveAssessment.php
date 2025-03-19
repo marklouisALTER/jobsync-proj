@@ -127,33 +127,39 @@ if (isset($data['assessmentData']) && is_array($data['assessmentData'])) {
         // If there are more correct than incorrect, they are Qualified.
         // If not, and if there are 3 or more incorrect answers, mark as On Hold.
         // Otherwise, mark as Rejected.
-        if ($correctAnswersCount > $incorrectAnswersCount) {
-            $applied_status = 'Qualified';
-        } else if ($incorrectAnswersCount >= 3) {
-            $applied_status = 'On Hold';
-        } else {
+        // Determine final applied status based on total counts:
+        if ($correctAnswersCount === 0) {
             $applied_status = 'Rejected';
+        } elseif ($correctAnswersCount === 1) {
+            $applied_status = 'On Hold';
+        } elseif ($correctAnswersCount === count($data['assessmentData'])) {
+            $applied_status = 'Qualified';
+        } elseif ($correctAnswersCount === 2) {
+            $applied_status = 'Waiting for Approval';
+        } else {
+            $applied_status = 'On Hold';
         }
-        
+
         // Set a custom message based on the final status.
         if ($applied_status === 'Qualified') {
-            $custom_message = "Congratulations! You have successfully qualified for the next step. We look forward to your continued success!";
-        } else if ($applied_status === 'On Hold') {
-            $custom_message = "We have placed your application on hold for further review. Please await further instructions.";
+            $custom_message = "Congratulations! You have successfully passed all assessments and are approved for the next step.";
+        } elseif ($applied_status === 'Waiting for Approval') {
+            $custom_message = "You have performed well! Your application is currently waiting for approval.";
         } else {
             $custom_message = "Thank you for your application. After careful consideration, we’ve decided to move forward with other candidates. We appreciate your time and wish you success in the future.";
         }
-   
+
+        // Combine evaluation messages if needed
         $evaluationMessageStr = implode('; ', $evaluationMessages);
-           
-           $update_sql = "UPDATE js_applicant_application_resume 
-                          SET applied_status = :applied_status, message = :evaluation_message 
-                          WHERE application_id = :application_id";
-           $update_stmt = $conn->prepare($update_sql);
-           $update_stmt->bindParam(':applied_status', $applied_status, PDO::PARAM_STR);
-           $update_stmt->bindParam(':evaluation_message', $evaluationMessageStr, PDO::PARAM_STR);
-           $update_stmt->bindParam(':application_id', $application_id, PDO::PARAM_INT);
-   
+
+        // Update the applicant's status and message in the database
+        $update_sql = "UPDATE js_applicant_application_resume 
+                    SET applied_status = :applied_status, message = :evaluation_message 
+                    WHERE application_id = :application_id";
+        $update_stmt = $conn->prepare($update_sql);
+        $update_stmt->bindParam(':applied_status', $applied_status, PDO::PARAM_STR);
+        $update_stmt->bindParam(':evaluation_message', $evaluationMessageStr, PDO::PARAM_STR);
+        $update_stmt->bindParam(':application_id', $application_id, PDO::PARAM_INT);
            if (!$update_stmt->execute()) {
                throw new Exception('Failed to update applicant status and evaluation message.');
            }
@@ -183,10 +189,13 @@ if (isset($data['assessmentData']) && is_array($data['assessmentData'])) {
                }
            }
 
-           // Insert notification for the employer
-           $employer_message = ($applied_status === 'Qualified') 
-               ? "The applicant has been qualified to proceed to the next phase of the recruitment process for the $jobTitle position. They are now eligible to schedule their interview."
-               : "The applicant did not meet the qualifications for the $jobTitle position.";
+        //    // Insert notification for the employer
+        $employer_message = ($applied_status === 'Qualified') 
+            ? "The applicant has been approved to proceed to the next phase of the recruitment process for the $jobTitle position. They are now eligible to schedule their interview."
+            : (($applied_status === 'Waiting for Approval') 
+            ? "The applicant has performed well and is waiting for approval to proceed to the next phase of the recruitment process for the $jobTitle position."
+            : "The applicant has been rejected for the $jobTitle position. Thank you for your time and consideration.");
+
            
            $check_employer_notification_sql = "SELECT COUNT(*) FROM js_employer_notification 
                                                WHERE application_id = :application_id 

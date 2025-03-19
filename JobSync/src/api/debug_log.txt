@@ -10350,3 +10350,254 @@ Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
 {"query":"","location":""}
 Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
             JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"industry":"Computer Games","jobType":"Full Time","minSalary":"70000","maxSalary":"120000"}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND c.industry = 'Computer Games' AND j.jobType = 'Full Time' AND (j.minSalary >= '70000' OR j.minSalary IS NULL) AND (j.maxSalary <= '70000' OR j.maxSalary IS NULL)
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"P","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%P%' OR j.jobDescription LIKE '%P%' OR j.company_name LIKE '%P%')
+{"query":"Pr","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%Pr%' OR j.jobDescription LIKE '%Pr%' OR j.company_name LIKE '%Pr%')
+{"query":"Pro","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%Pro%' OR j.jobDescription LIKE '%Pro%' OR j.company_name LIKE '%Pro%')
+{"query":"Pro","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%Pro%' OR j.jobDescription LIKE '%Pro%' OR j.company_name LIKE '%Pro%')
+{"query":"Proj","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%Proj%' OR j.jobDescription LIKE '%Proj%' OR j.company_name LIKE '%Proj%')
+{"query":"Proje","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%Proje%' OR j.jobDescription LIKE '%Proje%' OR j.company_name LIKE '%Proje%')
+{"query":"Projec","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%Projec%' OR j.jobDescription LIKE '%Projec%' OR j.company_name LIKE '%Projec%')
+{"query":"Project","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%Project%' OR j.jobDescription LIKE '%Project%' OR j.company_name LIKE '%Project%')
+{"query":"Project","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%Project%' OR j.jobDescription LIKE '%Project%' OR j.company_name LIKE '%Project%')
+{"query":"Project","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%Project%' OR j.jobDescription LIKE '%Project%' OR j.company_name LIKE '%Project%')
+{"query":"M","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%M%' OR j.jobDescription LIKE '%M%' OR j.company_name LIKE '%M%')
+{"query":"Ma","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%Ma%' OR j.jobDescription LIKE '%Ma%' OR j.company_name LIKE '%Ma%')
+{"query":"Man","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%Man%' OR j.jobDescription LIKE '%Man%' OR j.company_name LIKE '%Man%')
+{"query":"Mana","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%Mana%' OR j.jobDescription LIKE '%Mana%' OR j.company_name LIKE '%Mana%')
+{"query":"Mana","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%Mana%' OR j.jobDescription LIKE '%Mana%' OR j.company_name LIKE '%Mana%')
+{"query":"Manag","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%Manag%' OR j.jobDescription LIKE '%Manag%' OR j.company_name LIKE '%Manag%')
+{"query":"Manag","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%Manag%' OR j.jobDescription LIKE '%Manag%' OR j.company_name LIKE '%Manag%')
+{"query":"Manag","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%Manag%' OR j.jobDescription LIKE '%Manag%' OR j.company_name LIKE '%Manag%')
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"m","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%m%' OR j.jobDescription LIKE '%m%' OR j.company_name LIKE '%m%')
+{"query":"ma","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%ma%' OR j.jobDescription LIKE '%ma%' OR j.company_name LIKE '%ma%')
+{"query":"man","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%man%' OR j.jobDescription LIKE '%man%' OR j.company_name LIKE '%man%')
+{"query":"man","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%man%' OR j.jobDescription LIKE '%man%' OR j.company_name LIKE '%man%')
+{"query":"mana","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%mana%' OR j.jobDescription LIKE '%mana%' OR j.company_name LIKE '%mana%')
+{"query":"mana","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%mana%' OR j.jobDescription LIKE '%mana%' OR j.company_name LIKE '%mana%')
+{"query":"mana","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%mana%' OR j.jobDescription LIKE '%mana%' OR j.company_name LIKE '%mana%')
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"l","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%l%' OR j.jobDescription LIKE '%l%' OR j.company_name LIKE '%l%')
+{"query":"ll","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%ll%' OR j.jobDescription LIKE '%ll%' OR j.company_name LIKE '%ll%')
+{"query":"ll","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%ll%' OR j.jobDescription LIKE '%ll%' OR j.company_name LIKE '%ll%')
+{"query":"ll ","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%ll %' OR j.jobDescription LIKE '%ll %' OR j.company_name LIKE '%ll %')
+{"query":"ll ","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%ll %' OR j.jobDescription LIKE '%ll %' OR j.company_name LIKE '%ll %')
+{"query":"ll","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%ll%' OR j.jobDescription LIKE '%ll%' OR j.company_name LIKE '%ll%')
+{"query":"l","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%l%' OR j.jobDescription LIKE '%l%' OR j.company_name LIKE '%l%')
+{"query":"ll ","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%ll %' OR j.jobDescription LIKE '%ll %' OR j.company_name LIKE '%ll %')
+{"query":"","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1
+{"query":"a","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%a%' OR j.jobDescription LIKE '%a%' OR j.company_name LIKE '%a%')
+{"query":"as","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%as%' OR j.jobDescription LIKE '%as%' OR j.company_name LIKE '%as%')
+{"query":"asd","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%asd%' OR j.jobDescription LIKE '%asd%' OR j.company_name LIKE '%asd%')
+{"query":"asd","location":""}
+Executed SQL: SELECT j.*, c.industry FROM active_job_postings j
+            JOIN js_founding_info c ON j.employer_id = c.employer_id WHERE 1=1 AND (j.jobTitle LIKE '%asd%' OR j.jobDescription LIKE '%asd%' OR j.company_name LIKE '%asd%')
